@@ -87,16 +87,16 @@ export default function HeroSlider() {
 
           {/* Button */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button className="group flex items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
-              Explore Courses
+            <button className="group cursor-pointer flex items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
+              Explore Departments
               <ArrowRight
                 size={19}
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
             </button>
 
-            <button className="rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-[#224248]">
-              Learn More
+            <button className="rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/60 cursor-pointer hover:text-[#224248]">
+              Admission Now
             </button>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function HeroSlider() {
       <button
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition hover:bg-white hover:text-[#224248] sm:left-6"
+        className="absolute cursor-pointer left-4 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition hover:bg-white/50 hover:text-[#224248] sm:left-6"
       >
         <ChevronLeft size={22} />
       </button>
@@ -115,7 +115,7 @@ export default function HeroSlider() {
       <button
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition hover:bg-white hover:text-[#224248] sm:right-6"
+        className="absolute cursor-pointer right-4 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/20 text-white backdrop-blur-sm transition hover:bg-white/50 hover:text-[#224248] sm:right-6"
       >
         <ChevronRight size={22} />
       </button>

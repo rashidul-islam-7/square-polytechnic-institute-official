@@ -112,7 +112,7 @@ const Navbar = () => {
             </p>
 
             {/* Right Side */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 ">
               {/* Phone */}
               <div className="flex items-center gap-2">
                 <Phone size={14} className="text-[#44A1A4]" />
@@ -123,15 +123,14 @@ const Navbar = () => {
               {/* Admission */}
               <Link
                 href="/admission"
-                className={`border px-4 py-1 rounded-full cursor-pointer transition ${
-                  isActive("/admission")
-                    ? "bg-[#FF9A00] border-[#FF9A00] text-white"
-                    : "border-white/40 hover:bg-[#FF9A00] hover:border-[#FF9A00]"
+                className={`animate-pulse px-4 py-1 bg-[#FF9A00] rounded-full cursor-pointer transition hover:bg-[#E88900] text-white font-semibold 
                 }`}
               >
                 Admission
               </Link>
             </div>
+
+            
           </div>
         </div>
       </div>
@@ -141,7 +140,7 @@ const Navbar = () => {
       ================================= */}
       <nav className="bg-[#325E6A] text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="py-3 md:py-4 flex items-center justify-between">
+          <div className="py-2 md:py-2 flex items-center justify-between">
             {/* =================================
                 LEFT SIDE
             ================================= */}

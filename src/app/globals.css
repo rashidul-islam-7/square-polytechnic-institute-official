@@ -1,28 +1,128 @@
 @import "tailwindcss";
+
 @plugin "daisyui";
-@import "@heroui/styles"; 
+
+@import "@heroui/styles";
+
+/* ========================================
+   THEME
+======================================== */
+
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-poppins);
+  --font-bengali: var(--font-bengali);
+
+  /* SPI Colors */
+  --color-primary: #224248;
+  --color-secondary: #325e6a;
+  --color-accent: #44a1a4;
+  --color-orange: #ff9a00;
+
+  /* Background */
+  --color-background: #f8fafa;
+  --color-foreground: #224248;
+
+  /* UI */
+  --color-card: #ffffff;
+  --color-card-foreground: #224248;
+
+  --color-border: #dce7e8;
+  --color-input: #dce7e8;
+
+  /* Muted */
+  --color-muted: #eef4f4;
+  --color-muted-foreground: #325e6a;
+
+  /* Primary */
+  --color-primary-foreground: #ffffff;
+
+  /* Secondary */
+  --color-secondary-foreground: #ffffff;
+
+  /* Accent */
+  --color-accent-foreground: #ffffff;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+
+/* ========================================
+   ROOT
+======================================== */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafa;
+  --foreground: #224248;
+
+  --primary: #224248;
+  --primary-foreground: #ffffff;
+
+  --secondary: #325e6a;
+  --secondary-foreground: #ffffff;
+
+  --accent: #44a1a4;
+  --accent-foreground: #ffffff;
+
+  --orange: #ff9a00;
+
+  --card: #ffffff;
+  --card-foreground: #224248;
+
+  --muted: #eef4f4;
+  --muted-foreground: #325e6a;
+
+  --border: #dce7e8;
+  --input: #dce7e8;
+
+  --ring: #44a1a4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ========================================
+   GLOBAL
+======================================== */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-poppins), var(--font-bengali), sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+
+    font-family: var(--font-bengali), var(--font-poppins), sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* ========================================
+   FONT UTILITIES
+======================================== */
+
+.font-english {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-bengali {
+  font-family: var(--font-bengali), sans-serif;
+}
+
+
+/* ========================================
+   SELECTION
+======================================== */
+
+::selection {
+  background: #44a1a4;
+  color: #ffffff;
 }
