@@ -2,13 +2,14 @@
 
 import { ArrowUpRight } from "lucide-react";
 
-const InstituteFeatureCard = ({ feature, index, isActive }) => {
+const InstituteFeatureCard = ({ feature, index, isActive, modal }) => {
   const Icon = feature.icon;
 
   return (
     <div
+      onClick={() => modal(index)}
       className={`
-        group relative overflow-hidden rounded-2xl border bg-white
+        group relative cursor-pointer overflow-hidden rounded-2xl border bg-white
         px-4 py-7 text-center transition-all duration-500
         md:min-h-[200px]
         ${
