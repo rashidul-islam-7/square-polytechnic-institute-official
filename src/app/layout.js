@@ -2,6 +2,7 @@ import { Poppins, Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,12 +30,14 @@ export default function RootLayout({ children }) {
       lang="bn"
       className={`${poppins.variable} ${notoSansBengali.variable}`}
     >
-      <body className="min-h-screen">
-        <Navbar />
+      <body className="flex min-h-screen flex-col">
 
-        <main className="pt-16 bg-[#F8FAFA]">
+        <main className="flex-1 bg-background pt-16">
           {children}
         </main>
+
+        <Navbar />
+        <Footer />
       </body>
     </html>
   );

@@ -1,25 +1,29 @@
 "use client";
 
-import DepartmentCard from "@/components/DepartmentCard";
+import React from "react";
 import HeroSlider from "@/components/HomePageComponents.jsx/HomeSlider";
+import CareerSection from "@/components/Shared/CareerSection";
 import GallerySection from "@/components/Shared/GallerySection";
 import HostelSection from "@/components/Shared/HostelSection";
 import InstituteFeatures from "@/components/Shared/InstituteFeatures";
+import StudentReviews from "@/components/Shared/Review/StudentReviews";
 import ScholarshipSection from "@/components/Shared/ScholarshipSection";
 import HomePageMarquee from "@/components/UI/Marquee/HomePageMarquee";
-import { Home } from "lucide-react";
-import React, { useState } from "react";
+import Departments from "@/components/Shared/Department";
+
 
 export default function HomePage() {
   return (
-    <div className="h-[2000px]">
+    <div className="">
       <HeroSlider />
       <HomePageMarquee />
-      <DepartmentCard />
+      <Departments />
       <InstituteFeatures />
       <ScholarshipSection />
       <HostelSection />
       <GallerySection />
+      <CareerSection />
+      <StudentReviews />
     </div>
   );
 }
