@@ -10,7 +10,7 @@ import StudentReviews from "@/components/Shared/Review/StudentReviews";
 import ScholarshipSection from "@/components/Shared/ScholarshipSection";
 import HomePageMarquee from "@/components/UI/Marquee/HomePageMarquee";
 import Departments from "@/components/Shared/Department";
-
+import Slider from "@/components/Shared/Slider/OneSlider";
 
 export default function HomePage() {
   return (
