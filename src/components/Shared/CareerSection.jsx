@@ -19,24 +19,25 @@ const careerPoints = [
   "ইন্টার্নশীপ ও Job Placement Support",
 ];
 
+
 const careerSteps = [
   {
     icon: GraduationCap,
     number: "01",
-    title: "দক্ষতা অর্জন",
-    text: "প্রযুক্তির প্রয়োজনীয় জ্ঞান ও ব্যবহারিক দক্ষতা অর্জন করুন।",
+    title: "ব্যবহারিক দক্ষতা",
+    text: "ইন্টার্নশীপ, শিল্পপ্রতিষ্ঠান ও বাস্তব কর্মক্ষেত্রের সাথে পরিচিতি।",
   },
   {
     icon: BriefcaseBusiness,
     number: "02",
-    title: "ইন্টার্নশীপ",
+    title: "ইন্টার্নশীপ বা ইন্ডাস্ট্রি সংযোগ",
     text: "বাস্তব কর্মক্ষেত্রে কাজের মাধ্যমে অভিজ্ঞতা অর্জন করুন।",
   },
   {
     icon: Target,
     number: "03",
-    title: "ক্যারিয়ার গড়ুন",
-    text: "চাকরি ও পেশাগত জীবনের জন্য নিজেকে প্রস্তুত করুন।",
+    title: "ক্যারিয়ারের সুযোগ",
+    text: "দেশ-বিদেশের বিভিন্ন সরকারি ও বেসরকারি প্রতিষ্ঠানে কর্মসংস্থানের প্রস্তুতি।",
   },
 ];
 
@@ -59,12 +60,12 @@ const CareerSection = () => {
             ক্যারিয়ার প্রস্তুতি
           </div>
 
-          <h2 className="text-3xl font-bold tracking-tight text-[#224248] md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#224248] md:text-4xl">
             ইন্টার্নশীপ ও{" "}
             <span className="text-[#44A1A4]">জব প্লেসমেন্ট</span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-500 md:text-base">
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600 text-base">
             শিক্ষার্থীদের একাডেমিক শিক্ষার পাশাপাশি বাস্তব কর্মক্ষেত্রের
             অভিজ্ঞতা ও ক্যারিয়ার গঠনের জন্য প্রয়োজনীয় প্রস্তুতি প্রদানে আমরা
             গুরুত্ব দিয়ে থাকি।
@@ -83,10 +84,11 @@ const CareerSection = () => {
             <h3 className="mt-3 text-2xl font-bold leading-tight text-[#224248] md:text-3xl">
               শিক্ষা থেকে
               <br />
-              <span className="text-[#44A1A4]">কর্মজীবনের পথে</span>
+              <span className="text-[#44A1A4]">কর্মজীবনের পথে </span>
+              শিক্ষার্থীদের সাথে
             </h3>
 
-            <p className="mt-5 text-sm leading-7 text-slate-600 md:text-[15px]">
+            <p className="mt-4 leading-6 text-slate-700 text-base">
               শুধু ডিপ্লোমা সম্পন্ন করাই আমাদের লক্ষ্য নয়। একজন শিক্ষার্থীকে
               বাস্তব কর্মক্ষেত্রের জন্য প্রস্তুত করে তোলাই আমাদের অন্যতম
               উদ্দেশ্য। এজন্য একাডেমিক শিক্ষার পাশাপাশি ব্যবহারিক দক্ষতা,
@@ -94,7 +96,7 @@ const CareerSection = () => {
             </p>
 
             {/* Points */}
-            <div className="mt-7 space-y-4">
+            <div className="mt-6 space-y-2">
               {careerPoints.map((point, index) => (
                 <div
                   key={index}
@@ -104,7 +106,7 @@ const CareerSection = () => {
                     <CheckCircle2 size={15} />
                   </div>
 
-                  <p className="text-sm leading-6 text-slate-600">
+                  <p className="text-base leading-6 text-slate-700">
                     {point}
                   </p>
                 </div>
@@ -112,8 +114,8 @@ const CareerSection = () => {
             </div>
 
             {/* Highlight Text */}
-            <div className="mt-7 border-l-2 border-[#44A1A4] pl-4">
-              <p className="text-sm font-medium leading-6 text-[#325E6A]">
+            <div className="mt-6 border-l-2 border-[#44A1A4] pl-4">
+              <p className="text-base font-medium leading-6 text-[#28505b]">
                 দক্ষতা, অভিজ্ঞতা ও আত্মবিশ্বাস—এই তিনটি বিষয়কে সামনে রেখে
                 শিক্ষার্থীদের ভবিষ্যৎ ক্যারিয়ারের জন্য প্রস্তুত করা হয়।
               </p>
@@ -123,9 +125,9 @@ const CareerSection = () => {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/career"
-                className="group inline-flex items-center gap-2 rounded-lg bg-[#FF9A00] px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#E88900] hover:shadow-lg hover:shadow-[#FF9A00]/20"
+                className="group inline-flex items-center gap-2 rounded-lg bg-[#FF9A00] px-5 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-[#E88900] hover:shadow-lg hover:shadow-[#FF9A00]/20"
               >
-                ক্যারিয়ার সম্পর্কে জানুন
+                ক্যারিয়ার সম্পর্কে জানুন...
 
                 <ArrowRight
                   size={17}
@@ -133,7 +135,7 @@ const CareerSection = () => {
                 />
               </Link>
 
-              <div className="flex items-center gap-2 text-xs text-slate-500">
+              <div className="flex items-center gap-2 text-base text-slate-500">
                 <UsersRound
                   size={16}
                   className="text-[#44A1A4]"
@@ -148,16 +150,16 @@ const CareerSection = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=85"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9QiZELD4MigAN4CexB-FssMKLVxQIi8G2KRE49ONmDvIH-l5OTfHuBGtY&s=10"
                 alt="Students working together during practical training"
-                className="h-[360px] w-full object-cover transition-transform duration-700 hover:scale-105 md:h-[440px]"
+                className="h-[300px] w-full object-cover md:h-[440px]"
               />
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#224248]/85 via-[#224248]/20 to-transparent" />
 
               {/* Image Content */}
-              <div className="absolute bottom-7 left-7 right-7">
+              {/* <div className="absolute bottom-7 left-7 right-7">
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#44A1A4]">
                   Career Development
                 </p>
@@ -167,7 +169,7 @@ const CareerSection = () => {
                   <br />
                   আগামী দিনের পেশা
                 </h3>
-              </div>
+              </div> */}
             </div>
 
             {/* Floating Career Card */}
@@ -192,17 +194,17 @@ const CareerSection = () => {
             {/* Top Badge */}
             <div className="absolute right-5 top-5 flex items-center gap-2 rounded-full bg-[#44A1A4] px-4 py-2 text-xs font-bold text-white shadow-lg">
               <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              Career Ready
+              Career Ready 
             </div>
           </div>
         </div>
 
         {/* ================= CAREER JOURNEY ================= */}
-        <div className="mt-20">
+        <div className="mt-15 md:mt-20">
           {/* Section Small Title */}
-          <div className="mb-6 flex items-center justify-between">
+          <div className="mb-4 flex items-center justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#44A1A4]">
+              <p className="text-xs  font-semibold uppercase tracking-[0.18em] text-[#44A1A4]">
                 Career Journey
               </p>
 
@@ -222,15 +224,15 @@ const CareerSection = () => {
               return (
                 <div
                   key={item.number}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#44A1A4]/30 hover:shadow-lg"
+                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 "
                 >
                   {/* Number */}
-                  <span className="absolute right-5 top-3 text-4xl font-bold text-slate-100 transition-colors duration-300 group-hover:text-[#44A1A4]/10">
+                  <span className="absolute right-5 top-3 text-4xl font-bold text-slate-100 ">
                     {item.number}
                   </span>
 
                   {/* Icon */}
-                  <div className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-[#224248] text-white transition-all duration-300 group-hover:bg-[#44A1A4]">
+                  <div className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-[#224248] text-white">
                     <Icon size={20} />
                   </div>
 
@@ -239,12 +241,10 @@ const CareerSection = () => {
                     {item.title}
                   </h4>
 
-                  <p className="relative mt-2 text-xs leading-6 text-slate-500">
+                  <p className="relative mt-2 text-base leading-6 text-slate-500">
                     {item.text}
                   </p>
 
-                  {/* Bottom Line */}
-                  <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#44A1A4] transition-all duration-300 group-hover:w-full" />
                 </div>
               );
             })}
