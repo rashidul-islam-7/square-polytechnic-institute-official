@@ -16,7 +16,7 @@ const Navbar = () => {
   const departments = [
     {
       name: "Computer Science & Technology",
-      link: "/departments/computer",
+      link: "/computerPage",
     },
     {
       name: "Civil Technology",

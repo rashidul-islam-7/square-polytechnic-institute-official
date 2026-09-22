@@ -164,10 +164,6 @@
 
 // export default HostelSection;
 
-
-
-
-
 "use client";
 
 import React from "react";
@@ -208,7 +204,6 @@ const HostelSection = () => {
       <div className="pointer-events-none absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-[#FF9A00]/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* Heading */}
         <div className="mx-auto mb-8 max-w-2xl text-center">
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-white px-4 py-2 text-sm font-semibold text-[#325E6A] shadow-sm">
@@ -218,25 +213,20 @@ const HostelSection = () => {
 
           <h2 className="text-2xl font-bold leading-tight text-[#224248] sm:text-3xl md:text-4xl">
             পড়াশোনার সাথে{" "}
-            <span className="text-[#44A1A4]">
-              নিশ্চিন্ত আবাসন
-            </span>
+            <span className="text-[#44A1A4]">নিশ্চিন্ত আবাসন</span>
           </h2>
 
           <p className="mx-auto mt-3 text-base leading-7 text-slate-500">
-            দূরবর্তী শিক্ষার্থীদের জন্য নিরাপদ, স্বাস্থ্যকর ও
-            পরিচ্ছন্ন আবাসিক পরিবেশ।
+            দূরবর্তী শিক্ষার্থীদের জন্য নিরাপদ, স্বাস্থ্যকর ও পরিচ্ছন্ন আবাসিক
+            পরিবেশ।
           </p>
         </div>
 
         {/* Main Card */}
         <div className="group overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-[0_15px_50px_rgba(34,66,72,0.08)]">
-
           <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
-
             {/* Image */}
             <div className="relative min-h-[280px] overflow-hidden sm:min-h-[330px] lg:min-h-[380px]">
-
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJT7p9VNnEcN1I3IbUHbuQzkzPeDbb4wzCf6xf__SkhbUV0TyURt6Xys&s=10"
                 alt="Student hostel accommodation"
@@ -271,7 +261,6 @@ const HostelSection = () => {
 
             {/* Content */}
             <div className="flex flex-col justify-center p-6 md:p-10 ">
-
               {/* Label */}
               <div className="mb-3 flex items-center gap-2">
                 <span className="h-px w-8 bg-[#44A1A4]" />
@@ -284,15 +273,12 @@ const HostelSection = () => {
               <h3 className="text-2xl font-bold leading-snug text-[#224248] sm:text-3xl">
                 শিক্ষার্থীদের জন্য রয়েছে
                 <br />
-                <span className="text-[#44A1A4]">
-                  নিরাপদ আবাসন
-                </span>
+                <span className="text-[#44A1A4]">নিরাপদ আবাসন</span>
               </h3>
 
               <p className="mt-4 max-w-xl text-base leading-7 text-slate-500">
-                শিক্ষার্থীদের স্বাচ্ছন্দ্য, নিরাপত্তা ও পড়াশোনার
-                বিষয়টি গুরুত্ব দিয়ে আবাসিক হোস্টেল সুবিধায় রাখা হয়েছে
-                প্রয়োজনীয় সকল ব্যবস্থা।
+                শিক্ষার্থীদের স্বাচ্ছন্দ্য, নিরাপত্তা ও পড়াশোনার বিষয়টি গুরুত্ব
+                দিয়ে আবাসিক হোস্টেল সুবিধায় রাখা হয়েছে প্রয়োজনীয় সকল ব্যবস্থা।
               </p>
 
               {/* Facilities */}
@@ -301,12 +287,8 @@ const HostelSection = () => {
                   const Icon = item.icon;
 
                   return (
-                    <div
-                      key={index}
-                      className=" "
-                    >
-                      <div className="flex items-center gap-2">
-
+                    <div key={index} className=" ">
+                      <div className="flex items-center justify-center gap-2">
                         {/* Icon */}
                         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-[#224248] text-white ">
                           <Icon size={18} />
@@ -322,7 +304,6 @@ const HostelSection = () => {
                             {item.description}
                           </p> */}
                         </div>
-
                       </div>
                     </div>
                   );
@@ -331,13 +312,11 @@ const HostelSection = () => {
 
               {/* Bottom */}
               <div className="mt-7 flex flex-wrap items-center gap-4">
-
                 <Link
                   href="/facilities/hostel"
                   className="group/btn inline-flex items-center gap-2 rounded-xl bg-[#FF9A00] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E88900] hover:shadow-lg"
                 >
                   বিস্তারিত জানুন
-
                   <ArrowRight
                     size={16}
                     className="transition-transform duration-300 group-hover/btn:translate-x-1"
@@ -348,12 +327,9 @@ const HostelSection = () => {
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#44A1A4]/10 text-[#44A1A4]">
                     <Check size={13} strokeWidth={3} />
                   </span>
-
                   শিক্ষার্থীবান্ধব পরিবেশ
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>
@@ -363,4 +339,3 @@ const HostelSection = () => {
 };
 
 export default HostelSection;
-
