@@ -26,6 +26,7 @@ const departmentsData = [
     shortName: "Civil",
     icon: Building2,
     image: civilImg,
+    link: "civilPage",
     description:
       "আধুনিক নির্মাণশিল্প, অবকাঠামোগত ডিজাইন ও স্ট্রাকচারাল ইঞ্জিনিয়ারিংয়ের ব্যবহারিক দক্ষতার মাধ্যমে টেকসই ভবিষ্যৎ গড়ার কারিগর হন।",
   },
@@ -35,6 +36,7 @@ const departmentsData = [
     shortName: "Electrical",
     icon: Zap,
     image: electricalImg,
+    link: "electricalPage",
     description:
       "স্মার্ট পাওয়ার সিস্টেম, আধুনিক ইলেকট্রনিক্স ও শিল্প কারখানা অটোমেশনে ইন্ডাস্ট্রি-লেভেল জ্ঞান অর্জন করে নিজেকে তৈরি করুন।",
   },
@@ -44,6 +46,7 @@ const departmentsData = [
     shortName: "Computer",
     icon: Monitor,
     image: computerImg,
+    link: "computerPage",
     description:
       "প্রোগ্রামিং, সফটওয়্যার ও ওয়েব ডেভেলপমেন্ট থেকে শুরু করে আধুনিক কৃত্রিম বুদ্ধিমত্তার প্রযুক্তিতে গড়ে তুলুন সফল আইটি ক্যারিয়ার।",
   },
@@ -53,6 +56,7 @@ const departmentsData = [
     shortName: "Mechanical",
     icon: Cog,
     image: mechanicalImg,
+    link: "mechanicalPage",
     description:
       "এডভান্সড মেশিনারি, রোবোটিক্স, ম্যানুফ্যাকচারিং প্রসেস ও মেকানিক্যাল অটোমেশনে সরাসরি প্র্যাকটিক্যাল কাজের অভিজ্ঞতা অর্জন করুন।",
   },
@@ -62,6 +66,7 @@ const departmentsData = [
     shortName: "Textile",
     icon: Shirt,
     image: textileImg,
+    link: "textilePage",
     description:
       "আধুনিক টেক্সটাইল প্রযুক্তি, গার্মেন্টস ম্যানুফ্যাকচারিং ও কোয়ালিটি কন্ট্রোলের দক্ষতা নিয়ে দ্রুত বর্ধনশীল টেক্সটাইল খাতে নিজেকে এগিয়ে রাখুন।",
   },
@@ -71,6 +76,7 @@ const departmentsData = [
     shortName: "Others",
     icon: GraduationCap,
     image: othersImg,
+    link: "shortCourses",
     description:
       "প্রফেশনাল স্কিল ডেভেলপমেন্ট, কম্পিউটার, আইটি ট্রেনিং, ও বিভিন্ন প্র্যাকটিক্যাল শর্ট কোর্সের মাধ্যমে নিজেকে আধুনিক জব মার্কেট উপযোগী করে তুলুন।",
   },

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const slides = [
   {
@@ -87,17 +88,21 @@ export default function HeroSlider() {
 
           {/* Button */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button className="group cursor-pointer flex items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
-              Explore Departments
-              <ArrowRight
-                size={19}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </button>
+            <Link href={"/departmentPage"}>
+              <button className="group cursor-pointer flex items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
+                Explore Departments
+                <ArrowRight
+                  size={19}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </button>
+            </Link>
 
-            <button className="rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/60 cursor-pointer hover:text-[#224248]">
-              Admission Now
-            </button>
+            <Link href={"/admissionPage"}>
+              <button className="rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/60 cursor-pointer hover:text-[#224248]">
+                Admission Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

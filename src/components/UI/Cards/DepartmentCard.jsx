@@ -58,7 +58,7 @@ const DepartmentCard = ({ department }) => {
 
         {/* Button */}
         <Link
-          href={`/departments/${department.shortName?.toLowerCase()}`}
+          href={`/${department.link}`}
           className="group/btn mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-[#224248] px-4 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#FF9A00]"
         >
           Explore Department

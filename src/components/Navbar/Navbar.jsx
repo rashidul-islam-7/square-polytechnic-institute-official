@@ -10,9 +10,7 @@ import SPILogo from "../UI/SPILogo/SPILogo";
 const Navbar = () => {
   const pathname = usePathname();
 
-  // =========================
   // Departments
-  // =========================
   const departments = [
     {
       name: "Computer Science & Technology",
@@ -20,47 +18,42 @@ const Navbar = () => {
     },
     {
       name: "Civil Technology",
-      link: "/departments/civil",
+      link: "/civilPage",
     },
     {
       name: "Electrical Technology",
-      link: "/departments/electrical",
+      link: "/electricalPage",
     },
     {
       name: "Mechanical Technology",
-      link: "/departments/mechanical",
+      link: "/mechanicalPage",
     },
     {
       name: "Textile Technology",
-      link: "/departments/textile",
+      link: "/textilePage",
     },
   ];
 
-  // =========================
   // Others
-  // =========================
   const others = [
     {
+      name: "ভর্তি",
+      link: "/admissionPage",
+    },
+    {
       name: "নোটিশ",
-      link: "/notice",
+      link: "/noticePage",
     },
     {
       name: "যোগাযোগ",
-      link: "/contact",
+      link: "/contactPage",
     },
     {
       name: "Student Corner",
-      link: "/student-corner",
-    },
-    {
-      name: "শিক্ষকবৃন্দ",
-      link: "/teachers",
+      link: "/studentCorner",
     },
   ];
-
-  // =========================
   // Main Navigation
-  // =========================
   const navLinks = [
     {
       name: "হোম",
@@ -68,21 +61,19 @@ const Navbar = () => {
     },
     {
       name: "ক্যাম্পাস",
-      link: "/campus",
+      link: "/campusPage",
     },
     {
       name: "গ্যালারি & ইভেন্ট",
-      link: "/gallery",
+      link: "/galleryPage",
     },
     {
       name: "আমাদের সম্পর্কে",
-      link: "/about",
+      link: "/aboutPage",
     },
   ];
 
-  // =========================
   // Active Route Check
-  // =========================
   const isActive = (link) => {
     if (link === "/") {
       return pathname === "/";
@@ -99,9 +90,9 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* =================================
+      {/* 
           TOP BAR
-      ================================= */}
+       */}
       <div className="hidden md:block bg-[#224248] text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="py-2 flex items-center justify-between text-xs">
@@ -129,25 +120,23 @@ const Navbar = () => {
                 Admission
               </Link>
             </div>
-
-            
           </div>
         </div>
       </div>
 
-      {/* =================================
+      {/* 
           MAIN NAVBAR
-      ================================= */}
+  */}
       <nav className="bg-[#325E6A] text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="py-2 md:py-2 flex items-center justify-between">
-            {/* =================================
+            {/* 
                 LEFT SIDE
-            ================================= */}
+            */}
             <div className="flex items-center gap-2">
-              {/* =============================
+              {/*
                   MOBILE MENU
-              ============================= */}
+             */}
               <div className="dropdown lg:hidden">
                 <button
                   tabIndex={0}
@@ -161,9 +150,7 @@ const Navbar = () => {
                   tabIndex={0}
                   className="menu dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-xl w-72"
                 >
-                  {/* =============================
-                      Mobile Departments
-                  ============================= */}
+                  {/* Mobile Departments */}
                   <li>
                     <details open={isDepartmentActive}>
                       <summary
@@ -173,7 +160,7 @@ const Navbar = () => {
                             : "text-gray-700"
                         }`}
                       >
-                        ডিপার্টমেন্টস
+                        <Link href={"/departmentPage"}>ডিপার্টমেন্টস</Link>
                       </summary>
 
                       <ul className="p-2">
@@ -199,9 +186,7 @@ const Navbar = () => {
                     </details>
                   </li>
 
-                  {/* =============================
-                      Mobile Main Links
-                  ============================= */}
+                  {/* Mobile Main Links*/}
                   {navLinks.map((item) => {
                     const active = isActive(item.link);
 
@@ -221,9 +206,7 @@ const Navbar = () => {
                     );
                   })}
 
-                  {/* =============================
-                      Mobile Others
-                  ============================= */}
+                  {/* Mobile Others */}
                   <li>
                     <details open={isOthersActive}>
                       <summary
@@ -257,12 +240,10 @@ const Navbar = () => {
                     </details>
                   </li>
 
-                  {/* =============================
-                      Mobile Admission
-                  ============================= */}
+                  {/* Mobile Admission */}
                   <li className="mt-2">
                     <Link
-                      href="/admission"
+                      href="/admissionPage"
                       className={`justify-center rounded-lg font-semibold transition flex items-center gap-2 ${
                         isActive("/admission")
                           ? "bg-[#FF9A00] text-white"
@@ -276,20 +257,14 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              {/* =============================
-                  LOGO
-              ============================= */}
-                <SPILogo />
+              {/* LOGO */}
+              <SPILogo />
             </div>
 
-            {/* =================================
-                DESKTOP NAVIGATION
-            ================================= */}
+            {/* DESKTOP NAVIGATION */}
             <nav className="hidden lg:flex items-center">
               <ul className="flex items-center gap-8">
-                {/* =============================
-                    HOME
-                ============================= */}
+                {/* HOME */}
                 <li>
                   <Link
                     href="/"
@@ -306,9 +281,7 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                {/* =============================
-                    DEPARTMENTS
-                ============================= */}
+                {/* DEPARTMENTS */}
                 <li className="relative group">
                   <button
                     className={`relative cursor-pointer flex items-center gap-1 text-[15px] font-semibold transition ${
@@ -317,7 +290,7 @@ const Navbar = () => {
                         : "text-gray-300 hover:text-white"
                     }`}
                   >
-                    ডিপার্টমেন্টস
+                    <Link href={"/departmentPage"}>ডিপার্টমেন্টস</Link>
                     <ChevronDown
                       size={16}
                       className="group-hover:rotate-180 transition-transform duration-200"
@@ -349,9 +322,7 @@ const Navbar = () => {
                   </div>
                 </li>
 
-                {/* =============================
-                    OTHER MAIN LINKS
-                ============================= */}
+                {/* OTHER MAIN LINKS*/}
                 {navLinks.slice(1).map((item) => {
                   const active = isActive(item.link);
 
@@ -373,9 +344,7 @@ const Navbar = () => {
                   );
                 })}
 
-                {/* =============================
-                    OTHERS DROPDOWN
-                ============================= */}
+                {/* OTHERS DROPDOWN */}
                 <li className="relative group">
                   <button
                     className={`relative cursor-pointer flex items-center gap-1 text-[15px] font-semibold transition ${

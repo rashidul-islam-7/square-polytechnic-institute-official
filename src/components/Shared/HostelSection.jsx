@@ -313,7 +313,7 @@ const HostelSection = () => {
               {/* Bottom */}
               <div className="mt-7 flex flex-wrap items-center gap-4">
                 <Link
-                  href="/facilities/hostel"
+                  href="/hostel"
                   className="group/btn inline-flex items-center gap-2 rounded-xl bg-[#FF9A00] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E88900] hover:shadow-lg"
                 >
                   বিস্তারিত জানুন

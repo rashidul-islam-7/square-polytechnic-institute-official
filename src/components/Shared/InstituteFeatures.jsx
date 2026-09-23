@@ -166,7 +166,7 @@ const InstituteFeatures = () => {
       {/* More Details Button */}
       <div className="mt-6 flex justify-center">
         <Link
-          href="/about"
+          href="/aboutPage"
           className="group inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-orange px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#44A1A4]/40 hover:bg-[#224248] hover:text-white hover:shadow-lg sm:px-7 sm:py-3.5 sm:text-base"
         >
           <span>আরও বিস্তারিত জানুন</span>

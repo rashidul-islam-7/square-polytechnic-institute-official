@@ -67,7 +67,7 @@ const HomePageMarquee = () => {
                 {/* Admission Link */}
                 {notice.type === "admission" && (
                   <Link
-                    href="/admission"
+                    href="/admissionPage"
                     className="group ml-3 mr-5 flex shrink-0 items-center gap-1 text-xs font-semibold text-[#FF9A00] transition-colors hover:text-white"
                   >
                     Apply Now

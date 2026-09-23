@@ -23,7 +23,7 @@ const ScholarshipSection = () => {
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-white px-4 py-2 shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#44A1A4]" />
 
-            <span className="text-xs font-bold tracking-wide text-[#325E6A] sm:text-sm">
+            <span className="text-base font-bold tracking-wide text-[#325E6A] sm:text-sm">
               শিক্ষার্থীদের জন্য বিশেষ সুযোগ
             </span>
           </div>
@@ -33,7 +33,7 @@ const ScholarshipSection = () => {
             <span className="text-[#44A1A4]"> আমাদের সহযোগিতা</span>
           </h2>
 
-          <p className="mt-4 text-sm leading-7 text-[#527080] sm:text-base">
+          <p className="mt-4 leading-7 text-[#527080] text-base">
             মেধাবী ও যোগ্য শিক্ষার্থীদের পড়াশোনার সুযোগকে আরও সহজ করতে স্কয়ার
             পলিটেকনিক ইন্সটিটিউটের নিজস্ব উদ্যোগ।
           </p>
@@ -94,9 +94,7 @@ const ScholarshipSection = () => {
               </div>
             </div>
 
-            {/* =====================================================
-                RIGHT - CONTENT
-            ====================================================== */}
+            {/* RIGHT - CONTENT */}
 
             <div className="flex flex-col justify-center p-7 sm:p-9 md:p-12 lg:p-14">
               {/* Small Label */}
@@ -109,7 +107,7 @@ const ScholarshipSection = () => {
                     বিশেষ সুবিধা
                   </p>
 
-                  <p className="mt-0.5 text-sm font-bold text-[#325E6A]">
+                  <p className="mt-0.5 font-bold text-[#325E6A]">
                     প্রতিষ্ঠানের নিজস্ব উদ্যোগ
                   </p>
                 </div>
@@ -125,7 +123,7 @@ const ScholarshipSection = () => {
 
               {/* Description */}
 
-              <p className="mt-5 max-w-xl text-sm leading-7 text-[#527080] sm:text-base">
+              <p className="mt-5 max-w-xl  leading-6 text-[#527080] text-base">
                 শিক্ষার্থীদের স্বপ্নের পড়াশোনাকে আরও সহজ করতে স্কয়ার পলিটেকনিক
                 ইন্সটিটিউটের নিজস্ব উদ্যোগে রয়েছে সম্পূর্ণ ১০০% স্কলারশিপের
                 বিশেষ সুবিধা।
@@ -154,10 +152,10 @@ const ScholarshipSection = () => {
 
               <div className="mt-8">
                 <Link 
-                  href="/admission"
+                  href="/scholarshipPage"
                   className="group inline-flex items-center gap-3 rounded-full bg-[#FF9A00] px-6 py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(255,154,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E88900] hover:shadow-[0_12px_28px_rgba(255,154,0,0.25)] sm:px-7 sm:text-base"
                 >
-                  <span>স্কলারশিপ সম্পর্কে জানুন</span>
+                  <span>স্কলারশিপ সম্পর্কে জানুন...</span>
 
                   <FaArrowRight
                     size={14}
