@@ -1,6 +1,6 @@
 import React from "react";
 
-const Glance = ({focus}) => {
+const DiplomaGlance = ({focus}) => {
   const department = [
    
     {
@@ -45,4 +45,4 @@ const Glance = ({focus}) => {
   );
 };
 
-export default Glance;
+export default DiplomaGlance;

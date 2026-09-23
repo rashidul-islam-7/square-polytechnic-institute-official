@@ -651,8 +651,10 @@ import {
   FaChevronDown,
 } from "react-icons/fa6";
 
-import DepartmentHeroSection from "../../../components/department/Hero"
-import Glance from "@/components/department/Glance";
+import DepartmentHeroSection from "../../../components/department/Hero";
+import DiplomaGlance from "@/components/department/DiplomaGlance";
+import DepartmentOverview from "@/components/department/DepartmentOverview";
+import LabsSection from "@/components/department/Lab";
 
 const department = {
   name: "Computer Technology",
@@ -708,7 +710,6 @@ const learningAreas = [
       "Computer components, assembly, maintenance এবং basic troubleshooting সম্পর্কে শেখানো হয়।",
   },
 ];
-
 
 const labs = [
   {
@@ -911,73 +912,13 @@ export default function ComputerDepartmentPage() {
       {/* HERO / DEPARTMENT OVERVIEW */}
       <DepartmentHeroSection department={department} />
 
-
       {/* AT A GLANCE */}
+      <DiplomaGlance focus={"Information & Technology"} />
+      <DepartmentOverview  />
 
-      <Glance focus={"Information & Technology"} />
-      <section
-        id="overview"
-        className="scroll-mt-20 border-b border-slate-200 bg-white"
-      >
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
-          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
-            <div>
-              <SectionLabel>Department Overview</SectionLabel>
+      {/* LABS & PRACTICAL FACILITIES*/}
 
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Computer Technology কী?
-              </h2>
-
-              <p className="mt-5 leading-8 text-slate-600">
-                Computer Technology হলো Computer ও Information Technology
-                সম্পর্কিত বিভিন্ন বিষয় শেখার একটি কারিগরি শিক্ষা ক্ষেত্র। এখানে
-                শিক্ষার্থীরা Computer fundamentals থেকে শুরু করে Programming,
-                Web Development, Database, Networking এবং Hardware সম্পর্কে
-                ধারণা অর্জন করে।
-              </p>
-
-              <p className="mt-4 leading-8 text-slate-600">
-                তাত্ত্বিক জ্ঞানের পাশাপাশি practical work, laboratory practice
-                এবং project-এর মাধ্যমে বাস্তব দক্ষতা গড়ে তোলার সুযোগ থাকে।
-              </p>
-            </div>
-
-            {/* VIDEO / INFOGRAPHIC PLACEHOLDER */}
-
-            <div className="relative aspect-video overflow-hidden rounded-3xl bg-slate-900">
-              <img
-                src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=1200&q=80"
-                alt="Computer Technology"
-                className="h-full w-full object-cover opacity-70"
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  type="button"
-                  className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-slate-900 shadow-xl transition hover:scale-105"
-                  aria-label="Play introduction video"
-                >
-                  ▶
-                </button>
-              </div>
-
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                <p className="text-sm font-medium text-white">
-                  এক নজরে Computer Technology
-                </p>
-
-                <p className="mt-1 text-xs text-slate-300">
-                  Introduction Video / Infographic
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          03. LABS & PRACTICAL FACILITIES
-      ===================================================== */}
+      <LabsSection />
 
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
@@ -1413,7 +1354,6 @@ export default function ComputerDepartmentPage() {
 /* =========================================================
    REUSABLE COMPONENTS
 ========================================================= */
-
 
 function SectionLabel({ children, dark = false }) {
   return (
