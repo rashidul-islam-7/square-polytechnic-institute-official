@@ -2,166 +2,7 @@ import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
 
-const labImages = [
-  {
-    id: 1,
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
-    title: "Practical Class",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
-    title: "Student Activity",
-  },
-  {
-    id: 3,
-    image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80",
-    title: "Learning Session",
-  },
-  {
-    id: 4,
-    image:
-      "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80",
-    title: "Team Work",
-  },
-  {
-    id: 5,
-    image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
-    title: "Computer Lab",
-  },
-  {
-    id: 6,
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-    title: "Programming Lab",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-  {
-    id: 7,
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-    title: "Technology Learning",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80",
-    title: "Workshop",
-  },
-];
-
-const LabsGallery = () => {
+const LabsGallery = ({ labImages, lab, alt }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const itemsPerSlide = 6;
@@ -187,8 +28,8 @@ const LabsGallery = () => {
               হাতে-কলমে শেখার সুযোগ
             </h1>
             <p className="text-base max-w-2xl leading-6 mt-4 mb-10">
-              তাত্ত্বিক জ্ঞানের পাশাপাশি বিভিন্ন laboratory ও practical
-              activity-এর মাধ্যমে বাস্তব অভিজ্ঞতা অর্জনের সুযোগ।
+              Theory জ্ঞানের পাশাপাশি বিভিন্ন lab ও practical activity-এর
+              মাধ্যমে বাস্তব অভিজ্ঞতা অর্জনের সুযোগ।
             </p>
           </div>
         </div>
@@ -197,11 +38,7 @@ const LabsGallery = () => {
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
             {/*LEFT MAIN FEATURED CARD  */}
             <div className="group relative h-[270px] sm:h-[300px] lg:h-[390px] overflow-hidden rounded-3xl lg:col-span-2 shadow-md">
-              <img
-                src={""}
-                alt="Computer Lab"
-                className="h-full w-full object-cover"
-              />
+              <img src={lab} alt={alt} className="h-full w-full object-cover" />
 
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
@@ -210,9 +47,9 @@ const LabsGallery = () => {
                   Labs & Practical Facilities
                 </span>
 
-                <h3 className="mt-3 text-2xl font-bold">আধুনিক ল্যাবরেটরি</h3>
+                <h3 className="mt-3 text-2xl font-bold">আধুনিক ল্যাব</h3>
 
-                <p className="mt-2 text-sm leading-6 text-slate-200">
+                <p className="mt-2 text-sm text-slate-200">
                   আধুনিক সুবিধাসম্পন্ন ল্যাবে শিক্ষার্থীদের হাতে-কলমে শেখার
                   সুযোগ।
                 </p>
