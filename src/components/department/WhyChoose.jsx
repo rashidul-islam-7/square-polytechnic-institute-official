@@ -1,5 +1,6 @@
-
+import { Section } from "lucide-react";
 import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
+import TitleStyle from "../UI/TitleStyle";
 
 const WhyChoose = ({ data }) => {
   const { supTitle, title, description, topics, reasons } = data;
@@ -8,11 +9,9 @@ const WhyChoose = ({ data }) => {
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 lg:items-start">
-          
           {/* Left Content */}
           <div className="lg:sticky lg:top-24">
             <SectionShortTitleStyle text={supTitle} />
-
             <h2 className="mt-3 max-w-xl text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
               {title}
             </h2>
@@ -39,13 +38,10 @@ const WhyChoose = ({ data }) => {
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <p className="text-base leading-7 text-slate-700">
-                  {reason}
-                </p>
+                <p className="text-base leading-7 text-slate-700">{reason}</p>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
@@ -53,4 +49,3 @@ const WhyChoose = ({ data }) => {
 };
 
 export default WhyChoose;
-

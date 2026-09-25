@@ -26,6 +26,7 @@ import DiplomaGlance from "@/components/department/DiplomaGlance";
 import DepartmentOverview from "@/components/department/DepartmentOverview";
 import LabsSection from "@/components/department/Lab";
 import WhyChoose from "@/components/department/WhyChoose";
+import CareerSection from "@/components/department/CareerSection";
 
 const department = {
   name: "Computer Technology",
@@ -351,7 +352,10 @@ export default function ComputerDepartmentPage() {
       <WhyChoose data={whyChooseData} />
 
       {/* CAREER & INDUSTRY */}
-      <section id="career" className="scroll-mt-20 bg-slate-950">
+
+      <CareerSection />
+
+      <section id="career" className="scroll-mt-20 bg-[#224248] ">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
           <SectionHeading
             dark
@@ -406,7 +410,6 @@ export default function ComputerDepartmentPage() {
       </section>
 
       {/* HIGHER STUDY & ENTREPRENEURSHIP */}
-
       <section>
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
           <div className="grid gap-6 lg:grid-cols-2">
