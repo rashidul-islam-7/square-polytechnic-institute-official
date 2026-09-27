@@ -27,6 +27,8 @@ import DepartmentOverview from "@/components/department/DepartmentOverview";
 import LabsSection from "@/components/department/Lab";
 import WhyChoose from "@/components/department/WhyChoose";
 import CareerSection from "@/components/department/CareerSection";
+import HigherStudy from "@/components/department/HigherStudy";
+import Curriculum from "@/components/department/Curriculum";
 
 const department = {
   name: "Computer Technology",
@@ -352,183 +354,14 @@ export default function ComputerDepartmentPage() {
       <WhyChoose data={whyChooseData} />
 
       {/* CAREER & INDUSTRY */}
-
       <CareerSection />
 
-      <section id="career" className="scroll-mt-20 bg-[#224248] ">
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
-          <SectionHeading
-            dark
-            label="Career & Industry"
-            title="ক্যারিয়ার ও ইন্ডাস্ট্রি সংযোগ"
-            description="Computer Technology-এর দক্ষতা বিভিন্ন IT-related কাজ, internship, industrial training এবং project-based কাজের ক্ষেত্রে ব্যবহার করা যেতে পারে।"
-          />
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {careers.map((career) => (
-              <div
-                key={career.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-slate-900">
-                  <FaBriefcase />
-                </div>
-
-                <h3 className="mt-5 font-bold text-white">{career.title}</h3>
-
-                <p className="mt-3 text-sm leading-7 text-slate-400">
-                  {career.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* INDUSTRY EXPERIENCE */}
-
-          <div className="mt-14 rounded-3xl border border-white/10 bg-white/5 p-7 sm:p-9">
-            <div className="grid gap-8 sm:grid-cols-3">
-              <IndustryItem
-                icon={<FaBuildingColumns />}
-                title="Industrial Training"
-                text="Industry-oriented practical training-এর সুযোগ।"
-              />
-
-              <IndustryItem
-                icon={<FaUsers />}
-                title="Internship"
-                text="বাস্তব কাজের পরিবেশ সম্পর্কে অভিজ্ঞতা অর্জনের সুযোগ।"
-              />
-
-              <IndustryItem
-                icon={<FaBriefcase />}
-                title="Career Preparation"
-                text="Industry-relevant skills ও project experience তৈরি।"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* HIGHER STUDY & ENTREPRENEURSHIP */}
-      <section>
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
-          <div className="grid gap-6 lg:grid-cols-2">
-            {/* HIGHER STUDY */}
-
-            <div className="rounded-3xl bg-slate-50 p-8 sm:p-10">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-xl text-white">
-                <FaGraduationCap />
-              </div>
-
-              <h2 className="mt-6 text-2xl font-bold text-slate-900">
-                উচ্চশিক্ষার সুযোগ
-              </h2>
-
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                Diploma-এর পর যোগ্যতা ও প্রতিষ্ঠানের নিয়ম অনুযায়ী বিভিন্ন higher
-                study ও professional learning-এর সুযোগ রয়েছে।
-              </p>
-
-              <div className="mt-7 space-y-3">
-                {higherStudies.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 rounded-xl bg-white p-3"
-                  >
-                    <FaCheck className="text-xs" />
-
-                    <span className="text-sm text-slate-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* ENTREPRENEURSHIP */}
-
-            <div className="rounded-3xl bg-slate-900 p-8 text-white sm:p-10">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-xl text-slate-900">
-                <FaLaptopCode />
-              </div>
-
-              <h2 className="mt-6 text-2xl font-bold">
-                Freelancing & Entrepreneurship
-              </h2>
-
-              <p className="mt-3 text-sm leading-7 text-slate-400">
-                Technology skill ব্যবহার করে project-based work, freelancing
-                অথবা নিজস্ব technology service তৈরি করার সুযোগ থাকতে পারে।
-              </p>
-
-              <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {entrepreneurship.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3"
-                  >
-                    <FaCheck className="text-xs text-slate-300" />
-
-                    <span className="text-sm text-slate-300">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HigherStudy />
 
       {/* CURRICULUM */}
-
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
-          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-            <SectionHeading
-              label="Curriculum"
-              title="কী কী পড়ানো হয়?"
-              description="নিচে কিছু গুরুত্বপূর্ণ semester ও subject-এর উদাহরণ দেওয়া হলো। সম্পূর্ণ curriculum PDF আকারে রাখা যেতে পারে।"
-            />
-
-            <Link
-              href="/documents/computer-curriculum.pdf"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-100"
-            >
-              <FaDownload />
-              Full Curriculum
-            </Link>
-          </div>
-
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {curriculum.map((item) => (
-              <div
-                key={item.semester}
-                className="rounded-2xl border border-slate-200 bg-white p-6"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">
-                    <FaBookOpen />
-                  </div>
-
-                  <h3 className="font-bold text-slate-900">{item.semester}</h3>
-                </div>
-
-                <div className="mt-5 grid gap-2">
-                  {item.subjects.map((subject) => (
-                    <div
-                      key={subject}
-                      className="flex items-center gap-2 text-sm text-slate-600"
-                    >
-                      <FaCheck className="text-[10px]" />
-                      {subject}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <Curriculum />
       {/* FACULTY */}
-
       <section>
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
           <SectionHeading

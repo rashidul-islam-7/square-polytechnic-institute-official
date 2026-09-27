@@ -34,8 +34,7 @@ export default function CareerSection() {
           <div className="lg:col-span-5 lg:sticky lg:top-28">
             <SectionShortTitleStyle text="Career & Job Opportunities" />
 
-
-<TitleStyle title={title} highlightedTitle={highlightedTitle} />
+            <TitleStyle title={title} highlightedTitle={highlightedTitle} />
             {/* <h2 className="mt-3 text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl lg:text-4xl">
               {title} <span className="text-[#224248]">{} </span>
             </h2> */}
@@ -47,7 +46,7 @@ export default function CareerSection() {
             {/* Highlighted Quote Callout */}
             <div className="mt-8 hidden md:block rounded-xl border-l-4 border-[#224248] bg-white p-4 shadow-sm sm:p-5">
               <p className="text-sm font-medium leading-relaxed text-slate-700 sm:text-base">
-               {highlight}
+                {highlight}
               </p>
             </div>
           </div>
@@ -128,7 +127,7 @@ export default function CareerSection() {
                 <span className="h-px w-8 bg-teal-300/60" />
 
                 <span className="text-xs font-semibold uppercase tracking-[0.18em] text-teal-200/80">
-                 {workAreas.label}
+                  {workAreas.label}
                 </span>
               </div>
 
@@ -137,7 +136,7 @@ export default function CareerSection() {
               </h3>
 
               <p className="mt-4 max-w-md text-sm leading-7 text-white/65 sm:text-base">
-            {workAreas.description}
+                {workAreas.description}
               </p>
             </div>
 
@@ -165,7 +164,9 @@ export default function CareerSection() {
             </div>
 
             <div>
-              <h4 className="text-lg font-bold text-slate-800">{specialNote.title}</h4>
+              <h4 className="text-lg font-bold text-slate-800">
+                {specialNote.title}
+              </h4>
 
               <p className="mt-1.5 text-sm leading-relaxed text-slate-600 sm:text-base">
                 {specialNote.description}
