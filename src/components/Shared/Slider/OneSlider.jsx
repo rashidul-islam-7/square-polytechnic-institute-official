@@ -8,7 +8,7 @@ import {
   FaStar,
 } from "react-icons/fa6";
 
-const Slider = ({reviewsContent}) => {
+const Slider = ({ reviewsContent }) => {
   const [slider, setSlider] = useState(0);
 
   // Next Slide
@@ -35,14 +35,13 @@ const Slider = ({reviewsContent}) => {
   return (
     <section className="relative overflow-hidden  ">
       {/* Background Decoration */}
-      {/* <div className="pointer-events-none absolute -left-32 top-20 h-72 w-full rounded-full bg-[#44A1A4]/10 blur-3xl" />
-
-      <div className="pointer-events-none absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-[#FF9A00]/10 blur-3xl" /> */}
-
       <div className="relative mx-auto w-full md:max-w-6xl px-4 sm:px-6 ">
         {/* Slider */}
         <div className="relative mx-auto w-full md:max-w-4xl">
           <div className="relative overflow-hidden rounded-3xl border border-[#DCE7E8] bg-white shadow-xl shadow-[#224248]/5">
+            <div className="pointer-events-none absolute -left-32 top-20 h-72 w-full rounded-full bg-[#44A1A4]/10 blur-3xl" />
+
+            <div className="pointer-events-none absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-[#FF9A00]/10 blur-3xl" />
             <div className="p-7 sm:p-8">
               {/* Quote Icon */}
               <div className="mb-4 flex items-center justify-between">

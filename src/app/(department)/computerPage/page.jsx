@@ -3,20 +3,7 @@
 import Link from "next/link";
 import {
   FaArrowRight,
-  FaLaptopCode,
-  FaCode,
-  FaDatabase,
-  FaGlobe,
-  FaNetworkWired,
-  FaMicrochip,
-  FaCheck,
   FaGraduationCap,
-  FaBriefcase,
-  FaFlask,
-  FaBookOpen,
-  FaUsers,
-  FaBuildingColumns,
-  FaDownload,
   FaQuoteLeft,
   FaChevronDown,
 } from "react-icons/fa6";
@@ -29,6 +16,10 @@ import WhyChoose from "@/components/department/WhyChoose";
 import CareerSection from "@/components/department/CareerSection";
 import HigherStudy from "@/components/department/HigherStudy";
 import Curriculum from "@/components/department/Curriculum";
+import ReviewSectionHeader from "@/components/Shared/Review/ReviewSectionHeader";
+import OneSlider from "@/components/Shared/Slider/OneSlider";
+import { studentsFeedback } from "@/data/feedbackData/studentsFeedback";
+import { filterStudentsByDepartment } from "@/utils/filterStudentsComment";
 
 const department = {
   name: "Computer Technology",
@@ -45,45 +36,6 @@ const department = {
   heroImage:
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
 };
-
-const learningAreas = [
-  {
-    icon: FaCode,
-    title: "Programming",
-    description:
-      "Programming Language ব্যবহার করে সমস্যা সমাধান এবং Software তৈরির মৌলিক ধারণা শেখানো হয়।",
-  },
-  {
-    icon: FaGlobe,
-    title: "Web Development",
-    description:
-      "HTML, CSS, JavaScript এবং আধুনিক Web Technology ব্যবহার করে Website ও Web Application তৈরি শেখানো হয়।",
-  },
-  {
-    icon: FaDatabase,
-    title: "Database",
-    description:
-      "Data সংরক্ষণ, পরিচালনা এবং Database ব্যবহারের প্রয়োজনীয় ধারণা শেখানো হয়।",
-  },
-  {
-    icon: FaNetworkWired,
-    title: "Networking",
-    description:
-      "Computer Network, Internet, Router, IP Address এবং Network Management সম্পর্কে শেখানো হয়।",
-  },
-  {
-    icon: FaLaptopCode,
-    title: "Software Development",
-    description:
-      "Software planning, development, testing এবং maintenance সম্পর্কে বাস্তব ধারণা তৈরি করা হয়।",
-  },
-  {
-    icon: FaMicrochip,
-    title: "Computer Hardware",
-    description:
-      "Computer components, assembly, maintenance এবং basic troubleshooting সম্পর্কে শেখানো হয়।",
-  },
-];
 
 const labImages = [
   {
@@ -181,111 +133,6 @@ const whyChooseData = {
   ],
 };
 
-const careers = [
-  {
-    title: "Web Developer",
-    description: "Website এবং Web Application তৈরি ও রক্ষণাবেক্ষণের কাজ।",
-  },
-  {
-    title: "Software Developer",
-    description:
-      "Software ও Application development-এর বিভিন্ন কাজে যুক্ত হওয়া।",
-  },
-  {
-    title: "Network Technician",
-    description: "Network setup, maintenance ও troubleshooting-এর কাজ।",
-  },
-  {
-    title: "IT Support",
-    description: "Computer, software এবং IT-related technical support প্রদান।",
-  },
-  {
-    title: "Database Assistant",
-    description:
-      "Database ও data management-related বিভিন্ন কাজে সহযোগিতা করা।",
-  },
-  {
-    title: "Freelancer",
-    description:
-      "Web, software, design বা technology-based project নিয়ে কাজ করা।",
-  },
-];
-
-const higherStudies = [
-  "B.Sc. in Engineering",
-  "Bachelor Degree in Technology",
-  "Masters / Advanced Study",
-  "Professional Certification",
-  "Scholarship Opportunities",
-  "Research & Innovation",
-];
-
-const entrepreneurship = [
-  "Freelancing",
-  "Web Development Service",
-  "Software / App Development",
-  "IT Support Service",
-  "Technology-based Business",
-  "Startup & Innovation",
-];
-
-const curriculum = [
-  {
-    semester: "1st Semester",
-    subjects: [
-      "Computer Fundamentals",
-      "Engineering Drawing",
-      "Mathematics",
-      "Physics",
-    ],
-  },
-  {
-    semester: "2nd Semester",
-    subjects: [
-      "Programming Fundamentals",
-      "Digital Electronics",
-      "Mathematics",
-      "English",
-    ],
-  },
-  {
-    semester: "3rd Semester",
-    subjects: [
-      "Object Oriented Programming",
-      "Database",
-      "Web Technology",
-      "Networking",
-    ],
-  },
-  {
-    semester: "4th Semester",
-    subjects: [
-      "Data Structure",
-      "Computer Architecture",
-      "Operating System",
-      "Web Development",
-    ],
-  },
-];
-
-const faculty = [
-  {
-    name: "Teacher Name",
-    designation: "Chief Instructor",
-    image: "/images/faculty/faculty-1.jpg",
-  },
-  {
-    name: "Teacher Name",
-    designation: "Instructor",
-    image: "/images/faculty/faculty-2.jpg",
-  },
-  {
-    name: "Teacher Name",
-    designation: "Junior Instructor",
-    image: "/images/faculty/faculty-3.jpg",
-  },
-];
-
 const alumni = [
   {
     name: "Alumni Name",
@@ -332,6 +179,10 @@ const faqs = [
 /*  MAIN PAGE  */
 
 export default function ComputerDepartmentPage() {
+  const computerStudnetReview = filterStudentsByDepartment(
+    studentsFeedback,
+    "Computer",
+  );
   return (
     <main className="bg-white text-slate-800">
       {/* HERO / DEPARTMENT OVERVIEW */}
@@ -361,94 +212,13 @@ export default function ComputerDepartmentPage() {
 
       {/* CURRICULUM */}
       <Curriculum />
-      {/* FACULTY */}
-      <section>
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
-          <SectionHeading
-            label="Faculty Members"
-            title="আমাদের শিক্ষকবৃন্দ"
-            description="Department-এর শিক্ষক ও instructors-এর পরিচিতি এখানে দেখানো যেতে পারে।"
-          />
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {faculty.map((member) => (
-              <div
-                key={member.name + member.designation}
-                className="overflow-hidden rounded-3xl border border-slate-200 bg-white"
-              >
-                <div className="aspect-[4/3] bg-slate-100">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="font-bold text-slate-900">{member.name}</h3>
-
-                  <p className="mt-1 text-sm text-slate-500">
-                    {member.designation}
-                  </p>
-
-                  <Link
-                    href="#"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-slate-800"
-                  >
-                    View Profile
-                    <FaArrowRight className="text-xs" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ALUMNI SUCCESS STORIES */}
-
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
-          <SectionHeading
-            label="Alumni Success Stories"
-            title="আমাদের প্রাক্তন শিক্ষার্থীদের কথা"
-            description="বাস্তব Alumni-এর অভিজ্ঞতা ও career journey নতুন শিক্ষার্থীদের জন্য একটি মূল্যবান ধারণা দিতে পারে।"
-          />
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {alumni.map((person) => (
-              <div
-                key={person.name + person.position}
-                className="rounded-3xl border border-slate-200 bg-white p-7 sm:p-8"
-              >
-                <FaQuoteLeft className="text-2xl text-slate-300" />
-
-                <p className="mt-5 text-base leading-8 text-slate-600">
-                  “{person.quote}”
-                </p>
-
-                <div className="mt-7 flex items-center gap-4">
-                  <img
-                    src={person.image}
-                    alt={person.name}
-                    className="h-12 w-12 rounded-full object-cover"
-                  />
-
-                  <div>
-                    <h3 className="text-sm font-bold text-slate-900">
-                      {person.name}
-                    </h3>
-
-                    <p className="mt-1 text-xs text-slate-500">
-                      {person.position} · {person.company}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
+      <div className="py-16 md:py-20">
+        <ReviewSectionHeader />
+      <OneSlider reviewsContent={computerStudnetReview} />
+      </div>
 
       {/* FAQ */}
 
