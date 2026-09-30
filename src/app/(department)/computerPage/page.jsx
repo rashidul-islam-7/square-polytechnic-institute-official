@@ -21,6 +21,7 @@ import OneSlider from "@/components/Shared/Slider/OneSlider";
 import { studentsFeedback } from "@/data/feedbackData/studentsFeedback";
 import { filterStudentsByDepartment } from "@/utils/filterStudentsComment";
 import Faq from "@/components/department/Faq";
+import Action from "@/components/department/Action";
 
 const department = {
   name: "Computer Technology",
@@ -37,7 +38,6 @@ const department = {
   heroImage:
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
 };
-
 const labImages = [
   {
     id: 1,
@@ -88,7 +88,6 @@ const labImages = [
     title: "Workshop",
   },
 ];
-
 const departmentOverviewData = {
   title: "Computer Technology কী?",
   description:
@@ -96,7 +95,6 @@ const departmentOverviewData = {
   subDescription:
     " Theroy জ্ঞানের পাশাপাশি practical work, laboratory practice এবং project-এর মাধ্যমে বাস্তব দক্ষতা গড়ে তোলার সুযোগ থাকে।",
 };
-
 const whyChooseData = {
   id: 1,
   department: "Computer Technology",
@@ -134,13 +132,9 @@ const whyChooseData = {
   ],
 };
 
-
-
-
 /*  MAIN PAGE  */
-
 export default function ComputerDepartmentPage() {
-  const computerStudnetReview = filterStudentsByDepartment(
+  const computerStudentReview = filterStudentsByDepartment(
     studentsFeedback,
     "Computer",
   );
@@ -175,105 +169,17 @@ export default function ComputerDepartmentPage() {
       <Curriculum />
 
       {/* ALUMNI SUCCESS STORIES */}
-      
+
       <div className="py-16 md:py-20">
         <ReviewSectionHeader />
-      <OneSlider reviewsContent={computerStudnetReview} />
+        <OneSlider reviewsContent={computerStudentReview} />
       </div>
 
       {/* FAQ */}
+      <Faq />
 
-     <Faq />
-
-      {/* FINAL CTA */}
-
-      <section className="bg-slate-950">
-        <div className="mx-auto max-w-5xl px-5 py-20 text-center sm:px-8">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-2xl text-slate-900">
-            <FaGraduationCap />
-          </div>
-
-          <h2 className="mt-7 text-3xl font-bold text-white sm:text-4xl">
-            Computer Technology সম্পর্কে আরও জানতে চান?
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-400">
-            Admission, curriculum এবং অন্যান্য প্রয়োজনীয় তথ্য জানতে সংশ্লিষ্ট
-            section দেখুন।
-          </p>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/admission"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-100"
-            >
-              Admission Information
-              <FaArrowRight />
-            </Link>
-
-            <Link
-              href="/departments"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
-            >
-              Other Departments
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/*  CTA */}
+      <Action />
     </main>
-  );
-}
-
-/* REUSABLE COMPONENTS */
-
-function SectionLabel({ children, dark = false }) {
-  return (
-    <p
-      className={`text-xs font-bold uppercase tracking-[0.2em] ${
-        dark ? "text-slate-400" : "text-slate-500"
-      }`}
-    >
-      {children}
-    </p>
-  );
-}
-
-function SectionHeading({ label, title, description, dark = false }) {
-  return (
-    <div className="max-w-2xl">
-      <SectionLabel dark={dark}>{label}</SectionLabel>
-
-      <h2
-        className={`mt-3 text-3xl font-bold tracking-tight sm:text-4xl ${
-          dark ? "text-white" : "text-slate-900"
-        }`}
-      >
-        {title}
-      </h2>
-
-      <p
-        className={`mt-5 leading-8 ${
-          dark ? "text-slate-400" : "text-slate-600"
-        }`}
-      >
-        {description}
-      </p>
-    </div>
-  );
-}
-
-function IndustryItem({ icon, title, text }) {
-  return (
-    <div className="flex gap-4">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900">
-        {icon}
-      </div>
-
-      <div>
-        <h3 className="font-semibold text-white">{title}</h3>
-
-        <p className="mt-1 text-sm leading-6 text-slate-400">{text}</p>
-      </div>
-    </div>
   );
 }
