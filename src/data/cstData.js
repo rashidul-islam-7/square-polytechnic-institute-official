@@ -277,3 +277,34 @@ export const careerData = {
       "প্রযুক্তি প্রতিনিয়ত পরিবর্তিত হচ্ছে। তাই Computer Technology-তে ক্যারিয়ার গড়তে হলে নতুন প্রযুক্তি শেখা, নিয়মিত অনুশীলন এবং নিজেকে আপডেট রাখার মানসিকতা থাকতে হবে। সময়ের সঙ্গে নতুন প্রযুক্তি না শিখলে দক্ষতা ও কর্মক্ষেত্রে পিছিয়ে পড়ার সম্ভাবনা থাকে।",
   },
 };
+
+export const faqData = {
+  subtitle: "FAQ",
+  title: "সাধারণ কিছু",
+  highlightedTitle: "প্রশ্ন",
+  description:
+    "Computer Technology সম্পর্কে শিক্ষার্থী ও অভিভাবকদের সাধারণ কিছু প্রশ্নের উত্তর এখানে দেওয়া হলো।",
+
+  faqs: [
+    {
+      question: "Computer Technology কী?",
+      answer:
+        "Computer Technology হলো Computer, Programming, Software, Web Development, Networking, Database এবং Hardware-এর মতো বিষয় শেখার একটি প্রযুক্তিভিত্তিক শিক্ষা ক্ষেত্র।",
+    },
+    {
+      question: "Computer Technology পড়তে আগে থেকে Programming জানা প্রয়োজন?",
+      answer:
+        "না। আগে থেকে Programming জানা প্রয়োজন নেই। শুরু থেকেই প্রয়োজনীয় Computer ও Programming concepts ধাপে ধাপে শেখানো হয়।",
+    },
+    {
+      question: "এই Department-এ কি Practical কাজ করা হয়?",
+      answer:
+        "হ্যাঁ। Computer Technology-তে laboratory practice, programming, networking, hardware এবং project-based practical learning গুরুত্বপূর্ণ অংশ।",
+    },
+    {
+      question: "পড়াশোনা শেষে কী করা যায়?",
+      answer:
+        "শিক্ষার্থীরা তাদের দক্ষতা ও পরবর্তী শিক্ষার ভিত্তিতে বিভিন্ন IT-related career, higher study, freelancing বা entrepreneurship-এর দিকে যেতে পারে।",
+    },
+  ],
+};

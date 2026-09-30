@@ -20,6 +20,7 @@ import ReviewSectionHeader from "@/components/Shared/Review/ReviewSectionHeader"
 import OneSlider from "@/components/Shared/Slider/OneSlider";
 import { studentsFeedback } from "@/data/feedbackData/studentsFeedback";
 import { filterStudentsByDepartment } from "@/utils/filterStudentsComment";
+import Faq from "@/components/department/Faq";
 
 const department = {
   name: "Computer Technology",
@@ -133,48 +134,8 @@ const whyChooseData = {
   ],
 };
 
-const alumni = [
-  {
-    name: "Alumni Name",
-    position: "Software Developer",
-    company: "Organization Name",
-    quote:
-      "Computer Technology আমাকে Programming এবং Technology সম্পর্কে শক্ত ভিত্তি তৈরি করতে সাহায্য করেছে।",
-    image: "/images/alumni/alumni-1.jpg",
-  },
-  {
-    name: "Alumni Name",
-    position: "IT Professional",
-    company: "Organization Name",
-    quote:
-      "Practical learning এবং project experience আমার পরবর্তী career-এর জন্য গুরুত্বপূর্ণ ছিল।",
-    image: "/images/alumni/alumni-2.jpg",
-  },
-];
 
-/* FAQ */
-const faqs = [
-  {
-    question: "Computer Technology কী?",
-    answer:
-      "Computer Technology হলো Computer, Programming, Software, Web Development, Networking, Database এবং Hardware-এর মতো বিষয় শেখার একটি প্রযুক্তিভিত্তিক শিক্ষা ক্ষেত্র।",
-  },
-  {
-    question: "Computer Technology পড়তে আগে থেকে Programming জানা প্রয়োজন?",
-    answer:
-      "না। সাধারণত শুরু থেকেই প্রয়োজনীয় Computer ও Programming concepts ধাপে ধাপে শেখানো হয়।",
-  },
-  {
-    question: "এই Department-এ কি Practical কাজ করা হয়?",
-    answer:
-      "হ্যাঁ। Computer Technology-তে laboratory practice, programming, networking, hardware এবং project-based practical learning গুরুত্বপূর্ণ অংশ।",
-  },
-  {
-    question: "পড়াশোনা শেষে কী করা যায়?",
-    answer:
-      "শিক্ষার্থীরা তাদের দক্ষতা ও পরবর্তী শিক্ষার ভিত্তিতে বিভিন্ন IT-related career, higher study, freelancing বা entrepreneurship-এর দিকে যেতে পারে।",
-  },
-];
+
 
 /*  MAIN PAGE  */
 
@@ -222,34 +183,7 @@ export default function ComputerDepartmentPage() {
 
       {/* FAQ */}
 
-      <section>
-        <div className="mx-auto max-w-4xl px-5 py-20 sm:px-8 lg:py-24">
-          <SectionHeading
-            label="FAQ"
-            title="সাধারণ কিছু প্রশ্ন"
-            description="Computer Technology সম্পর্কে নতুন শিক্ষার্থীদের সাধারণ প্রশ্নের উত্তর।"
-          />
-
-          <div className="mt-10 space-y-3">
-            {faqs.map((faq) => (
-              <details
-                key={faq.question}
-                className="group rounded-2xl border border-slate-200 bg-white"
-              >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-5 font-semibold text-slate-900">
-                  {faq.question}
-
-                  <FaChevronDown className="shrink-0 text-sm transition group-open:rotate-180" />
-                </summary>
-
-                <div className="border-t border-slate-100 px-5 pb-5 pt-4 text-sm leading-7 text-slate-600">
-                  {faq.answer}
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+     <Faq />
 
       {/* FINAL CTA */}
 
