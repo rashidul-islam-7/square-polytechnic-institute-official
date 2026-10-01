@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Department from "@/components/Shared/Department";
 
 const DepartmentPage = () => {
-    return (
-        <div>
-            DepartmentPage
-        </div>
-    );
+  return (
+    <div>
+      <Department />
+    </div>
+  );
 };
 
 export default DepartmentPage;
