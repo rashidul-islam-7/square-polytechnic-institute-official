@@ -29,15 +29,15 @@ const quickLinks = [
   },
   {
     name: "সুবিধাসমূহ",
-    href: "/#features",
+    href: "/features",
   },
   {
     name: "গ্যালারি",
-    href: "/#gallery",
+    href: "/gallery",
   },
   {
     name: "ইন্টার্নশীপ ও জব প্লেসমেন্ট",
-    href: "/#internship",
+    href: "/internship",
   },
   {
     name: "যোগাযোগ",
@@ -266,36 +266,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* ================= ADMISSION CTA ================= */}
-        <div className="border-t border-white/10 py-7">
-          <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 px-5 py-6 backdrop-blur-sm md:flex-row md:items-center md:px-7">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#44A1A4]">
-                Admission 2026–27
-              </p>
-
-              <h3 className="mt-2 text-lg font-bold text-white md:text-xl">
-                আপনার ভবিষ্যতের যাত্রা শুরু হোক আজ থেকেই।
-              </h3>
-
-              <p className="mt-2 text-base text-white/50">
-                দক্ষতা অর্জনের পথে SPI থাকছে আপনার পাশে।
-              </p>
-            </div>
-
-            <Link
-              href="/admission"
-              className="group inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#FF9A00] px-6 py-3.5 text-base font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E88900] hover:shadow-lg hover:shadow-orange-900/20"
-            >
-              ভর্তি আবেদন করুন
-
-              <FaArrowUpRightFromSquare className="text-sm transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
-          </div>
-        </div>
-
+       </div>
         {/* ================= BOTTOM FOOTER ================= */}
         <div className="flex flex-col gap-5 border-t border-white/10 py-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
           {/* Copyright */}

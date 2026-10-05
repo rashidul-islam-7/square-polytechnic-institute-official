@@ -88,7 +88,7 @@ export default function HeroSlider() {
 
           {/* Button */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link href={"/departmentPage"}>
+            <Link href={"/departments/departmentPage"}>
               <button className="group cursor-pointer flex items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
                 Explore Departments
                 <ArrowRight
@@ -98,7 +98,7 @@ export default function HeroSlider() {
               </button>
             </Link>
 
-            <Link href={"/admissionPage"}>
+            <Link href={"/admission"}>
               <button className="rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/60 cursor-pointer hover:text-[#224248]">
                 Admission Now
               </button>

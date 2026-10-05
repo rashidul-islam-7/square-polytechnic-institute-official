@@ -14,23 +14,23 @@ const Navbar = () => {
   const departments = [
     {
       name: "Computer Science & Technology",
-      link: "/computerPage",
+      link: "/departments/computer",
     },
     {
       name: "Civil Technology",
-      link: "/civilPage",
+      link: "/departments/civil",
     },
     {
       name: "Electrical Technology",
-      link: "/electricalPage",
+      link: "/departments/electrical",
     },
     {
       name: "Mechanical Technology",
-      link: "/mechanicalPage",
+      link: "/departments/mechanical",
     },
     {
       name: "Textile Technology",
-      link: "/textilePage",
+      link: "/departments/textile",
     },
   ];
 
@@ -38,15 +38,15 @@ const Navbar = () => {
   const others = [
     {
       name: "ভর্তি",
-      link: "/admissionPage",
+      link: "/admission",
     },
     {
       name: "নোটিশ",
-      link: "/noticePage",
+      link: "/notice",
     },
     {
       name: "যোগাযোগ",
-      link: "/contactPage",
+      link: "/contact",
     },
     {
       name: "Student Corner",
@@ -61,15 +61,15 @@ const Navbar = () => {
     },
     {
       name: "ক্যাম্পাস",
-      link: "/campusPage",
+      link: "/campus",
     },
     {
       name: "গ্যালারি & ইভেন্ট",
-      link: "/galleryPage",
+      link: "/gallery",
     },
     {
       name: "আমাদের সম্পর্কে",
-      link: "/aboutPage",
+      link: "/about",
     },
   ];
 
