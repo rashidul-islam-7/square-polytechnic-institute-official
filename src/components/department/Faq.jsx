@@ -1,30 +1,29 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa6";
-import { faqData } from "@/data/cstData";
 import TitleStyle from "../UI/TitleStyle";
 import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
 
-const Faq = () => {
+const Faq = ({ faq }) => {
   return (
     <section className="bg-slate-50">
       <div className="mx-auto max-w-5xl px-5 py-16 md:py-20 sm:px-8 lg:py-24">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl">
-          <SectionShortTitleStyle text={faqData.subtitle} />
+          <SectionShortTitleStyle text={faq.subtitle} />
 
           <TitleStyle
-            title={faqData.title}
-            highlightedTitle={faqData.highlightedTitle}
+            title={faq.title}
+            highlightedTitle={faq.highlightedTitle}
           />
 
           <p className="mt-4 leading-7 text-slate-600 text-base">
-            {faqData.description}
+            {faq.description}
           </p>
         </div>
 
         {/* FAQ List */}
         <div className="mx-auto mt-12 max-w-3xl space-y-4">
-          {faqData.faqs.map((faq, index) => (
+          {faq.faqs.map((faq, index) => (
             <details
               key={faq.question}
               className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-[#224248]/30 hover:shadow-md open:border-[#224248]/30"

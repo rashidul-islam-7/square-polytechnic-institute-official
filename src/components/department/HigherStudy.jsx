@@ -1,9 +1,8 @@
 import { FaCheck } from "react-icons/fa6";
 
-import { higherStudy } from "@/data/cstData";
 import CustomIcon from "../UI/CustomIcon";
 
-export default function HigherStudy() {
+export default function HigherStudy({ higherStudy }) {
   const sections = [higherStudy.higherStudy, higherStudy.entrepreneurship];
 
   return (

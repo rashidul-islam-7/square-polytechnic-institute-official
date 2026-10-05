@@ -6,11 +6,9 @@ import {
 } from "react-icons/fa6";
 import CustomIcon from "../UI/CustomIcon";
 import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
-import { careerData } from "@/data/cstData";
 import TitleStyle from "../UI/TitleStyle";
-import { DialogDescription } from "@base-ui/react";
 
-export default function CareerSection() {
+export default function CareerSection({ careerData }) {
   const {
     sectionLabel,
     title,

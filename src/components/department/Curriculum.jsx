@@ -2,12 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { FaBookOpen, FaCheck, FaDownload } from "react-icons/fa6";
 
-import { curriculum } from "@/data/cstData";
 import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
 import TitleStyle from "../UI/TitleStyle";
 import CustomIcon from "../UI/CustomIcon";
 
-const Curriculum = () => {
+const Curriculum = ({ curriculum }) => {
   const [section, ...semesters] = curriculum;
 
   return (
