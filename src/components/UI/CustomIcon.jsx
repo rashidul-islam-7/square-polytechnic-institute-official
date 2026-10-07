@@ -17,6 +17,7 @@ const CustomIcon = ({
 
   // Hex / RGB / Tailwind class
   const isCustomColor = color?.startsWith("#") || color?.startsWith("rgb");
+
   const isCustomBg = bg?.startsWith("#") || bg?.startsWith("rgb");
 
   return (

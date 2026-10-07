@@ -16,53 +16,57 @@ import {
 } from "react-icons/fa6";
 
 import { FaTools } from "react-icons/fa";
-import HeroSlider from "@/components/HomePageComponents.jsx/HomeSlider";
+import CampusHero from "@/components/campus/Hero";
+import SectionShortTitleStyle from "@/components/UI/SectionShortTitleStyle";
+import TitleStyle from "@/components/UI/TitleStyle";
+import CampusIntro from "@/components/campus/Intro";
+import FaciliteSection from "@/components/campus/Facilities";
 
-/* =========================================================
-   DATA
-========================================================= */
+import { facilitesHeader, facilities } from "@/data/campusData";
 
-const facilities = [
-  {
-    title: "আধুনিক ল্যাবরেটরি",
-    subtitle: "Modern Laboratories",
-    description:
-      "শিক্ষার্থীদের ব্যবহারিক জ্ঞান ও দক্ষতা বৃদ্ধির জন্য প্রয়োজনীয় আধুনিক ল্যাব সুবিধা।",
-    icon: FaFlask,
-    image:
-      "https://images.unsplash.com/photo-1581093458791-9d42e3c4f2f3?auto=format&fit=crop&w=1000&q=80",
-    size: "large",
-  },
-  {
-    title: "লাইব্রেরি",
-    subtitle: "Digital Library",
-    description:
-      "বিভিন্ন একাডেমিক বই, রেফারেন্স ও শিক্ষামূলক রিসোর্সের সমৃদ্ধ সংগ্রহ।",
-    icon: FaBookOpen,
-    image:
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=80",
-    size: "small",
-  },
-  {
-    title: "ওয়ার্কশপ",
-    subtitle: "Practical Workshop",
-    description:
-      "প্রযুক্তিভিত্তিক হাতে-কলমে শিক্ষা ও বাস্তব কাজের অভিজ্ঞতার সুযোগ।",
-    icon: FaTools,
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
-    size: "small",
-  },
-  {
-    title: "নিরাপদ ক্যাম্পাস",
-    subtitle: "Safe Campus",
-    description: "শিক্ষার্থীদের জন্য নিরাপদ, পরিচ্ছন্ন ও শিক্ষাবান্ধব পরিবেশ।",
-    icon: FaShieldHalved,
-    image:
-      "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
-    size: "medium",
-  },
-];
+/* DATA  */
+
+// const facilities = [
+//   {
+//     title: "আধুনিক ল্যাবরেটরি",
+//     subtitle: "Modern Laboratories",
+//     description:
+//       "শিক্ষার্থীদের ব্যবহারিক জ্ঞান ও দক্ষতা বৃদ্ধির জন্য প্রয়োজনীয় আধুনিক ল্যাব সুবিধা।",
+//     icon: FaFlask,
+//     image:
+//       "https://images.unsplash.com/photo-1581093458791-9d42e3c4f2f3?auto=format&fit=crop&w=1000&q=80",
+//     size: "large",
+//   },
+//   {
+//     title: "লাইব্রেরি",
+//     subtitle: "Digital Library",
+//     description:
+//       "বিভিন্ন একাডেমিক বই, রেফারেন্স ও শিক্ষামূলক রিসোর্সের সমৃদ্ধ সংগ্রহ।",
+//     icon: FaBookOpen,
+//     image:
+//       "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=80",
+//     size: "small",
+//   },
+//   {
+//     title: "ওয়ার্কশপ",
+//     subtitle: "Practical Workshop",
+//     description:
+//       "প্রযুক্তিভিত্তিক হাতে-কলমে শিক্ষা ও বাস্তব কাজের অভিজ্ঞতার সুযোগ।",
+//     icon: FaTools,
+//     image:
+//       "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
+//     size: "small",
+//   },
+//   {
+//     title: "নিরাপদ ক্যাম্পাস",
+//     subtitle: "Safe Campus",
+//     description: "শিক্ষার্থীদের জন্য নিরাপদ, পরিচ্ছন্ন ও শিক্ষাবান্ধব পরিবেশ।",
+//     icon: FaShieldHalved,
+//     image:
+//       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
+//     size: "medium",
+//   },
+// ];
 
 const labs = [
   {
@@ -94,32 +98,7 @@ const studentLife = [
   "ক্যারিয়ার সেমিনার",
 ];
 
-const stats = [
-  {
-    number: "05",
-    title: "টেকনোলজি",
-    subtitle: "Technology Departments",
-  },
-  {
-    number: "20+",
-    title: "ল্যাব ও ওয়ার্কশপ",
-    subtitle: "Labs & Workshops",
-  },
-  {
-    number: "1000+",
-    title: "শিক্ষার্থী",
-    subtitle: "Students",
-  },
-  {
-    number: "01",
-    title: "আধুনিক ক্যাম্পাস",
-    subtitle: "Modern Campus",
-  },
-];
-
-/* =========================================================
-   REUSABLE COMPONENTS
-========================================================= */
+/*  REUSABLE COMPONENTS */
 
 function SectionHeading({
   eyebrow,
@@ -150,166 +129,22 @@ function SectionHeading({
   );
 }
 
-/* =========================================================
-   PAGE
-========================================================= */
+/* PAGE*/
 
 export default function CampusPage() {
   return (
     <main className="overflow-hidden bg-[#f8fafc] text-slate-900">
       {/* HERO */}
+      <CampusHero />
 
-      <HeroSlider />
-      {/* =====================================================
-          INTRO
-      ===================================================== */}
+      {/* INTRO */}
+      <CampusIntro />
 
-      <section className="px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div className="relative">
-            <div className="overflow-hidden rounded-[2rem]">
-              <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1400&q=85"
-                alt="Institute Campus"
-                className="h-[520px] w-full object-cover transition duration-700 hover:scale-105"
-              />
-            </div>
+      {/* FACILITIES */}
 
-            {/* Floating Card */}
-            <div className="absolute -bottom-8 right-5 max-w-xs rounded-2xl border border-white bg-white p-5 shadow-2xl sm:right-8">
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-xl text-teal-600">
-                  <FaGraduationCap />
-                </div>
+      <FaciliteSection titleData={facilitesHeader} mainData={facilities} />
 
-                <div>
-                  <p className="font-black text-slate-900">
-                    Skill-Based Education
-                  </p>
-                  <p className="mt-1 text-sm leading-6 text-slate-500">
-                    জ্ঞান ও দক্ষতার সমন্বয়ে ভবিষ্যৎ গড়ে তোলা।
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <SectionHeading
-              eyebrow="Our Campus"
-              title="একটি ক্যাম্পাস,"
-              highlighted="একাধিক সম্ভাবনা"
-              description="আমাদের ক্যাম্পাস এমনভাবে পরিকল্পিত যেখানে শ্রেণিকক্ষের শিক্ষার পাশাপাশি ব্যবহারিক শিক্ষা, প্রযুক্তি, সৃজনশীলতা এবং ব্যক্তিগত দক্ষতা বিকাশের সুযোগ তৈরি করা হয়েছে।"
-            />
-
-            <div className="mt-9 space-y-5">
-              {[
-                "আধুনিক ও শিক্ষাবান্ধব পরিবেশ",
-                "ব্যবহারিক শিক্ষার জন্য ল্যাব ও ওয়ার্কশপ",
-                "শিক্ষার্থীদের জন্য নিরাপদ ও পরিচ্ছন্ন পরিবেশ",
-                "প্রযুক্তিনির্ভর শিক্ষা ও ক্যারিয়ার প্রস্তুতি",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-4">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-100 text-sm text-teal-600">
-                    <FaCheck />
-                  </div>
-
-                  <div>
-                    <p className="font-bold text-slate-800">{item}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <p className="text-sm font-semibold uppercase tracking-widest text-slate-400">
-                Garidaha, Sherpur, Bogura
-              </p>
-
-              <p className="mt-2 text-sm text-slate-500">
-                গাড়িদহ, শেরপুর, বগুড়া
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          FACILITIES
-      ===================================================== */}
-
-      <section
-        id="facilities"
-        className="bg-white px-5 py-24 sm:px-8 lg:px-10 lg:py-32"
-      >
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Campus Facilities"
-            title="ক্যাম্পাসের"
-            highlighted="সুবিধাসমূহ"
-            description="শিক্ষার্থীদের একাডেমিক ও ব্যক্তিগত উন্নয়নের জন্য প্রয়োজনীয় গুরুত্বপূর্ণ সুবিধাগুলো আমাদের ক্যাম্পাসে পরিকল্পিতভাবে সাজানো হয়েছে।"
-          />
-
-          {/* Bento Grid */}
-          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {facilities.map((item, index) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={item.title}
-                  className={`group relative overflow-hidden rounded-[1.75rem] ${
-                    index === 0
-                      ? "md:col-span-2 md:row-span-2"
-                      : index === 3
-                        ? "md:col-span-2"
-                        : ""
-                  }`}
-                >
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
-
-                  <div
-                    className={`relative flex h-full min-h-[300px] flex-col justify-end p-7 ${
-                      index === 0 ? "md:min-h-[625px]" : ""
-                    }`}
-                  >
-                    <div className="mb-auto">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-xl text-white backdrop-blur-md">
-                        <Icon />
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-300">
-                        {item.subtitle}
-                      </p>
-
-                      <h3 className="mt-2 text-2xl font-black text-white">
-                        {item.title}
-                      </h3>
-
-                      <p className="mt-3 max-w-lg text-sm leading-6 text-slate-200">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          LABS
-      ===================================================== */}
-
+      {/* LABS */}
       <section className="bg-slate-950 px-5 py-24 text-white sm:px-8 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
@@ -360,10 +195,7 @@ export default function CampusPage() {
         </div>
       </section>
 
-      {/* =====================================================
-          STUDENT LIFE
-      ===================================================== */}
-
+      {/* STUDENT LIFE */}
       <section className="px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div className="order-2 lg:order-1">
@@ -395,7 +227,7 @@ export default function CampusPage() {
           <div className="order-1 grid grid-cols-2 gap-4 lg:order-2">
             <div className="space-y-4 pt-10">
               <img
-                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85"
+                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85"
                 alt="Students"
                 className="h-72 w-full rounded-[1.75rem] object-cover"
               />
@@ -422,10 +254,7 @@ export default function CampusPage() {
         </div>
       </section>
 
-      {/* =====================================================
-          SAFE + GREEN CAMPUS
-      ===================================================== */}
-
+      {/*   SAFE + GREEN CAMPUS */}
       <section className="px-5 pb-24 sm:px-8 lg:px-10 lg:pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid overflow-hidden rounded-[2rem] bg-teal-700 lg:grid-cols-2">
@@ -502,10 +331,7 @@ export default function CampusPage() {
         </div>
       </section>
 
-      {/* =====================================================
-          GALLERY
-      ===================================================== */}
-
+      {/*  GALLERY */}
       <section className="bg-white px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
@@ -560,10 +386,7 @@ export default function CampusPage() {
         </div>
       </section>
 
-      {/* =====================================================
-          LOCATION
-      ===================================================== */}
-
+      {/*  LOCATION  */}
       <section id="location" className="px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid overflow-hidden rounded-[2rem] bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2">
@@ -641,9 +464,7 @@ export default function CampusPage() {
         </div>
       </section>
 
-      {/* =====================================================
-          CTA
-      ===================================================== */}
+      {/* CTA  */}
 
       <section className="px-5 pb-24 sm:px-8 lg:px-10 lg:pb-32">
         <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-slate-950 px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-20">
