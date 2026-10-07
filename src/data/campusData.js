@@ -72,3 +72,39 @@ export const facilities = [
     size: "medium",
   },
 ];
+
+export const labs = [
+  {
+    shortTitle: "Lab Facilities",
+    title: "ক্যাম্পাসের",
+    highlightedTitle: "সুবিধাসমূহ",
+    description:
+      "শিক্ষার্থীদের একাডেমিক ও ব্যক্তিগত উন্নয়নের জন্য প্রয়োজনীয় গুরুত্বপূর্ণ সুবিধাগুলো আমাদের ক্যাম্পাসে পরিকল্পিতভাবে সাজানো হয়েছে।",
+  },
+
+  {
+    name: "Computer Lab",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Mechanical Lab",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Electrical Lab",
+    image:
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Civil Lab",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    name: "Textile Lab",
+    image:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+  },
+];

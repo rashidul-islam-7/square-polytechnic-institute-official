@@ -14,80 +14,14 @@ import {
   FaShieldHalved,
   FaWifi,
 } from "react-icons/fa6";
-
-import { FaTools } from "react-icons/fa";
 import CampusHero from "@/components/campus/Hero";
-import SectionShortTitleStyle from "@/components/UI/SectionShortTitleStyle";
-import TitleStyle from "@/components/UI/TitleStyle";
 import CampusIntro from "@/components/campus/Intro";
 import FaciliteSection from "@/components/campus/Facilities";
+import CampusLabsSection from "@/components/campus/Labs";
 
-import { facilitesHeader, facilities } from "@/data/campusData";
+import { facilitesHeader, facilities, labs } from "@/data/campusData";
 
 /* DATA  */
-
-// const facilities = [
-//   {
-//     title: "আধুনিক ল্যাবরেটরি",
-//     subtitle: "Modern Laboratories",
-//     description:
-//       "শিক্ষার্থীদের ব্যবহারিক জ্ঞান ও দক্ষতা বৃদ্ধির জন্য প্রয়োজনীয় আধুনিক ল্যাব সুবিধা।",
-//     icon: FaFlask,
-//     image:
-//       "https://images.unsplash.com/photo-1581093458791-9d42e3c4f2f3?auto=format&fit=crop&w=1000&q=80",
-//     size: "large",
-//   },
-//   {
-//     title: "লাইব্রেরি",
-//     subtitle: "Digital Library",
-//     description:
-//       "বিভিন্ন একাডেমিক বই, রেফারেন্স ও শিক্ষামূলক রিসোর্সের সমৃদ্ধ সংগ্রহ।",
-//     icon: FaBookOpen,
-//     image:
-//       "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=80",
-//     size: "small",
-//   },
-//   {
-//     title: "ওয়ার্কশপ",
-//     subtitle: "Practical Workshop",
-//     description:
-//       "প্রযুক্তিভিত্তিক হাতে-কলমে শিক্ষা ও বাস্তব কাজের অভিজ্ঞতার সুযোগ।",
-//     icon: FaTools,
-//     image:
-//       "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
-//     size: "small",
-//   },
-//   {
-//     title: "নিরাপদ ক্যাম্পাস",
-//     subtitle: "Safe Campus",
-//     description: "শিক্ষার্থীদের জন্য নিরাপদ, পরিচ্ছন্ন ও শিক্ষাবান্ধব পরিবেশ।",
-//     icon: FaShieldHalved,
-//     image:
-//       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
-//     size: "medium",
-//   },
-// ];
-
-const labs = [
-  {
-    name: "Computer Technology Lab",
-    bnName: "কম্পিউটার টেকনোলজি ল্যাব",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    name: "Electrical Technology Lab",
-    bnName: "ইলেকট্রিক্যাল টেকনোলজি ল্যাব",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    name: "Civil Technology Lab",
-    bnName: "সিভিল টেকনোলজি ল্যাব",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-  },
-];
 
 const studentLife = [
   "সহশিক্ষা কার্যক্রম",
@@ -141,59 +75,10 @@ export default function CampusPage() {
       <CampusIntro />
 
       {/* FACILITIES */}
-
       <FaciliteSection titleData={facilitesHeader} mainData={facilities} />
 
       {/* LABS */}
-      <section className="bg-slate-950 px-5 py-24 text-white sm:px-8 lg:px-10 lg:py-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-            <SectionHeading
-              eyebrow="Labs & Workshops"
-              title="জ্ঞান থেকে"
-              highlighted="বাস্তব দক্ষতা"
-              description="প্রতিটি টেকনোলজির শিক্ষার্থীদের ব্যবহারিক জ্ঞান ও problem-solving skill উন্নয়নের জন্য রয়েছে প্রয়োজনীয় ল্যাব ও ওয়ার্কশপ সুবিধা।"
-            />
-
-            <button className="flex shrink-0 items-center gap-2 self-start rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10 lg:self-end">
-              সকল ল্যাব দেখুন
-              <FaChevronRight />
-            </button>
-          </div>
-
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
-            {labs.map((lab) => (
-              <div
-                key={lab.name}
-                className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5"
-              >
-                <div className="relative h-72 overflow-hidden">
-                  <img
-                    src={lab.image}
-                    alt={lab.name}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
-                </div>
-
-                <div className="p-6">
-                  <p className="text-sm font-bold text-teal-400">
-                    {lab.bnName}
-                  </p>
-
-                  <h3 className="mt-2 text-lg font-black">{lab.name}</h3>
-
-                  <button className="mt-5 flex items-center gap-2 text-sm font-bold text-slate-300 transition hover:text-teal-400">
-                    বিস্তারিত
-                    <FaArrowRight />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CampusLabsSection labData={labs} />
 
       {/* STUDENT LIFE */}
       <section className="px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
