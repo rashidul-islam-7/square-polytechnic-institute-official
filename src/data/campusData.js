@@ -108,3 +108,71 @@ export const labs = [
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
   },
 ];
+
+export const studentLifeData = {
+  shortTitle: "Student Life",
+  title: "শুধু পড়াশোনা নয়,",
+  highlightedTitle: "অভিজ্ঞতাও গুরুত্বপূর্ণ",
+  description:
+    "একজন শিক্ষার্থীর পূর্ণাঙ্গ বিকাশের জন্য একাডেমিক শিক্ষার পাশাপাশি প্রয়োজন সৃজনশীলতা, নেতৃত্ব, দলগত কাজ এবং সামাজিক দক্ষতা।",
+
+  /* STUDENT LIFE ACTIVITIES*/
+
+  items: [
+    {
+      title: "ক্লাব ও সাংস্কৃতিক কার্যক্রম",
+      image:
+        "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=400&q=80",
+    },
+
+    {
+      title: "খেলাধুলা ও শরীরচর্চা",
+      image:
+        "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=400&q=80",
+    },
+
+    {
+      title: "দলগত কাজ ও নেতৃত্ব",
+      image:
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80",
+    },
+
+    {
+      title: "সৃজনশীল প্রতিযোগিতা",
+      image:
+        "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=400&q=80",
+    },
+
+    {
+      title: "শিক্ষামূলক ভ্রমণ",
+      image:
+        "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=400&q=80",
+    },
+
+    {
+      title: "সামাজিক ও স্বেচ্ছাসেবী কার্যক্রম",
+      image:
+        "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=400&q=80",
+    },
+  ],
+
+  /*  MAIN SECTION IMAGES */
+
+  images: [
+    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85",
+
+    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85",
+  ],
+
+  /* INFO CARD */
+
+  card: {
+    title: "Together",
+
+    subtitle: "Learn • Build • Grow",
+
+    imageAlt1: "Students learning together",
+
+    imageAlt2: "Students participating in activities",
+  },
+};

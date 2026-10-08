@@ -65,7 +65,7 @@ export default function CampusLabsSection({ labData = [], className = "" }) {
 
                 {/* Image Bottom Title */}
                 <div className="absolute bottom-5 left-5 right-5">
-                  <h3 className="mt-1 text-xl font-black text-white">
+                  <h3 className="mt-1 text-sm font-black text-white">
                     {data.name}
                   </h3>
                 </div>

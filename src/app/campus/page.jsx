@@ -19,20 +19,13 @@ import CampusIntro from "@/components/campus/Intro";
 import FaciliteSection from "@/components/campus/Facilities";
 import CampusLabsSection from "@/components/campus/Labs";
 
-import { facilitesHeader, facilities, labs } from "@/data/campusData";
-
-/* DATA  */
-
-const studentLife = [
-  "সহশিক্ষা কার্যক্রম",
-  "সাংস্কৃতিক অনুষ্ঠান",
-  "ক্রীড়া ও বিনোদন",
-  "প্রজেক্ট প্রদর্শনী",
-  "টেকনোলজি ক্লাব",
-  "ক্যারিয়ার সেমিনার",
-];
-
-/*  REUSABLE COMPONENTS */
+import {
+  facilitesHeader,
+  facilities,
+  labs,
+  studentLifeData,
+} from "@/data/campusData";
+import StudentLife from "@/components/campus/StudentLife";
 
 function SectionHeading({
   eyebrow,
@@ -81,63 +74,8 @@ export default function CampusPage() {
       <CampusLabsSection labData={labs} />
 
       {/* STUDENT LIFE */}
-      <section className="px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <SectionHeading
-              eyebrow="Student Life"
-              title="শুধু পড়াশোনা নয়,"
-              highlighted="অভিজ্ঞতাও গুরুত্বপূর্ণ"
-              description="একজন শিক্ষার্থীর পূর্ণাঙ্গ বিকাশের জন্য একাডেমিক শিক্ষার পাশাপাশি প্রয়োজন সৃজনশীলতা, নেতৃত্ব, দলগত কাজ এবং সামাজিক দক্ষতা।"
-            />
 
-            <div className="mt-9 grid grid-cols-2 gap-3">
-              {studentLife.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
-                >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs text-teal-600">
-                    <FaCheck />
-                  </span>
-
-                  <span className="text-sm font-bold text-slate-700">
-                    {item}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="order-1 grid grid-cols-2 gap-4 lg:order-2">
-            <div className="space-y-4 pt-10">
-              <img
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85"
-                alt="Students"
-                className="h-72 w-full rounded-[1.75rem] object-cover"
-              />
-
-              <div className="rounded-[1.75rem] bg-teal-600 p-6 text-white">
-                <FaPeopleGroup className="text-3xl" />
-
-                <p className="mt-5 text-2xl font-black">Together</p>
-
-                <p className="mt-1 text-sm text-teal-100">
-                  Learn • Build • Grow
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85"
-                alt="Student Activity"
-                className="h-[470px] w-full rounded-[1.75rem] object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <StudentLife data={studentLifeData} />
 
       {/*   SAFE + GREEN CAMPUS */}
       <section className="px-5 pb-24 sm:px-8 lg:px-10 lg:pb-32">

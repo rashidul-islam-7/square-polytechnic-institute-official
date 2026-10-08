@@ -50,13 +50,9 @@ const FaciliteSection = ({ titleData, mainData }) => {
                       {item.subtitle}
                     </p>
 
-                    <h3 className=" text-xl font-black text-white">
+                    {/* <h3 className=" text-base font-black text-white">
                       {item.title}
-                    </h3>
-
-                    <p className="m-1  max-w-lg text-sm leading-4 text-slate-200">
-                      {item.description}
-                    </p>
+                    </h3> */}
                   </div>
                 </div>
               </div>
