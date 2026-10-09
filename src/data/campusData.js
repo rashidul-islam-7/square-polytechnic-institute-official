@@ -3,6 +3,8 @@ import { FaBookOpen } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { FaShieldHalved } from "react-icons/fa6";
 
+import { FaLeaf, FaHouseUser, FaGraduationCap } from "react-icons/fa6";
+
 export const campusFeatures = [
   "আধুনিক ক্লাসরুম ও সুসংগঠিত শিক্ষাবান্ধব পরিবেশ",
   "ব্যবহারিক শিক্ষার জন্য প্রয়োজনীয় ল্যাব ও ওয়ার্কশপ",
@@ -155,24 +157,26 @@ export const studentLifeData = {
         "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=400&q=80",
     },
   ],
+};
 
-  /*  MAIN SECTION IMAGES */
+export const campusGalleryData = {
+  shortTitle: "Campus Gallery",
+  title: "ক্যাম্পাসের ",
+  highlightedTitle: "কিছু মুহূর্ত",
+  description:
+    "আমাদের ক্যাম্পাস, শিক্ষার্থী জীবন এবং একাডেমিক কার্যক্রমের কিছু দৃশ্য।",
 
   images: [
-    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85",
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=85",
 
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85",
+    "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=400&q=80",
+
+    "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80",
+
+    "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=400&q=80",
+
+    "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=400&q=80",
+
+    "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=400&q=80",
   ],
-
-  /* INFO CARD */
-
-  card: {
-    title: "Together",
-
-    subtitle: "Learn • Build • Grow",
-
-    imageAlt1: "Students learning together",
-
-    imageAlt2: "Students participating in activities",
-  },
 };
