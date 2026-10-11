@@ -93,7 +93,10 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#224248] text-white">
+    <footer
+      className="relative overflow-hidden bg-[#224248] text-white border-t-4
+     border-teal-200/90"
+    >
       {/* Background Decorations */}
       <div className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[#44A1A4]/10 blur-3xl" />
 
@@ -108,8 +111,7 @@ const Footer = () => {
 
             <p className="mt-5 max-w-sm text-base leading-7 text-white/65">
               গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের অনুমোদিত এবং বাংলাদেশ কারিগরি
-              শিক্ষা বোর্ড (BTEB) অধিভুক্ত একটি বেসরকারি পলিটেকনিক
-              ইন্সটিটিউট।
+              শিক্ষা বোর্ড (BTEB) অধিভুক্ত একটি বেসরকারি পলিটেকনিক ইন্সটিটিউট।
             </p>
 
             {/* Tagline */}
@@ -192,9 +194,7 @@ const Footer = () => {
                 <FaMessage className="text-sm text-[#44A1A4]" />
               </div>
 
-              <h3 className="text-base font-bold text-white">
-                যোগাযোগ
-              </h3>
+              <h3 className="text-base font-bold text-white">যোগাযোগ</h3>
             </div>
 
             <div className="mt-6 space-y-5">
@@ -228,7 +228,7 @@ const Footer = () => {
                   </p>
                 </div>
               </a>
-         
+
               {/* Email */}
               <a
                 href="mailto:squarepoly@gmail.com"
@@ -244,7 +244,7 @@ const Footer = () => {
               </a>
             </div>
 
-             {/* Social Media */}
+            {/* Social Media */}
             <div className="mt-7">
               <div className="flex items-center gap-3">
                 {socialLinks.map((social) => {
@@ -266,7 +266,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-       </div>
+        </div>
         {/* ================= BOTTOM FOOTER ================= */}
         <div className="flex flex-col gap-5 border-t border-white/10 py-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
           {/* Copyright */}

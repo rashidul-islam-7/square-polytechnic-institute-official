@@ -22,7 +22,7 @@ const InstituteLocation = () => {
 
             <TitleStyle title="আমাদের" highlightedTitle="ঠিকানা" />
 
-            <p className="mt-4 text-base leading-7 text-slate-500">
+            <p className="mt-4 text-base leading-6 text-slate-500">
               স্কয়ার পলিটেকনিক ইন্সটিটিউট
               <br />
               গাড়িদহ, শেরপুর, বগুড়া
