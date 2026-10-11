@@ -16,7 +16,7 @@ const StudentLife = ({ data = {} }) => {
           </div>
 
           {description && (
-            <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-600">
+            <p className="mt-4 text-base max-w-2xl sm:text-lg leading-relaxed text-slate-600">
               {description}
             </p>
           )}

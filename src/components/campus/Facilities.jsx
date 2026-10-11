@@ -15,7 +15,9 @@ const FaciliteSection = ({ titleData, mainData }) => {
             title={titleData.title}
             highlightedTitle={titleData.highlightedTitle}
           />
-          <p>{titleData.description}</p>
+          <p className="mt-4 text-base max-w-2xl text-gray-600">
+            {titleData.description}
+          </p>
         </div>
 
         {/* Bento Grid */}
