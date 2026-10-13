@@ -16,7 +16,7 @@ const Btn = ({
     <Link
       href={link}
       onClick={onClick}
-      className={`group inline-flex items-center justify-center gap-3 rounded-xl bg-[#ff9a00] px-6 py-3 font-bold text-white transition-colors duration-300 hover:bg-[#ff9a00]/80 ${className}`}
+      className={`group inline-flex items-center justify-center gap-3 rounded-full bg-[#ff9a00] px-6 py-2  text-white transition-colors duration-300 hover:bg-[#ff9a00]/80 ${className}`}
     >
       {icon && iconPosition === "left" && (
         <span className={`${iconClassName} group-hover:-translate-x-1`}>
