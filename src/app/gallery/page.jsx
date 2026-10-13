@@ -174,30 +174,15 @@ const CampusGalleryPage = () => {
           {/* IMAGE GRID */}
 
           {/* RANDOM / MASONRY GALLERY GRID */}
-          <div className="mt-10 grid grid-cols-1 auto-rows-[220px] gap-4 sm:grid-cols-2 sm:auto-rows-[200px] sm:gap-5 lg:grid-cols-4 lg:auto-rows-[190px]">
+          <div className="mt-10 grid grid-cols-1 auto-rows-[220px] gap-4 sm:grid-cols-4 sm:auto-rows-[200px] sm:gap-5 lg:grid-cols-5 lg:auto-rows-[190px]">
             {filteredImages.map((image, index) => {
-              const layouts = [
-                "sm:col-span-2 sm:row-span-2",
-                "sm:row-span-1",
-                "sm:row-span-2",
-                "sm:row-span-1",
-                "sm:row-span-2 lg:col-span-2",
-                "sm:row-span-1",
-                "sm:col-span-2 sm:row-span-1",
-                "sm:row-span-2",
-                "sm:row-span-1",
-                "sm:row-span-2",
-                "sm:row-span-1",
-                "sm:col-span-2 sm:row-span-2",
-              ];
-
               return (
                 <button
                   key={image.id}
                   type="button"
                   onClick={() => setSelectedImage(image)}
                   aria-label={`${image.title} / ${image.titleEn}`}
-                  className={`group relative h-full min-h-0 w-full overflow-hidden rounded-2xl bg-slate-100 text-left ${layouts[index % layouts.length]}`}
+                  className={`group relative h-full min-h-0 w-full overflow-hidden rounded-lg bg-slate-100 text-left `}
                 >
                   {/* IMAGE */}
                   <img
@@ -208,12 +193,7 @@ const CampusGalleryPage = () => {
                   />
 
                   {/* OVERLAY */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/10 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
-
-                  {/* CATEGORY */}
-                  <span className="absolute left-4 top-4 rounded-full border border-white/20 bg-slate-950/50 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-md">
-                    {image.category}
-                  </span>
+                  <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/10 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
                 </button>
               );
             })}
