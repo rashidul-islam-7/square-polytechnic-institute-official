@@ -5,12 +5,11 @@ import HeroSlider from "@/components/HomePageComponents.jsx/HomeSlider";
 import CareerSection from "@/components/Shared/CareerSection";
 import GallerySection from "@/components/Shared/GallerySection";
 import HostelSection from "@/components/Shared/HostelSection";
-import InstituteFeatures from "@/components/Shared/InstituteFeatures";
 import StudentReviews from "@/components/Shared/Review/StudentReviews";
 import ScholarshipSection from "@/components/Shared/ScholarshipSection";
 import HomePageMarquee from "@/components/UI/Marquee/HomePageMarquee";
 import Departments from "@/components/Shared/Department";
-import Slider from "@/components/Shared/Slider/OneSlider";
+import InstituteFeatureSection from "@/components/HomePageComponents.jsx/InstituteFeatureSection";
 
 export const homeHeroData = {
   badge: "Square Polytechnic Institute",
@@ -51,7 +50,7 @@ export default function HomePage() {
       <HeroSlider {...homeHeroData} />
       <HomePageMarquee />
       <Departments />
-      <InstituteFeatures />
+      <InstituteFeatureSection />
       <ScholarshipSection />
       <HostelSection />
       <GallerySection />

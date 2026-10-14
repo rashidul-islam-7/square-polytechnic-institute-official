@@ -1,6 +1,10 @@
+import ScholarshipSection from "@/components/about/ScholarshipSection";
+import Departments from "@/components/Shared/Department";
+import InstituteFeatures from "@/components/Shared/InstituteFeatures";
 import Btn from "@/components/UI/Btn";
 import CustomIcon from "@/components/UI/CustomIcon";
 import SectionShortTitleStyle from "@/components/UI/SectionShortTitleStyle";
+import SectionTopSubTitle from "@/components/UI/SectionTopSubTitle";
 import TitleStyle from "@/components/UI/TitleStyle";
 import React from "react";
 
@@ -18,62 +22,9 @@ import {
   FaLightbulb,
   FaBuildingColumns,
   FaCheck,
+  FaStar,
 } from "react-icons/fa6";
-
-const facilities = [
-  {
-    icon: FaBookOpen,
-    title: "সমৃদ্ধ লাইব্রেরি",
-    subtitle: "Rich Library",
-    description:
-      "পাঠ্যবই, রেফারেন্স বই ও জ্ঞানচর্চার জন্য শিক্ষার্থীদের উপযোগী পরিবেশ।",
-  },
-  {
-    icon: FaLaptopCode,
-    title: "আধুনিক কম্পিউটার ল্যাব",
-    subtitle: "Computer Lab",
-    description:
-      "প্রযুক্তিগত জ্ঞান ও ব্যবহারিক দক্ষতা অর্জনের জন্য আধুনিক কম্পিউটার সুবিধা।",
-  },
-  {
-    icon: FaFlask,
-    title: "বিজ্ঞানাগার",
-    subtitle: "Science Laboratory",
-    description:
-      "পরীক্ষা-নিরীক্ষা ও হাতে-কলমে শেখার মাধ্যমে বিজ্ঞানের ব্যবহারিক জ্ঞান অর্জন।",
-  },
-  {
-    icon: FaUsers,
-    title: "শিক্ষার্থীবান্ধব পরিবেশ",
-    subtitle: "Student Friendly Campus",
-    description:
-      "শিক্ষার্থীদের ব্যক্তিগত ও একাডেমিক বিকাশে সহায়ক শিক্ষার পরিবেশ।",
-  },
-];
-
-const departments = [
-  {
-    number: "01",
-    title: "বিজ্ঞান বিভাগ",
-    subtitle: "Science",
-    description: "বিজ্ঞান, অনুসন্ধান ও প্রযুক্তিনির্ভর জ্ঞানচর্চা।",
-    icon: FaFlask,
-  },
-  {
-    number: "02",
-    title: "মানবিক বিভাগ",
-    subtitle: "Humanities",
-    description: "ইতিহাস, সমাজ, সংস্কৃতি ও মানবিক মূল্যবোধের চর্চা।",
-    icon: FaBookOpen,
-  },
-  {
-    number: "03",
-    title: "ব্যবসায় শিক্ষা",
-    subtitle: "Business Studies",
-    description: "ব্যবসা, অর্থনীতি ও ব্যবস্থাপনা বিষয়ে জ্ঞান অর্জন।",
-    icon: FaBuildingColumns,
-  },
-];
+import { FaTrophy } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
@@ -117,7 +68,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* INTRODUCTION */}
       <section id="college-introduction" className="relative py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-10">
@@ -189,7 +139,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* MISSION AND VISION */}
       <section id="mission-vision" className="bg-slate-50 py-16 lg:py-20 ">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
@@ -253,76 +202,22 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* FACILITIES */}
-      <section className="py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-            <div>
-              <SectionShortTitleStyle title=" Campus Facilities" />
-
-              <h2 className="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-                শিক্ষার জন্য প্রয়োজনীয় সুবিধা
-              </h2>
-
-              <p className="mt-4 max-w-2xl leading-8 text-slate-600">
-                শিক্ষার্থীদের একাডেমিক ও ব্যক্তিগত বিকাশে সহায়ক পরিবেশ এবং
-                প্রয়োজনীয় সুযোগ-সুবিধা।
-              </p>
-            </div>
-
-            <span className="hidden text-sm font-semibold text-green-700 md:block">
-              Learn • Explore • Grow
-            </span>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {facilities.map((facility, index) => {
-              const Icon = facility.icon;
-
-              return (
-                <article
-                  key={facility.title}
-                  className="group rounded-2xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-2 hover:border-green-200 hover:shadow-xl"
-                >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-green-50 text-2xl text-green-700 transition group-hover:bg-green-700 group-hover:text-white">
-                    <Icon />
-                  </div>
-
-                  <p className="mt-6 text-xs font-bold tracking-widest text-green-700">
-                    FACILITY 0{index + 1}
-                  </p>
-
-                  <h3 className="mt-3 text-lg font-bold text-slate-900">
-                    {facility.title}
-                  </h3>
-
-                  <p className="mt-1 text-sm font-medium text-slate-400">
-                    {facility.subtitle}
-                  </p>
-
-                  <p className="mt-4 text-sm leading-7 text-slate-600">
-                    {facility.description}
-                  </p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
+      <section className="py-16 md:py-20 ">
+        <InstituteFeatures />
       </section>
-
       {/* PRINCIPAL'S MESSAGE */}
       <section className="bg-slate-950 py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
           <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="relative lg:col-span-5">
-              <div className="absolute -left-3 -top-3 h-28 w-28 rounded-tl-3xl border-l-2 border-t-2 border-green-500 sm:-left-5 sm:-top-5" />
+              <div className="absolute -left-3 -top-3 h-28 w-28 rounded-tl-3xl border-l-2 border-t-2 border-[#44a1a4] sm:-left-5 sm:-top-5" />
 
-              <div className="relative flex min-h-[350px] items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-800 to-slate-900 p-8 sm:min-h-[430px]">
+              <div className="relative flex min-h-[350px] items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-linear-to-br from-slate-800 to-slate-900 p-8 sm:min-h-[430px]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.15),transparent_50%)]" />
 
                 <div className="relative text-center">
-                  <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-green-400/40 bg-green-400/10 text-5xl text-green-300">
+                  <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-[#44a1a4]/40 bg-[#0d383a] text-5xl text-[#44a1a4] ">
                     <FaGraduationCap />
                   </div>
 
@@ -334,7 +229,7 @@ const AboutPage = () => {
                     Message from the Principal
                   </p>
 
-                  <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-green-500" />
+                  <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#44a1a4]" />
 
                   <p className="mt-5 text-sm leading-7 text-slate-300">
                     শিক্ষা, সততা ও নিষ্ঠার পথে এগিয়ে চলাই আমাদের প্রত্যয়।
@@ -344,33 +239,33 @@ const AboutPage = () => {
             </div>
 
             <div className="lg:col-span-7">
-              <FaQuoteLeft className="text-4xl text-green-400/80" />
+              <FaQuoteLeft className="text-4xl text-[#44a1a4]/80" />
 
-              <span className="mt-6 block text-sm font-bold uppercase tracking-[0.2em] text-green-400">
+              <span className="mt-6 block text-sm font-bold uppercase tracking-[0.2em] text-[#44a1a4]">
                 Principal's Message
               </span>
 
               <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
                 প্রতিটি শিক্ষার্থীর
-                <span className="mt-2 block text-green-400">
+                <span className="mt-2 block text-[#44a1a4]">
                   সম্ভাবনাই আমাদের প্রেরণা।
                 </span>
               </h2>
 
-              <p className="mt-7 text-base leading-8 text-slate-300">
+              <p className="mt-7 text-base leading-6 text-slate-300">
                 প্রিয় শিক্ষার্থীরা, শিক্ষা তোমাদের স্বপ্ন পূরণের অন্যতম
                 শক্তিশালী মাধ্যম। জ্ঞান অর্জনের পাশাপাশি সততা, শৃঙ্খলা,
                 অধ্যবসায় ও মানবিক মূল্যবোধকে জীবনের অংশ করে তুলতে হবে।
               </p>
 
-              <p className="mt-4 text-base leading-8 text-slate-300">
+              <p className="mt-4 text-base leading-6 text-slate-300">
                 আমরা এমন একটি শিক্ষার পরিবেশ গড়ে তুলতে চাই, যেখানে তোমরা
                 নিজেদের প্রতিভা বিকশিত করতে পারবে এবং ভবিষ্যতের চ্যালেঞ্জ
                 মোকাবিলায় প্রস্তুত হবে। তোমাদের সাফল্যই আমাদের প্রতিষ্ঠানের
                 সবচেয়ে বড় অর্জন।
               </p>
 
-              <div className="mt-8 border-l-2 border-green-500 pl-5">
+              <div className="mt-8 border-l-2 border-[#44a1a4] pl-5">
                 <p className="text-lg font-bold text-white">অধ্যক্ষ</p>
                 <p className="mt-1 text-sm text-slate-400">
                   Principal, Our College
@@ -380,41 +275,70 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
       {/* SCHOLARSHIP */}
-      <section className="px-5 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
-        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-green-700 px-7 py-12 sm:px-12 sm:py-16 lg:px-16">
-          <div className="absolute -right-16 -top-20 h-72 w-72 rounded-full border-[45px] border-white/5" />
-          <div className="absolute -bottom-28 right-1/3 h-64 w-64 rounded-full bg-green-500/30 blur-3xl" />
 
-          <div className="relative grid items-center gap-10 lg:grid-cols-12">
-            <div className="lg:col-span-8">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-2xl text-white">
+      <section className="px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl border border-[#DCE7E8] bg-gradient-to-br from-[#F8FAFA] via-white to-[#EDF7F5] px-7 py-10 sm:px-12 sm:py-14 lg:px-16 lg:py-16">
+          {/* Background Decoration */}
+          <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-[#44A1A4]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 left-1/4 h-64 w-64 rounded-full bg-[#D9A441]/10 blur-3xl" />
+
+          <div className="relative grid items-center gap-12 lg:grid-cols-12">
+            {/* Left Content */}
+            <div className="lg:col-span-7">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#44A1A4]/10 text-xl text-[#44A1A4]">
                 <FaAward />
               </div>
 
-              <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-green-200">
+              <p className="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-[#44A1A4] sm:text-sm">
                 Scholarship & Student Support
               </p>
 
-              <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[#224248] sm:text-4xl lg:text-5xl">
                 মেধা ও সম্ভাবনার বিকাশে
-                <span className="mt-2 block text-green-200">
+                <span className="mt-2 block text-[#44A1A4]">
                   শিক্ষার্থীদের পাশে
                 </span>
               </h2>
 
-              <p className="mt-5 max-w-2xl text-base leading-8 text-green-50">
-                মেধাবী ও যোগ্য শিক্ষার্থীদের উৎসাহিত করা এবং শিক্ষার সুযোগ
-                সম্প্রসারণে বৃত্তি ও সহায়তামূলক উদ্যোগ গুরুত্বপূর্ণ ভূমিকা
-                রাখতে পারে।
+              <p className="mt-5 max-w-lg text-sm leading-7 text-[#325E6A] sm:text-base sm:leading-8">
+                শিক্ষার্থীদের স্বপ্নের পাশে দাঁড়াতে এবং শিক্ষার নতুন দুয়ার
+                উন্মোচনে শিক্ষার্থীদের জন্য রয়েছে শিক্ষাবৃত্তি ব্যবস্থা।
               </p>
             </div>
 
-            <div className="lg:col-span-4 lg:text-right">
-              <div className="inline-flex items-center gap-3 rounded-xl bg-white px-6 py-4 font-bold text-green-800 shadow-lg">
-                <FaLightbulb className="text-xl" />
-                স্বপ্ন দেখুন, এগিয়ে যান
+            {/* Right Trophy & Button */}
+            <div className="relative flex flex-col items-center justify-center lg:col-span-5">
+              {/* Decorative Circles */}
+              <div className="absolute top-1/2 left-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#44A1A4]/15 sm:h-64 sm:w-64" />
+
+              <div className="absolute top-1/2 left-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-[#D9A441]/40 sm:h-52 sm:w-52" />
+
+              {/* Trophy */}
+              <div className="relative flex h-48 w-48 items-center justify-center rounded-full bg-gradient-to-br from-[#FFF9E9] via-[#F9EBC9] to-[#E8CB82] shadow-xl shadow-[#D9A441]/15 sm:h-56 sm:w-56">
+                <div className="absolute inset-3 rounded-full border border-[#D9A441]/30" />
+
+                <FaTrophy className="relative z-10 text-7xl text-[#B88A2D] drop-shadow-md transition-transform duration-500 hover:scale-110 sm:text-8xl" />
+
+                {/* Sparkles */}
+                <FaStar className="absolute right-7 top-7 text-lg text-[#D9A441]" />
+                <FaStar className="absolute bottom-9 left-7 text-sm text-[#D9A441]" />
+              </div>
+
+              {/* Trophy Caption */}
+              <div className="relative mt-7 text-center">
+                <h3 className="text-base font-extrabold text-[#224248] sm:text-lg">
+                  মেধার স্বীকৃতি, সাফল্যের অনুপ্রেরণা
+                </h3>
+
+                <p className="mx-auto mt-2 max-w-sm text-xs leading-6 text-[#325E6A]/80">
+                  প্রতিটি অর্জন হোক আগামীর পথচলার নতুন প্রেরণা।
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-4">
+                <Btn text={"Apply Now "} link="/admission" />
               </div>
             </div>
           </div>
@@ -422,91 +346,63 @@ const AboutPage = () => {
       </section>
 
       {/* DEPARTMENTS */}
-      <section id="departments" className="bg-slate-50 py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <div className="mx-auto mb-14 max-w-3xl text-center">
-            <span className="text-sm font-bold uppercase tracking-[0.2em] text-green-700">
-              Academic Departments
-            </span>
+      <Departments />
+      {/* CTA */}
+      <section className="relative isolate overflow-hidden bg-linear-to-br from-[#F8FCFB] via-white to-[#EDF7F5] px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
+        {/* Background Decoration */}
+        <div className="pointer-events-none absolute -left-20 top-40 -z-10 h-96 w-96 rounded-full bg-[#44A1A4]/20 blur-3xl" />
 
-            <h2 className="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-5xl">
-              আমাদের বিভাগসমূহ
-            </h2>
+        <div className="pointer-events-none absolute -right-20 bottom-0 -z-10 h-96 w-96 rounded-full bg-[#D9A441]/20 blur-3xl" />
 
-            <p className="mt-5 text-base leading-8 text-slate-600">
-              শিক্ষার্থীদের আগ্রহ, যোগ্যতা ও ভবিষ্যৎ পরিকল্পনার ভিত্তি গড়ে
-              তুলতে বিভিন্ন শিক্ষাধারায় জ্ঞান অর্জনের সুযোগ।
+        {/* Decorative Rings */}
+        <div className="pointer-events-none absolute top-24 right-[30%] -z-10 hidden h-31 w-31 rounded-full border-[12px] border-[#44A1A4]/[0.10] lg:block" />
+
+        <div className="pointer-events-none absolute bottom-32 left-[30%] -z-10 hidden h-26 w-26 rounded-full border-[12px] border-[#44A1A4]/[0.08] lg:block" />
+
+        <div className="relative mx-auto max-w-5xl">
+          <div className="relative overflow-hidden border rounded-xl p-10 shadow-sm text-center">
+            {/* Icon */}
+
+            <CustomIcon
+              icon={FaGraduationCap}
+              size={30}
+              className="p-4 shadow border border-accent"
+            />
+
+            {/* Eyebrow */}
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-[#44A1A4] sm:text-sm">
+              Starts Your Journey
             </p>
+
+            {/* Heading */}
+            <div className=" flex justify-center items-center mt-4">
+              <TitleStyle
+                title={" গড়ে তুলি আগামীর"}
+                highlightedTitle={"সম্ভাবনা "}
+              />
+            </div>
+
+            {/* Description */}
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#325E6A] sm:text-base sm:leading-8">
+              জ্ঞান অর্জন, দক্ষতা বিকাশ ও স্বপ্নপূরণের পথে স্কয়ার শিক্ষাপরিবারের
+              সাথে হোক আগামীর পথ চলা। আপনার উজ্জ্বল ভবিষ্যৎ জন্য রইলো দোয়া ও
+              ভালোবাসা!
+            </p>
+
+            {/* CTA */}
+            <div className="mt-8 flex items-center justify-center ">
+              <Btn text={"বিস্তারিত জানতে যোগাযোগ করুন "} link="/contact" />
+            </div>
+
+            {/* Bottom Accent */}
+            <div className="mx-auto mt-10 flex items-center justify-center gap-2">
+              <span className="h-1.5 w-6 rounded-full bg-[#44A1A4]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#D9A441]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#DCE7E8]" />
+            </div>
           </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {departments.map((department) => {
-              const Icon = department.icon;
-
-              return (
-                <article
-                  key={department.number}
-                  className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-green-300 hover:shadow-xl sm:p-8"
-                >
-                  <div className="absolute right-5 top-4 text-5xl font-black text-slate-100 transition group-hover:text-green-50">
-                    {department.number}
-                  </div>
-
-                  <div className="relative">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-green-50 text-2xl text-green-700 transition group-hover:bg-green-700 group-hover:text-white">
-                      <Icon />
-                    </div>
-
-                    <h3 className="mt-7 text-xl font-bold text-slate-900">
-                      {department.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm font-medium text-green-700">
-                      {department.subtitle}
-                    </p>
-
-                    <p className="mt-4 min-h-14 text-sm leading-7 text-slate-600">
-                      {department.description}
-                    </p>
-
-                    <div className="mt-6 h-1 w-12 rounded-full bg-green-600 transition-all duration-300 group-hover:w-20" />
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-
-          <p className="mt-8 text-center text-sm leading-7 text-slate-500">
-            দ্রষ্টব্য: বিভাগগুলোর নাম উদাহরণ হিসেবে দেওয়া হয়েছে। আপনার কলেজের
-            প্রকৃত বিভাগ অনুযায়ী পরিবর্তন করুন।
-          </p>
         </div>
-      </section>
-
-      {/* FINAL CTA */}
-      <section className="bg-white px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
-        <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100 text-3xl text-green-700">
-            <FaGraduationCap />
-          </div>
-
-          <h2 className="mt-7 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            গড়ে তুলি আগামীর সম্ভাবনা
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600">
-            জ্ঞান অর্জন, দক্ষতা বিকাশ ও স্বপ্নপূরণের পথে আমাদের শিক্ষাপরিবারের
-            সঙ্গে এগিয়ে চলুন।
-          </p>
-
-          <a
-            href="#college-introduction"
-            className="mt-8 inline-flex items-center gap-3 rounded-xl bg-green-700 px-7 py-4 font-bold text-white transition hover:bg-green-800"
-          >
-            আমাদের সম্পর্কে আরও জানুন
-            <FaArrowRight />
-          </a>
-        </div>
+        {/* Your Existing Content Goes Here */}
       </section>
     </main>
   );

@@ -11,12 +11,11 @@ import {
   House,
   Trophy,
   BriefcaseBusiness,
-  ArrowRight,
   X,
 } from "lucide-react";
 
 import InstituteFeatureCard from "../UI/Cards/InstituteFeatureCard";
-import Link from "next/link";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 
 const features = [
   {
@@ -108,11 +107,10 @@ const InstituteFeatures = () => {
     };
   }, [modalIndex]);
 
-  const selectedFeature =
-    modalIndex !== null ? features[modalIndex] : null;
+  const selectedFeature = modalIndex !== null ? features[modalIndex] : null;
 
   return (
-    <section className="relative overflow-hidden bg-[#F8FAFC] py-16 md:py-20">
+    <section>
       {/* Background Blur */}
       <div className="absolute -left-24 top-20 h-64 w-64 rounded-full bg-[#44A1A4]/5 blur-3xl" />
 
@@ -121,19 +119,10 @@ const InstituteFeatures = () => {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#C28B24]/20 bg-[#FFFDF7] px-4 py-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#C28B24]" />
-
-            <span className="text-xs font-bold tracking-wide text-[#9B6F17] sm:text-sm">
-              বিশেষ সুবিধা ও বৈশিষ্ট্য
-            </span>
-          </div>
+          <SectionTopSubTitle text={" বিশেষ সুবিধা ও বৈশিষ্ট্য"} />
 
           <h2 className="text-3xl font-extrabold text-[#224248] sm:text-4xl">
-            আমাদের{" "}
-            <span className="text-[#44A1A4]">
-              বিশেষ সুবিধাসমূহ
-            </span>
+            আমাদের <span className="text-[#44A1A4]">বিশেষ সুবিধাসমূহ</span>
           </h2>
 
           <p className="mt-4 text-sm leading-7 text-[#527080] sm:text-base">
@@ -163,10 +152,10 @@ const InstituteFeatures = () => {
         </p>
       </div>
 
-      {/* More Details Button */}
+      {/* More Details Button
       <div className="mt-6 flex justify-center">
         <Link
-          href="/aboutPage"
+          href="/about"
           className="group inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-orange px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#44A1A4]/40 hover:bg-[#224248] hover:text-white hover:shadow-lg sm:px-7 sm:py-3.5 sm:text-base"
         >
           <span>আরও বিস্তারিত জানুন</span>
@@ -177,7 +166,7 @@ const InstituteFeatures = () => {
             className="transition-transform duration-300 group-hover:translate-x-1"
           />
         </Link>
-      </div>
+      </div> */}
 
       {/* ================= MODAL ================= */}
       {selectedFeature && (
@@ -210,10 +199,7 @@ const InstituteFeatures = () => {
 
               {/* Icon */}
               <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-3xl bg-[#224248] text-[#F4C95D] shadow-lg">
-                <selectedFeature.icon
-                  size={38}
-                  strokeWidth={1.7}
-                />
+                <selectedFeature.icon size={38} strokeWidth={1.7} />
               </div>
 
               {/* Title */}
