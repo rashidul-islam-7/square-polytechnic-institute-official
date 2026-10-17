@@ -1,26 +1,7 @@
 import { FaChevronCircleRight } from "react-icons/fa";
 import Btn from "../UI/Btn";
 import SectionTopSubTitle from "../UI/SectionTopSubTitle";
-import {
-  FaArrowRight,
-  FaArrowUpRightFromSquare,
-  FaBookOpen,
-  FaCheck,
-  FaChevronDown,
-  FaClipboardCheck,
-  FaClock,
-  FaFileAlt,
-  FaGraduationCap,
-  FaLaptopCode,
-  FaLightbulb,
-  FaPhone,
-  FaRegCalendarCheck,
-  FaRegCircleCheck,
-  FaRegFileLines,
-  FaShieldHalved,
-  FaUserGraduate,
-  FaWrench,
-} from "react-icons/fa6";
+import { FaArrowRight, FaCheck, FaRegFileLines } from "react-icons/fa6";
 import CustomIcon from "../UI/CustomIcon";
 
 const AdmissionHeroSection = () => {
@@ -74,10 +55,10 @@ const AdmissionHeroSection = () => {
 
         {/* Admission Required Documents Card */}
         <div className="relative mx-auto w-full max-w-lg">
-          <div className="absolute -inset-4 rounded-[2rem] bg-cyan-400/10 blur-2xl" />
+          <div className="absolute -inset-4 rounded-2xl bg-cyan-400/10 blur-2xl" />
 
           <div
-            className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/[0.07] 
+            className="relative overflow-hidden rounded-3xl border border-white/15 bg-white/[0.07] 
           p-5 shadow-2xl"
           >
             <div className="flex items-start justify-between gap-4">
