@@ -19,9 +19,22 @@ const notoSansBengali = Noto_Sans_Bengali({
 });
 
 export const metadata = {
-  title: "Square Polytechnic | Home",
+  title: "Square Polytechnic Institute",
   description:
-    "Square Polytechnic is a leading educational institution dedicated to providing quality technical education, developing practical skills, and preparing students for successful careers in technology and industry.",
+    "Square Polytechnic Institute provides quality technical education and practical skills for students in Bangladesh. Square Polytechnic is a leading educational institution dedicated to providing quality technical education, developing practical skills, and preparing students for successful careers in technology and industry.",
+  keywords: [
+    "Square Polytechnic Institute",
+    "Polytechnic Institute in Bangladesh",
+    "Technical Education",
+  ],
+  authors: [{ name: "Square Polytechnic Institute" }],
+  openGraph: {
+    title: "Square Polytechnic Institute",
+    description: "Learn technical skills and build your future.",
+    url: "https://square.edu.bd",
+    siteName: "Square Polytechnic Institute",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,10 +44,7 @@ export default function RootLayout({ children }) {
       className={`${poppins.variable} ${notoSansBengali.variable}`}
     >
       <body className="flex min-h-screen flex-col">
-
-        <main className="flex-1 bg-background pt-20">
-          {children}
-        </main>
+        <main className="flex-1 bg-background pt-20">{children}</main>
 
         <Navbar />
         <Footer />
