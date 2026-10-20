@@ -29,12 +29,6 @@ const HomePageMarquee = () => {
         {/* Announcement Label */}
         <div className="relative z-10 flex shrink-0 items-center gap-2 bg-[#FF9A00] px-4 py-2.5 text-white shadow-md md:px-5">
           <Bell size={16} className="fill-white" />
-
-          {/* <span className="hidden text-sm font-bold sm:block">
-            Announcements
-          </span> */}
-
-          {/* <span className="text-sm font-bold sm:hidden">Notice</span> */}
         </div>
 
         {/* Marquee */}

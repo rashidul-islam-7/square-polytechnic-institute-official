@@ -1,4 +1,34 @@
-"use client";
+export const metadata = {
+  title: "Square Polytechnic",
+  description:
+    "Square Polytechnic Institute offers quality technical education, modern academic departments, practical learning, campus facilities, and career-focused programs in Bangladesh.",
+
+  alternates: {
+    canonical: "https://square.edu.bd",
+  },
+
+  openGraph: {
+    title: "Square Polytechnic Institute | Official Website",
+    description:
+      "Build your future with quality technical education, modern technology, practical learning, and career opportunities at Square Polytechnic Institute.",
+    url: "https://square.edu.bd",
+    siteName: "Square Polytechnic Institute",
+    locale: "bn_BD",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Square Polytechnic Institute",
+    description:
+      "Explore technical education, academic programs, campus facilities, and career opportunities.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 import React from "react";
 import HeroSlider from "@/components/HomePageComponents.jsx/HomeSlider";
@@ -12,11 +42,11 @@ import Departments from "@/components/Shared/Department";
 import InstituteFeatureSection from "@/components/HomePageComponents.jsx/InstituteFeatureSection";
 
 export const homeHeroData = {
-  badge: "Square Polytechnic Institute",
-  title: "শিখুন প্রযুক্তি,",
-  highlightedTitle: "গড়ুন দক্ষ ক্যারিয়ার",
+  badge: "Build Your Burght Futute With AI Teechnology!",
+  title: "স্বপ্ন হোক বাস্তব,",
+  highlightedTitle: "ক্যারিয়ার হোক প্রযুক্তিনির্ভর",
   description:
-    "আধুনিক কারিগরি শিক্ষা ও ব্যবহারিক প্রশিক্ষণের মাধ্যমে আপনার সম্ভাবনাকে দক্ষতায় রূপ দিন।",
+    "সঠিক শিক্ষা, আধুনিক প্রযুক্তি ও বাস্তবমুখী শিক্ষার সমন্বয়ে তৈরি হোক আপনার আগামীর সম্ভাবনাময় ক্যারিয়ার।",
 
   slides: [
     {
