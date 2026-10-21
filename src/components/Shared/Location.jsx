@@ -1,6 +1,6 @@
 import { FaBuilding, FaLocationDot, FaArrowRight } from "react-icons/fa6";
-
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
+import { FaMapLocationDot } from "react-icons/fa6";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
 import CustomIcon from "../UI/CustomIcon";
 import Btn from "../UI/Btn";
@@ -18,7 +18,8 @@ const InstituteLocation = () => {
         <div className="grid overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200 lg:grid-cols-2">
           {/* Institute Information */}
           <div className="p-8 sm:p-12 lg:p-16">
-            <SectionShortTitleStyle text="Find Us" />
+
+            <SectionTopSubTitle text ="Find Us" icon={FaMapLocationDot} />
 
             <TitleStyle title="আমাদের" highlightedTitle="ঠিকানা" />
 

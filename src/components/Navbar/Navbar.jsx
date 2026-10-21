@@ -83,7 +83,7 @@ const Navbar = () => {
   };
 
   // Department active
-  const isDepartmentActive = pathname.startsWith("/departments");
+  const isDepartmentActive = pathname.startsWith("/department");
 
   // Others active
   const isOthersActive = others.some((item) => isActive(item.link));
@@ -160,7 +160,7 @@ const Navbar = () => {
                             : "text-gray-700"
                         }`}
                       >
-                        <Link href={"/departmentPage"}>ডিপার্টমেন্টস</Link>
+                        <span>ডিপার্টমেন্টস</span>
                       </summary>
 
                       <ul className="p-2">
@@ -243,7 +243,7 @@ const Navbar = () => {
                   {/* Mobile Admission */}
                   <li className="mt-2">
                     <Link
-                      href="/admissionPage"
+                      href="/admission"
                       className={`justify-center rounded-lg font-semibold transition flex items-center gap-2 ${
                         isActive("/admission")
                           ? "bg-[#FF9A00] text-white"
@@ -290,7 +290,7 @@ const Navbar = () => {
                         : "text-gray-300 hover:text-white"
                     }`}
                   >
-                    <Link href={"/departmentPage"}>ডিপার্টমেন্টস</Link>
+                    <span>ডিপার্টমেন্টস</span>
                     <ChevronDown
                       size={16}
                       className="group-hover:rotate-180 transition-transform duration-200"

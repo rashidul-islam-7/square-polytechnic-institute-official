@@ -1,5 +1,6 @@
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
 import TitleStyle from "../UI/TitleStyle";
+import { IoCamera } from "react-icons/io5";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 
 const CampusGallery = ({ data }) => {
   return (
@@ -7,7 +8,9 @@ const CampusGallery = ({ data }) => {
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
         <div>
-          <SectionShortTitleStyle text={data.shortTitle} />
+          {data.shortTitle && (
+            <SectionTopSubTitle text={data.shortTitle} icon={IoCamera} />
+          )}
 
           <TitleStyle
             title={data.title}

@@ -1,5 +1,6 @@
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
+import { PiStudentFill } from "react-icons/pi";
 
 const StudentLife = ({ data = {} }) => {
   const { shortTitle, title, highlightedTitle, description, items = [] } = data;
@@ -9,7 +10,7 @@ const StudentLife = ({ data = {} }) => {
       <div className="mx-auto max-w-7xl">
         {/* SECTION HEADER */}
         <div className="max-w-3xl">
-          {shortTitle && <SectionShortTitleStyle text={shortTitle} />}
+          {shortTitle && <SectionTopSubTitle  text ={shortTitle} icon = {PiStudentFill} /> }
 
           <div className="mt-2">
             <TitleStyle title={title} highlightedTitle={highlightedTitle} />

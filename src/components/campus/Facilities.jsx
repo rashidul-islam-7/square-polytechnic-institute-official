@@ -1,8 +1,10 @@
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
+
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
+import { BsBuildingsFill } from "react-icons/bs";
 
 const FaciliteSection = ({ titleData, mainData }) => {
-  console.log(mainData);
+ 
   return (
     <section
       id="facilities"
@@ -10,7 +12,7 @@ const FaciliteSection = ({ titleData, mainData }) => {
     >
       <div>
         <div className="max-w-2xl ">
-          <SectionShortTitleStyle text={titleData.shortTitle} />
+       {titleData.shortTitle &&   <SectionTopSubTitle  text ={titleData.shortTitle} icon={BsBuildingsFill} /> }
           <TitleStyle
             title={titleData.title}
             highlightedTitle={titleData.highlightedTitle}

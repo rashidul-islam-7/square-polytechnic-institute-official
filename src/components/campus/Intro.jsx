@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGraduationCap, FaCheck, FaMapMarkerAlt } from "react-icons/fa";
 import { campusFeatures, campusInfo } from "@/data/campusData";
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
 import TitleStyle from "../UI/TitleStyle";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
+import { RiBuilding2Fill } from "react-icons/ri";
 
 export default function CampusIntro() {
   return (
@@ -21,7 +22,8 @@ export default function CampusIntro() {
 
         {/* Right Side: Clean Content */}
         <div className="mt-6 lg:mt-0">
-          <SectionShortTitleStyle text={campusInfo.shortTitle} />
+
+        {campusInfo.shortTitle &&  <SectionTopSubTitle text={campusInfo.shortTitle} icon={RiBuilding2Fill} /> }
 
           <TitleStyle
             title={campusInfo.title}

@@ -1,6 +1,7 @@
 import { FaArrowRight, FaChevronRight } from "react-icons/fa6";
+import { SiLabex } from "react-icons/si";
 
-import SectionShortTitleStyle from "../UI/SectionShortTitleStyle";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
 
 export default function CampusLabsSection({ labData = [], className = "" }) {
@@ -21,7 +22,9 @@ export default function CampusLabsSection({ labData = [], className = "" }) {
         {/* HEADER  */}
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <SectionShortTitleStyle text={shortTitle} />
+           
+{shortTitle && <SectionTopSubTitle text={shortTitle} icon={SiLabex} /> }
+           
 
             <div className="mt-3">
               <TitleStyle title={title} highlightedTitle={highlightedTitle} />
