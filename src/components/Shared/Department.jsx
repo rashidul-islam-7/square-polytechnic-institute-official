@@ -18,10 +18,13 @@ import computerImg from "@/assets/images/department_images/computer_square_polyt
 import mechanicalImg from "@/assets/images/department_images/mechanical_square_polytechnic.jpeg";
 import textileImg from "@/assets/images/department_images/textile_square_polytechnic.jpg";
 import othersImg from "@/assets/images/department_images/others_skills_square_polytechnic.jpg";
+import TitleStyle from "../UI/TitleStyle";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 
 const departmentsData = [
   {
     id: 1,
+    type: " Diploma ",
     name: "Civil Engineering",
     shortName: "Civil",
     icon: Building2,
@@ -32,6 +35,7 @@ const departmentsData = [
   },
   {
     id: 2,
+    type: " Diploma ",
     name: "Electrical Engineering",
     shortName: "Electrical",
     icon: Zap,
@@ -42,6 +46,7 @@ const departmentsData = [
   },
   {
     id: 3,
+    type: " Diploma ",
     name: "Computer Science & Engineering",
     shortName: "Computer",
     icon: Monitor,
@@ -52,6 +57,7 @@ const departmentsData = [
   },
   {
     id: 4,
+    type: " Diploma ",
     name: "Mechanical Engineering",
     shortName: "Mechanical",
     icon: Cog,
@@ -62,6 +68,7 @@ const departmentsData = [
   },
   {
     id: 5,
+    type: " Diploma ",
     name: "Textile Engineering",
     shortName: "Textile",
     icon: Shirt,
@@ -72,6 +79,7 @@ const departmentsData = [
   },
   {
     id: 6,
+    type: "Training ",
     name: "Short Courses & Training",
     shortName: "Others",
     icon: GraduationCap,
@@ -88,17 +96,14 @@ const Departments = () => {
       <div className="mx-auto max-w-7xl px-5">
         {/* Section Heading */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <span className="inline-flex rounded-full bg-[#44A1A4]/10 px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#44A1A4]">
-            Our Departments
-          </span>
-
-          <h2 className="mt-4 text-3xl font-bold text-[#224248] sm:text-4xl">
-            Choose Your Path to <span className="text-[#44A1A4]">Success</span>
-          </h2>
+          <SectionTopSubTitle text={"Our Departments"} />
+          <div className="flex justify-center">
+            <TitleStyle title={"সাফল্যের"} highlightedTitle={"পথ বেছে নিন"} />
+          </div>
 
           <p className="mt-4 text-sm leading-6 text-[#325E6A] sm:text-base">
-            Explore our diploma engineering departments and build the practical
-            skills you need for a successful career.
+            আমাদের ডিপ্লোমা ইঞ্জিনিয়ারিং বিভাগগুলো ঘুরে দেখুন এবং একটি সফল
+            কর্মজীবনের জন্য প্রয়োজনীয় ব্যবহারিক দক্ষতা অর্জন করুন।
           </p>
         </div>
 

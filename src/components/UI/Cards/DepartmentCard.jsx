@@ -26,18 +26,18 @@ const DepartmentCard = ({ department }) => {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Image Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#224248]/50 via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#224248]/50 via-transparent to-transparent opacity-60" />
 
         {/* Diploma Badge */}
         <span className="absolute left-4 top-4 z-10 rounded-full bg-[#EEF7F7] px-3 py-1 text-xs font-semibold text-[#325E6A] shadow-sm">
-          Diploma
+          {department.type}
         </span>
       </div>
 
       {/* Bottom Content */}
       <div className="relative p-6">
         {/* Floating Icon */}
-        <div className="-mt-12 mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-white bg-[#224248] text-white shadow-md transition-all duration-300 group-hover:bg-[#44A1A4] group-hover:shadow-lg">
+        <div className="-mt-12 mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-white bg-[#224248] text-white shadow-md ">
           {Icon && <Icon size={26} strokeWidth={1.8} />}
         </div>
 
@@ -47,7 +47,7 @@ const DepartmentCard = ({ department }) => {
         </p>
 
         {/* Title */}
-        <h3 className="text-xl font-bold leading-snug text-[#224248] transition-colors duration-300 group-hover:text-[#44A1A4]">
+        <h3 className="text-xl font-bold leading-snug text-[#224248]">
           {department.name}
         </h3>
 
