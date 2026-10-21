@@ -1,6 +1,14 @@
-import Link from "next/link";
+export const metadata = {
+  title: "100$ Scholarship",
+  descripton:
+    "প্রতিষ্ঠানের নিজস্ব স্কলারশিপ সম্পূর্ণ ১০০% স্কলারশিপ সুবিধা যোগ্য শিক্ষার্থীদের জন্য বিশেষ সুযোগ",
+};
+
 import React from "react";
-import { FaArrowRight, FaCheck, FaGraduationCap } from "react-icons/fa6";
+import { FaTrophy, FaCheck, FaGraduationCap } from "react-icons/fa6";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
+import TitleStyle from "../UI/TitleStyle";
+import Btn from "../UI/Btn";
 
 const ScholarshipSection = () => {
   const benefits = [
@@ -17,21 +25,20 @@ const ScholarshipSection = () => {
       <div className="pointer-events-none absolute -right-20 bottom-10 h-64 w-64 rounded-full bg-[#224248]/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ================= SECTION HEADING ================= */}
+        {/* SECTION HEADING  */}
 
         <div className="mx-auto mb-10 max-w-2xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-white px-4 py-2 shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#44A1A4]" />
-
-            <span className="text-base font-bold tracking-wide text-[#325E6A] sm:text-sm">
-              শিক্ষার্থীদের জন্য বিশেষ সুযোগ
-            </span>
-          </div>
+          <SectionTopSubTitle text={"Student Scholarship"} icon = {FaTrophy} />
 
           <h2 className="text-3xl font-extrabold tracking-tight text-[#224248] sm:text-4xl">
             আপনার স্বপ্ন,
             <span className="text-[#44A1A4]"> আমাদের সহযোগিতা</span>
           </h2>
+
+          {/* <TitleStyle
+            title={"আপনার স্বপ্ন,"}
+            highlightedTitle={"আমাদের সহযোগিতা"}
+          /> */}
 
           <p className="mt-4 leading-7 text-[#527080] text-base">
             মেধাবী ও যোগ্য শিক্ষার্থীদের পড়াশোনার সুযোগকে আরও সহজ করতে স্কয়ার
@@ -39,16 +46,14 @@ const ScholarshipSection = () => {
           </p>
         </div>
 
-        {/* ================= SCHOLARSHIP CARD ================= */}
+        {/* SCHOLARSHIP CARD */}
 
         <div className="relative overflow-hidden rounded-[28px] border border-[#DCE9EA] bg-white shadow-[0_18px_55px_rgba(34,66,72,0.08)]">
           {/* Top Line */}
-          <div className="absolute left-0 right-0 top-0 h-[3px] bg-gradient-to-r from-[#224248] via-[#44A1A4] to-[#224248]" />
+          <div className="absolute left-0 right-0 top-0 h-[3px] bg-linear-to-r from-[#224248] via-[#44A1A4] to-[#224248]" />
 
           <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
-            {/* =====================================================
-                LEFT - 100% VISUAL
-            ====================================================== */}
+            {/* LEFT - 100% VISUAL*/}
 
             <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden border-b border-[#E5EEEE] bg-[#F4FAFA] p-8 lg:border-b-0 lg:border-r">
               {/* Decorative Circle */}
@@ -151,17 +156,10 @@ const ScholarshipSection = () => {
               {/* CTA */}
 
               <div className="mt-8">
-                <Link 
-                  href="/scholarshipPage"
-                  className="group inline-flex items-center gap-3 rounded-full bg-[#FF9A00] px-6 py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(255,154,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E88900] hover:shadow-[0_12px_28px_rgba(255,154,0,0.25)] sm:px-7 sm:text-base"
-                >
-                  <span>স্কলারশিপ সম্পর্কে জানুন...</span>
-
-                  <FaArrowRight
-                    size={14}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
+                <Btn
+                  text={"স্কলারশিপ সম্পর্কে জানুন..."}
+                  link="scholarshipPage"
+                />
               </div>
             </div>
           </div>

@@ -16,6 +16,7 @@ import {
 
 import InstituteFeatureCard from "../UI/Cards/InstituteFeatureCard";
 import SectionTopSubTitle from "../UI/SectionTopSubTitle";
+import TitleStyle from "../UI/TitleStyle";
 
 const features = [
   {
@@ -88,7 +89,7 @@ const InstituteFeatures = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // ESC দিয়ে modal close
+  // ESC modal close
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
@@ -121,9 +122,12 @@ const InstituteFeatures = () => {
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <SectionTopSubTitle text={" বিশেষ সুবিধা ও বৈশিষ্ট্য"} />
 
-          <h2 className="text-3xl font-extrabold text-[#224248] sm:text-4xl">
-            আমাদের <span className="text-[#44A1A4]">বিশেষ সুবিধাসমূহ</span>
-          </h2>
+          <div className="flex justify-center ">
+            <TitleStyle
+              title={"আমাদের"}
+              highlightedTitle={"বিশেষ সুবিধাসমূহ"}
+            />
+          </div>
 
           <p className="mt-4 text-sm leading-7 text-[#527080] sm:text-base">
             আধুনিক শিক্ষা, দক্ষ শিক্ষক এবং প্রয়োজনীয় সুযোগ-সুবিধার মাধ্যমে

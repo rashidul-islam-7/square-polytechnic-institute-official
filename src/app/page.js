@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Square Polytechnic",
   description:
-    "Square Polytechnic Institute offers quality technical education, modern academic departments, practical learning, campus facilities, and career-focused programs in Bangladesh.",
+    "Square Polytechnic Institute offers quality technical education, modern academic departments, practical learning, campus facilities, and career-focused programs in Bangladesh.স্কয়ার পলিটেকনিক ইন্সটিটিউটের নিজস্ব স্কলারশিপ সুবিধা সম্পর্কে জানুন। যোগ্য শিক্ষার্থীদের জন্য রয়েছে বিশেষ শিক্ষাবৃত্তির সুযোগ।",
 
   alternates: {
     canonical: "https://square.edu.bd",

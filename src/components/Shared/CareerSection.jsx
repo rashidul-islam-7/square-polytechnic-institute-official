@@ -4,21 +4,21 @@ import React from "react";
 import Link from "next/link";
 import {
   ArrowRight,
-  ArrowUpRight,
   BriefcaseBusiness,
   CheckCircle2,
   GraduationCap,
   Target,
-  TrendingUp,
   UsersRound,
 } from "lucide-react";
+import SectionTopSubTitle from "../UI/SectionTopSubTitle";
+import TitleStyle from "../UI/TitleStyle";
+import Btn from "../UI/Btn";
 
 const careerPoints = [
   "বাস্তব কর্মক্ষেত্রের অভিজ্ঞতা অর্জনের সুযোগ",
   "ইন্ডাস্ট্রি-ভিত্তিক দক্ষতা ও পেশাগত প্রস্তুতি",
   "ইন্টার্নশীপ ও Job Placement Support",
 ];
-
 
 const careerSteps = [
   {
@@ -53,17 +53,19 @@ const CareerSection = () => {
       <div className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-[#224248]/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ================= HEADER ================= */}
+        {/* HEADER */}
         <div className="mb-12 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#44A1A4]/20 bg-white px-4 py-2 text-xs font-semibold text-[#325E6A] shadow-sm">
-            <BriefcaseBusiness size={14} />
-            ক্যারিয়ার প্রস্তুতি
-          </div>
+          <SectionTopSubTitle
+            text={"ক্যারিয়ার প্রস্তুতি"}
+            icon={BriefcaseBusiness}
+          />
 
-          <h2 className="text-3xl font-bold tracking-tight text-[#224248] md:text-4xl">
-            ইন্টার্নশীপ ও{" "}
-            <span className="text-[#44A1A4]">জব প্লেসমেন্ট</span>
-          </h2>
+          <div className="flex justify-center">
+            <TitleStyle
+              title="ইন্টার্নশীপ ও "
+              highlightedTitle="জব প্লেসমেন্ট"
+            />
+          </div>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600 text-base">
             শিক্ষার্থীদের একাডেমিক শিক্ষার পাশাপাশি বাস্তব কর্মক্ষেত্রের
@@ -72,16 +74,16 @@ const CareerSection = () => {
           </p>
         </div>
 
-        {/* ================= MAIN CONTENT ================= */}
+        {/* MAIN CONTENT */}
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           {/* LEFT CONTENT */}
           <div>
             {/* Small Heading */}
-            <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#44A1A4]">
+            <p className="text-xs uppercase text-[#44A1A4]">
               Build Your Career
             </p>
 
-            <h3 className="mt-3 text-2xl font-bold leading-tight text-[#224248] md:text-3xl">
+            <h3 className="mt-2 text-xl font-bold leading-tight text-[#224248] border-b border-gray-300 ">
               শিক্ষা থেকে
               <br />
               <span className="text-[#44A1A4]">কর্মজীবনের পথে </span>
@@ -98,17 +100,12 @@ const CareerSection = () => {
             {/* Points */}
             <div className="mt-6 space-y-2">
               {careerPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3"
-                >
+                <div key={index} className="flex items-start gap-3">
                   <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#44A1A4]/10 text-[#44A1A4]">
                     <CheckCircle2 size={15} />
                   </div>
 
-                  <p className="text-base leading-6 text-slate-700">
-                    {point}
-                  </p>
+                  <p className="text-base leading-6 text-slate-700">{point}</p>
                 </div>
               ))}
             </div>
@@ -123,30 +120,16 @@ const CareerSection = () => {
 
             {/* CTA */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/career"
-                className="group inline-flex items-center gap-2 rounded-lg bg-[#FF9A00] px-5 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-[#E88900] hover:shadow-lg hover:shadow-[#FF9A00]/20"
-              >
-                ক্যারিয়ার সম্পর্কে জানুন...
-
-                <ArrowRight
-                  size={17}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </Link>
-
+              <Btn text="Learn More..." link ="/career" />
+             
               <div className="flex items-center gap-2 text-base text-slate-500">
-                <UsersRound
-                  size={16}
-                  className="text-[#44A1A4]"
-                />
-
+                <UsersRound size={16} className="text-[#44A1A4]" />
                 শিক্ষার্থীদের ক্যারিয়ার সহায়তা
               </div>
             </div>
           </div>
 
-          {/* ================= RIGHT IMAGE ================= */}
+          {/* RIGHT IMAGE */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl">
               <img
@@ -194,7 +177,7 @@ const CareerSection = () => {
             {/* Top Badge */}
             <div className="absolute right-5 top-5 flex items-center gap-2 rounded-full bg-[#44A1A4] px-4 py-2 text-xs font-bold text-white shadow-lg">
               <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              Career Ready 
+              Career Ready
             </div>
           </div>
         </div>
@@ -244,7 +227,6 @@ const CareerSection = () => {
                   <p className="relative mt-2 text-base leading-6 text-slate-500">
                     {item.text}
                   </p>
-
                 </div>
               );
             })}

@@ -177,26 +177,27 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
+import TitleStyle from "../UI/TitleStyle";
+import Btn from "../UI/Btn";
+const facilities = [
+  {
+    icon: ShieldCheck,
+    title: "নিরাপদ আবাসন (CCTV)",
+    description: "CCTV নজরদারিসহ নিরাপদ আবাসিক ব্যবস্থা",
+  },
+  {
+    icon: Utensils,
+    title: "স্বাস্থ্যকর খাবার",
+    description: "শিক্ষার্থীদের জন্য স্বাস্থ্যসম্মত ও পুষ্টিকর খাবার",
+  },
+  {
+    icon: Sparkles,
+    title: "পরিচ্ছন্ন পরিবেশ",
+    description: "পরিচ্ছন্ন, সুন্দর ও পড়াশোনার উপযোগী পরিবেশ",
+  },
+];
 
 const HostelSection = () => {
-  const facilities = [
-    {
-      icon: ShieldCheck,
-      title: "নিরাপদ আবাসন (CCTV)",
-      description: "CCTV নজরদারিসহ নিরাপদ আবাসিক ব্যবস্থা",
-    },
-    {
-      icon: Utensils,
-      title: "স্বাস্থ্যকর খাবার",
-      description: "শিক্ষার্থীদের জন্য স্বাস্থ্যসম্মত ও পুষ্টিকর খাবার",
-    },
-    {
-      icon: Sparkles,
-      title: "পরিচ্ছন্ন পরিবেশ",
-      description: "পরিচ্ছন্ন, সুন্দর ও পড়াশোনার উপযোগী পরিবেশ",
-    },
-  ];
-
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-10 md:py-14">
       {/* Decorative Background */}
@@ -211,11 +212,12 @@ const HostelSection = () => {
             আবাসিক সুবিধা
           </div>
 
-          <h2 className="text-2xl font-bold leading-tight text-[#224248] sm:text-3xl md:text-4xl">
-            পড়াশোনার সাথে{" "}
-            <span className="text-[#44A1A4]">নিশ্চিন্ত আবাসন</span>
-          </h2>
-
+          <div className=" flex justify-center">
+            <TitleStyle
+              title={"পড়াশোনার সাথে"}
+              highlightedTitle={"নিশ্চিন্ত আবাসন"}
+            />
+          </div>
           <p className="mx-auto mt-3 text-base leading-7 text-slate-500">
             দূরবর্তী শিক্ষার্থীদের জন্য নিরাপদ, স্বাস্থ্যকর ও পরিচ্ছন্ন আবাসিক
             পরিবেশ।
@@ -312,16 +314,7 @@ const HostelSection = () => {
 
               {/* Bottom */}
               <div className="mt-7 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/hostel"
-                  className="group/btn inline-flex items-center gap-2 rounded-xl bg-[#FF9A00] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#E88900] hover:shadow-lg"
-                >
-                  বিস্তারিত জানুন
-                  <ArrowRight
-                    size={16}
-                    className="transition-transform duration-300 group-hover/btn:translate-x-1"
-                  />
-                </Link>
+                <Btn text={"Read More"} link="/hostel" />
 
                 <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#44A1A4]/10 text-[#44A1A4]">

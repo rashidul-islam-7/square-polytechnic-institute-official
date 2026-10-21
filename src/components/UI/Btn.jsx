@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Btn = ({
   text,
@@ -10,7 +11,7 @@ const Btn = ({
   iconPosition = "right",
 }) => {
   const iconClassName =
-    "flex items-center transition-transform duration-300 ease-in-out group-hover:translate-x-2";
+    "flex items-center text-2xl transition-transform duration-300 ease-in-out group-hover:translate-x-2";
 
   return (
     <Link
@@ -29,7 +30,7 @@ const Btn = ({
       {icon && iconPosition === "right" ? (
         <span className={iconClassName}>{icon}</span>
       ) : !icon && iconPosition === "right" ? (
-        <FaArrowRight className={iconClassName} />
+        <IoIosArrowRoundForward className={iconClassName} />
       ) : null}
     </Link>
   );

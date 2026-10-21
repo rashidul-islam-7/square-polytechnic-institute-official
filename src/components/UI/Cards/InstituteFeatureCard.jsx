@@ -44,7 +44,7 @@ const InstituteFeatureCard = ({ feature, index, isActive, modal }) => {
 
       {/* Icon */}
       <div
-        className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-500 ${
+        className={`mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-xl border-2 border-[#224248] transition-all duration-500 ${
           isActive
             ? "scale-110 bg-[#224248] text-[#F4C95D] shadow-lg"
             : "bg-[#EEF7F7] text-[#325E6A] group-hover:bg-[#44A1A4] group-hover:text-white"

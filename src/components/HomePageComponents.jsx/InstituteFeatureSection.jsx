@@ -8,7 +8,7 @@ const InstituteFeatureSection = () => {
       {/* More Details Button */}
       <div className="flex justify-center items-center mt-5">
         {" "}
-        <Btn text={"আরও বিস্তারিত জানুন"} link="/about" />
+        <Btn text={"বিস্তারিত জানুন"} link="/about" />
       </div>
     </section>
   );
