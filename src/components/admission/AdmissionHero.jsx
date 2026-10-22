@@ -23,28 +23,27 @@ const AdmissionHeroSection = () => {
             className="max-w-2xl text-3xl font-black tracking-tight sm:text-4xl 
             lg:text-5xl"
           >
-            <span className="text-white"> তোমার স্বপ্ন, তোমার </span>
+            <span className="text-white"> আপনার স্বপ্ন, </span>
             <span className="mt-2 block text-[#44a1a4] ">
-              শুরু হোক তোমার স্বপ্নের পথচলা।
+              শুরু হোক আপনার স্বপ্নের পথচলা!
             </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-7 text-slate-300 ">
             দক্ষতা অর্জন, প্রযুক্তিনির্ভর শিক্ষা এবং বাস্তব অভিজ্ঞতার মাধ্যমে
-            গড়ে তোলো তোমার আগামী দিনের ক্যারিয়ার। তোমার পছন্দের টেকনোলজি বেছে
-            নাও এবং এগিয়ে যাও স্বপ্নপূরণের পথে।
+            গড়ে তুলুন আপনার আগামী দিনের ক্যারিয়ার। এগিয়ে যাও স্বপ্নপূরণের পথে।
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          {/* <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Btn text={"Apply Now"} link="#admission-form" />
-          </div>
+          </div> */}
 
-          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
+          <div className="mt-10  text-sm text-slate-300">
             <span className="flex items-center gap-2">
               <FaChevronCircleRight className="text-cyan-300" />
               ক্যারিয়ারমুখী শিক্ষা
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 mt-2">
               <FaChevronCircleRight className="text-cyan-300" />
               ব্যবহারিক প্রশিক্ষণ
             </span>
@@ -71,9 +70,9 @@ const AdmissionHeroSection = () => {
                   ভর্তির জন্য প্রয়োজনীয় কাগজপত্র
                 </h2>
 
-                <p className="mt-2 text-sm leading-6 text-slate-300">
+                {/* <p className="mt-2 text-sm leading-6 text-slate-300">
                   ভর্তি হওয়ার আগে প্রয়োজনীয় কাগজপত্রগুলো প্রস্তুত রাখুন।
-                </p>
+                </p> */}
               </div>
 
               <CustomIcon icon={FaRegFileLines} />
@@ -101,8 +100,8 @@ const AdmissionHeroSection = () => {
 
             <a
               href="#admission-form"
-              className="mt-7 flex w-full items-center justify-center gap-2 rounded-xl
-               bg-white px-5 py-4 font-bold text-[#071b36] transition hover:bg-gray-300"
+              className="mt-7 flex w-full items-center justify-center gap-2 rounded-full
+               bg-white px-5 py-2 font-bold text-[#071b36] transition hover:bg-gray-300"
             >
               আবেদন ফর্ম পূরণ করুন
               <FaArrowRight />

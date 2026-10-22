@@ -1,23 +1,4 @@
-import {
-  FaArrowRight,
-  FaArrowUpRightFromSquare,
-  FaBookOpen,
-  FaCheck,
-  FaChevronDown,
-  FaClipboardCheck,
-  FaClock,
-  FaFileAlt,
-  FaGraduationCap,
-  FaLaptopCode,
-  FaLightbulb,
-  FaPhone,
-  FaRegCalendarCheck,
-  FaRegCircleCheck,
-  FaRegFileLines,
-  FaShieldHalved,
-  FaUserGraduate,
-  FaWrench,
-} from "react-icons/fa6";
+
 import AdmissionHeroSection from "@/components/admission/AdmissionHero";
 import AdmissionForm from "@/components/admission/AdmissionForm";
 

@@ -9,9 +9,9 @@ import {
   Shirt,
   GraduationCap,
 } from "lucide-react";
+import { FaGraduationCap } from "react-icons/fa6";
 
 import DepartmentCard from "../UI/Cards/DepartmentCard";
-
 import civilImg from "@/assets/images/department_images/civil_square_polytechnic.jpg";
 import electricalImg from "@/assets/images/department_images/electrical_square_polytechnic.jpg";
 import computerImg from "@/assets/images/department_images/computer_square_polytechnic.jpg";
@@ -96,7 +96,7 @@ const Departments = () => {
       <div className="mx-auto max-w-7xl px-5">
         {/* Section Heading */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <SectionTopSubTitle text={"Our Departments"} />
+          <SectionTopSubTitle text={"Our Departments"} icon={FaGraduationCap} />
           <div className="flex justify-center">
             <TitleStyle title={"সাফল্যের"} highlightedTitle={"পথ বেছে নিন"} />
           </div>

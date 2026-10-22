@@ -8,6 +8,7 @@ import ImagePreviewModal from "@/components/gallery/ImagePreviewModal";
 import SectionShortTitleStyle from "@/components/UI/SectionShortTitleStyle";
 import TitleStyle from "@/components/UI/TitleStyle";
 import CategoryFilter from "@/components/UI/CategoryFilter";
+import SectionTopSubTitle from "@/components/UI/SectionTopSubTitle";
 
 const galleryImages = [
   {
@@ -151,10 +152,9 @@ const CampusGalleryPage = () => {
         <div className="mx-auto max-w-7xl">
           {/* SECTION HEADING */}
           <div className="flex flex-col items-center justify-center">
-            <SectionShortTitleStyle text="Our Memories" />
-
+          
+            <SectionTopSubTitle text = " Our Memories" />
             <TitleStyle title="ছবিতে আমাদের" highlightedTitle="ক্যাম্পাস" />
-
             <p className="mt-4 max-w-xl text-center text-sm leading-7 text-slate-500 sm:text-base">
               শিক্ষাঙ্গনের প্রতিটি মুহূর্ত, প্রতিটি অভিজ্ঞতা আমাদের গল্পের একটি
               অংশ।

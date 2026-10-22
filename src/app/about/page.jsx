@@ -1,10 +1,10 @@
-import ScholarshipSection from "@/components/about/ScholarshipSection";
+
 import Departments from "@/components/Shared/Department";
 import InstituteFeatures from "@/components/Shared/InstituteFeatures";
 import Btn from "@/components/UI/Btn";
 import CustomIcon from "@/components/UI/CustomIcon";
 import SectionShortTitleStyle from "@/components/UI/SectionShortTitleStyle";
-import SectionTopSubTitle from "@/components/UI/SectionTopSubTitle";
+
 import TitleStyle from "@/components/UI/TitleStyle";
 import React from "react";
 
@@ -12,19 +12,15 @@ import {
   FaGraduationCap,
   FaBullseye,
   FaEye,
-  FaBookOpen,
-  FaFlask,
-  FaLaptopCode,
   FaUsers,
   FaArrowRight,
   FaQuoteLeft,
   FaAward,
-  FaLightbulb,
-  FaBuildingColumns,
   FaCheck,
   FaStar,
 } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa";
+import SectionTopSubTitle from "@/components/UI/SectionTopSubTitle";
 
 const AboutPage = () => {
   return (
@@ -52,8 +48,8 @@ const AboutPage = () => {
             </div>
 
             <h1 className="mt-7 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-              আমাদের শিক্ষার্থী,
-              <span className="mt-1 block text-[#44a1a4] ">আমাদের গর্ব।</span>
+              আমাদের শিক্ষার্থী,{" "}
+              <span className=" text-[#44a1a4] ">আমাদের গর্ব।</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-slate-200 ">
@@ -98,7 +94,8 @@ const AboutPage = () => {
           </div>
 
           <div>
-            <SectionShortTitleStyle text=" Who We Are" />
+
+            <SectionTopSubTitle text= "Who We Aar?" icon = {FaUsers} />
 
             <TitleStyle title={"আমাদের"} highlightedTitle={"সম্পর্কে"} />
 
@@ -143,7 +140,8 @@ const AboutPage = () => {
       <section id="mission-vision" className="bg-slate-50 py-16 lg:py-20 ">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
           <div className="mx-auto flex flex-col items-center mb-14 max-w-3xl text-center">
-            <SectionShortTitleStyle text={"Our Direction"} />
+      
+            <SectionTopSubTitle text= "Our Direction" />
 
             <TitleStyle
               title="আমাদের"
