@@ -11,8 +11,6 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import CustomIcon from "../UI/CustomIcon";
 import Btn from "../UI/Btn";
 
-
-
 export default function AdmissionForm() {
   const inputStyle =
     "w-full min-w-0 rounded-xl border border-slate-200 px-4 py-3.5 text-sm text-[#071B36] outline-none transition-all duration-200 placeholder:text-slate-400 hover:border-[#3F969B]/60 focus:border-[#3F969B] focus:ring-4 focus:ring-[#3F969B]/15";
@@ -62,7 +60,7 @@ export default function AdmissionForm() {
         {/* Header */}
         <div className="relative overflow-hidden bg-linear-to-br from-[#071B36] via-[#0C3047] to-[#3F969B] px-5 py-8 text-white sm:px-8 sm:py-10 lg:px-10">
           <div className="pointer-events-none absolute -right-12 -top-16 h-56 w-56 rounded-full border-[30px] border-white/5" />
-  
+
           <div className="relative">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-2xl shadow-lg backdrop-blur-sm">
               <FaUserGraduate />
@@ -99,7 +97,7 @@ export default function AdmissionForm() {
           <section>
             <div className={sectionTitleStyle}>
               <div>
-                <CustomIcon icon ={FaUserGraduate} size="20" />
+                <CustomIcon icon={FaUserGraduate} size="20" />
               </div>
 
               <div>
@@ -175,8 +173,8 @@ export default function AdmissionForm() {
           {/* Admission Information */}
           <section>
             <div className={sectionTitleStyle}>
-              <div >
-                <CustomIcon icon ={FaGraduationCap} size="20" />
+              <div>
+                <CustomIcon icon={FaGraduationCap} size="20" />
               </div>
 
               <div>
@@ -325,8 +323,7 @@ export default function AdmissionForm() {
           {/* Scholarship */}
           <section className="rounded-2xl border border-[#3F969B]/20 bg-gradient-to-br from-[#3F969B]/10 to-white p-5 sm:p-6">
             <div className="flex items-start gap-3">
-           
-<CustomIcon icon = {FaShieldHalved} size="18" />
+              <CustomIcon icon={FaShieldHalved} size="18" />
               <div className="min-w-0 flex-1">
                 <h3 className="font-bold text-[#071B36]">
                   স্কলারশিপ ও ভর্তি ছাড়
@@ -439,18 +436,16 @@ export default function AdmissionForm() {
             <div className="flex items-start gap-3">
               <FaRegCheckCircle className="mt-0.5 shrink-0 text-[#3F969B]" />
               <p className="text-xs leading-6 text-slate-600 sm:text-sm">
-                আবেদন জমা দেওয়ার আগে আপনার দেওয়া সকল তথ্য ও আপলোড করা
-                কাগজপত্র সঠিক আছে কি না যাচাই করুন।
+                আবেদন জমা দেওয়ার আগে আপনার দেওয়া সকল তথ্য ও আপলোড করা কাগজপত্র
+                সঠিক আছে কি না যাচাই করুন।
               </p>
             </div>
           </div>
 
           {/* Submit */}
           <div className="border-t border-slate-100 pt-6">
-          
-
             <div>
-              
+              <Btn text={"ভর্তি ফরম জমা দিন"} />
             </div>
 
             <p className="mt-3 text-center text-xs text-slate-400 sm:text-right">
