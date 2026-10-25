@@ -433,3 +433,40 @@ export const studentsFeedback = [
     rating: 5,
   },
 ];
+
+
+
+export const reviewsContent = [
+  {
+    id: 1,
+    type: "student",
+    title: "আমার প্রিয় শিক্ষাপ্রতিষ্ঠান",
+    comment:
+      "এখানকার শিক্ষকরা খুব যত্নসহকারে পড়ান। পড়াশোনার পরিবেশও অনেক ভালো।",
+    studentName: "রহিম আহমেদ",
+    department: "বিজ্ঞান বিভাগ",
+    session: "২০২৪-২৫",
+    rating: 5,
+  },
+  {
+    id: 2,
+    type: "parent",
+    title: "সন্তানের জন্য ভালো পরিবেশ",
+    comment:
+      "শিক্ষকদের আন্তরিকতা এবং নিয়মিত খোঁজখবর নেওয়ার বিষয়টি আমাদের ভালো লাগে।",
+    studentName: "মোঃ করিম উদ্দিন",
+    department: "অভিভাবক",
+    session: "২০২৪-২৫",
+    rating: 5,
+  },
+  {
+    id: 3,
+    type: "teacher",
+    title: "একটি সুন্দর শিক্ষার পরিবেশ",
+    comment:
+      "শিক্ষার্থীদের দক্ষতা ও সৃজনশীলতা বিকাশে এই প্রতিষ্ঠানের পরিবেশ সহায়ক।",
+    studentName: "সালমা আক্তার",
+    department: "প্রভাষক, বাংলা",
+    rating: 5,
+  },
+];

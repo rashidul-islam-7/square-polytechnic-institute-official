@@ -1,5 +1,6 @@
 "use client";
 
+import Btn from "@/components/UI/Btn";
 import React, { useEffect, useState } from "react";
 import {
   FaChevronLeft,
@@ -104,25 +105,7 @@ const Slider = ({ reviewsContent }) => {
 
             {/* Navigation */}
             <div className="flex items-center justify-between border-t border-[#E5EEEE] bg-[#F8FAFA] px-7 py-5 sm:px-10">
-              {/* Dots */}
-              {/* <div className="flex items-center gap-2">
-                {sliderContent.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSlider(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                    className={`h-2.5 rounded-full transition-all duration-300 ${
-                      slider === index
-                        ? "w-8 bg-[#44A1A4]"
-                        : "w-2.5 bg-[#B8CCCC] hover:bg-[#44A1A4]/60"
-                    }`}
-                  />
-                ))}
-              </div> */}
-
-              <button className="btn rounded-full text-[#44A1A4]">
-                আরও দেখুন...
-              </button>
+              <Btn text={"আরও দেখুন"} link="/reviews" />
 
               {/* Buttons */}
               <div className="flex items-center gap-2">
