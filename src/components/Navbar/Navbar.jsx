@@ -90,9 +90,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* 
-          TOP BAR
-       */}
+      {/*  TOP BAR */}
       <div className="hidden md:block bg-[#224248] text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="py-2 flex items-center justify-between text-xs">
@@ -124,19 +122,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* 
-          MAIN NAVBAR
-  */}
+      {/* MAIN NAVBAR */}
       <nav className="bg-[#325E6A] text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="py-2 md:py-2 flex items-center justify-between">
-            {/* 
-                LEFT SIDE
-            */}
+            {/* LEFT SIDE*/}
             <div className="flex items-center gap-2">
-              {/*
-                  MOBILE MENU
-             */}
+              {/*MOBILE MENU*/}
               <div className="dropdown lg:hidden">
                 <button
                   tabIndex={0}
@@ -151,7 +143,7 @@ const Navbar = () => {
                   className="menu dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-xl w-72"
                 >
                   {/* Mobile Departments */}
-                  <li>
+                  {/* <li>
                     <details open={isDepartmentActive}>
                       <summary
                         className={`font-semibold ${
@@ -184,10 +176,10 @@ const Navbar = () => {
                         })}
                       </ul>
                     </details>
-                  </li>
+                  </li> */}
 
                   {/* Mobile Main Links*/}
-                  {navLinks.map((item) => {
+                  {/* {navLinks.map((item) => {
                     const active = isActive(item.link);
 
                     return (
@@ -203,6 +195,65 @@ const Navbar = () => {
                           {item.name}
                         </Link>
                       </li>
+                    );
+                  })} */}
+
+                  {/* Mobile Main Links */}
+                  {navLinks.map((item) => {
+                    const active = isActive(item.link);
+                    return (
+                      <React.Fragment key={item.link}>
+                        <li>
+                          <Link
+                            href={item.link}
+                            className={`py-3 font-medium rounded-lg transition ${
+                              active
+                                ? "bg-[#44A1A4]/15 text-[#224248] font-bold"
+                                : "text-gray-600 hover:bg-gray-100 hover:text-[#224248]"
+                            }`}
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+
+                        {/* Show Departments immediately after Home */}
+                        {item.link === "/" && (
+                          <li>
+                            <details open={isDepartmentActive}>
+                              <summary
+                                className={`font-semibold ${
+                                  isDepartmentActive
+                                    ? "text-[#224248]"
+                                    : "text-gray-700"
+                                }`}
+                              >
+                                ডিপার্টমেন্টস
+                              </summary>
+
+                              <ul className="p-2">
+                                {departments.map((department) => {
+                                  const active = isActive(department.link);
+
+                                  return (
+                                    <li key={department.link}>
+                                      <Link
+                                        href={department.link}
+                                        className={`py-2 rounded-lg transition ${
+                                          active
+                                            ? "bg-[#44A1A4]/15 text-[#224248] font-bold"
+                                            : "text-gray-600 hover:bg-gray-100 hover:text-[#224248]"
+                                        }`}
+                                      >
+                                        {department.name}
+                                      </Link>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            </details>
+                          </li>
+                        )}
+                      </React.Fragment>
                     );
                   })}
 
