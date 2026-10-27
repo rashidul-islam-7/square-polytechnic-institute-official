@@ -26,8 +26,8 @@ import {
 } from "react-icons/fa6";
 
 import { FaChalkboardTeacher } from "react-icons/fa";
-import SectionTopSubTitle from "@/components/UI/SectionTopSubTitle";
-import Btn from "@/components/UI/Btn";
+import ShortCourseHero from "@/components/shortCourse/Hero";
+import CourseHighligh from "@/components/shortCourse/CourseHighligh";
 
 const courses = [
   {
@@ -378,134 +378,7 @@ export default function ShortCoursesPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-white text-slate-800">
       {/* HERO SECTION */}
-      <section className="relative isolate overflow-hidden bg-[#224248] ">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=85"
-            alt="কম্পিউটার ও প্রযুক্তিনির্ভর কর্মপরিবেশ"
-            className="h-full w-full object-cover opacity-20"
-          />
-
-          <div
-            className="absolute inset-0 bg-linear-to-r 
-           via-slate-950/95 to-blue-950/80"
-          />
-        </div>
-
-        <div
-          className="pointer-events-none absolute -right-32 -top-32 -z-10 h-96 w-96 rounded-full
-           bg-[#224248]/20 blur-3xl"
-          aria-hidden="true"
-        />
-
-        <div
-          className="pointer-events-none absolute -bottom-40 left-1/4 -z-10 h-96 w-96 rounded-full bg-violet-600/20 blur-3xl"
-          aria-hidden="true"
-        />
-
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-2 lg:px-10 lg:py-28">
-          <div>
-            <div
-              className="inline-flex items-center gap-2 rounded-full border border-blue-400/30
-             bg-blue-400/10 px-4 py-2 text-sm font-bold text-white"
-            >
-              <FaGraduationCap className="text-lg" />
-              স্বল্পমেয়াদি কম্পিউটার প্রশিক্ষণ
-            </div>
-
-            <h1 className="mt-7 text-3xl font-black leading-tight tracking-tight text-white sm:text-5xl ">
-              দক্ষতা গড়ুন, <span className=" text-[#44A1A4] ">এগিয়ে যান</span>
-            </h1>
-
-            <p className="mt-6 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
-              ৩ মাস ও ৬ মাসের Computer Office Application কোর্সের মাধ্যমে শিখুন
-              Microsoft Word, Excel, PowerPoint, ইন্টারনেট এবং দৈনন্দিন অফিসের
-              প্রয়োজনীয় কম্পিউটার দক্ষতা।
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Btn text={"কোর্সগুলো দেখুন"} link=" #courses" />
-
-              <a
-                href="#admission"
-                className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/25 px-6 py-3 font-bold text-white transition hover:bg-white/10"
-              >
-                ভর্তি সম্পর্কে জানুন
-              </a>
-            </div>
-
-            <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
-              <span className="flex items-center gap-2">
-                <FaCircleCheck className="text-emerald-400" />
-                ব্যবহারিক প্রশিক্ষণ
-              </span>
-
-              <span className="flex items-center gap-2">
-                <FaCircleCheck className="text-emerald-400" />৩ ও ৬ মাসের কোর্স
-              </span>
-
-              <span className="flex items-center gap-2">
-                <FaCircleCheck className="text-emerald-400" />
-                দক্ষতা উন্নয়ন
-              </span>
-            </div>
-          </div>
-
-          {/* HERO IMAGE CARD */}
-          <div className="relative mx-auto w-full max-w-xl">
-            <div className="absolute -inset-4 rounded-[2rem] bg-blue-500/20 blur-2xl" />
-
-            <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-                alt="কম্পিউটার ও ডিজিটাল দক্ষতা শেখার পরিবেশ"
-                className="h-64 w-full rounded-2xl object-cover sm:h-80 lg:h-[390px]"
-                loading="eager"
-              />
-
-              <div className="grid grid-cols-2 gap-3 p-2 pt-4">
-                <div className="rounded-2xl bg-white p-4 sm:p-5">
-                  <FaRegClock className="text-2xl text-blue-600" />
-                  <p className="mt-3 text-xs text-slate-500">
-                    স্বল্পমেয়াদি প্রশিক্ষণ
-                  </p>
-                  <p className="mt-1 font-extrabold text-slate-900">
-                    ৩ মাসের কোর্স
-                  </p>
-                </div>
-
-                <div className="rounded-2xl bg-white p-4 sm:p-5">
-                  <FaLaptop className="text-2xl text-violet-600" />
-                  <p className="mt-3 text-xs text-slate-500">
-                    বিস্তারিত প্রশিক্ষণ
-                  </p>
-                  <p className="mt-1 font-extrabold text-slate-900">
-                    ৬ মাসের কোর্স
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute -left-2 top-1/3 hidden -translate-x-1/4 rounded-2xl border border-slate-100 bg-white p-4 shadow-xl sm:block">
-              <div className="flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-xl text-emerald-600">
-                  <FaCheck />
-                </span>
-
-                <div>
-                  <p className="text-sm font-extrabold text-slate-900">
-                    Learn & Practice
-                  </p>
-                  <p className="mt-1 text-xs text-slate-500">
-                    দক্ষতা গড়ার যাত্রা
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ShortCourseHero />
       {/* KEY HIGHLIGHTS */}
       <section className="relative z-10 -mt-1 bg-slate-50 px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-7xl">
@@ -522,6 +395,8 @@ export default function ShortCoursesPage() {
           </div>
         </div>
       </section>
+
+      <CourseHighligh />
 
       {/* SOFTWARE YOU WILL LEARN */}
       <section className="border-y border-slate-100 bg-white px-5 py-16 sm:px-8 lg:px-10">

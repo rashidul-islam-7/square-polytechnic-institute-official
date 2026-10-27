@@ -32,6 +32,10 @@ const Navbar = () => {
       name: "Textile Technology",
       link: "/departments/textile",
     },
+    {
+      name: "Short Course",
+      link: "/departments/short-courses",
+    },
   ];
 
   // Others

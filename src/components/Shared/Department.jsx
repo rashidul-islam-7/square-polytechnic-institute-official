@@ -84,7 +84,7 @@ const departmentsData = [
     shortName: "Others",
     icon: GraduationCap,
     image: othersImg,
-    link: "shortCourses",
+    link: "short-courses",
     description:
       "প্রফেশনাল স্কিল ডেভেলপমেন্ট, কম্পিউটার, আইটি ট্রেনিং, ও বিভিন্ন প্র্যাকটিক্যাল শর্ট কোর্সের মাধ্যমে নিজেকে আধুনিক জব মার্কেট উপযোগী করে তুলুন।",
   },
