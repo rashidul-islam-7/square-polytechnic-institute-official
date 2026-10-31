@@ -27,7 +27,8 @@ import {
 
 import { FaChalkboardTeacher } from "react-icons/fa";
 import ShortCourseHero from "@/components/shortCourse/Hero";
-import CourseHighligh from "@/components/shortCourse/CourseHighligh";
+import WhyChooseUs from "@/components/shortCourse/WhyChooseUs";
+import SoftwareLearn from "@/components/shortCourse/SoftwareLearn";
 
 const courses = [
   {
@@ -380,23 +381,7 @@ export default function ShortCoursesPage() {
       {/* HERO SECTION */}
       <ShortCourseHero />
       {/* KEY HIGHLIGHTS */}
-      <section className="relative z-10 -mt-1 bg-slate-50 px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Why Choose Us"
-            title="কেন আমাদের প্রশিক্ষণ বেছে নেবেন?"
-            description="কম্পিউটার শেখার জন্য প্রয়োজনীয় ব্যবহারিক অনুশীলন, প্রশিক্ষকের সহায়তা এবং সার্টিফিকেট-সংক্রান্ত তথ্য সম্পর্কে জেনে নিন।"
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((item) => (
-              <HighlightCard key={item.number} item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CourseHighligh />
+      <WhyChooseUs />
 
       {/* SOFTWARE YOU WILL LEARN */}
       <section className="border-y border-slate-100 bg-white px-5 py-16 sm:px-8 lg:px-10">
@@ -446,6 +431,8 @@ export default function ShortCoursesPage() {
           </div>
         </div>
       </section>
+
+      <SoftwareLearn />
 
       {/* COURSES SECTION */}
       <section
