@@ -29,6 +29,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import ShortCourseHero from "@/components/shortCourse/Hero";
 import WhyChooseUs from "@/components/shortCourse/WhyChooseUs";
 import SoftwareLearn from "@/components/shortCourse/SoftwareLearn";
+import Course from "@/components/shortCourse/Courses";
 
 const courses = [
   {
@@ -104,36 +105,6 @@ const software = [
     icon: FaGlobe,
     color: "text-violet-600",
     bg: "bg-violet-50",
-  },
-];
-
-const highlights = [
-  {
-    icon: FaDesktop,
-    number: "01",
-    title: "আধুনিক কম্পিউটার ল্যাব",
-    description:
-      "কম্পিউটারে হাতে-কলমে অনুশীলনের মাধ্যমে বাস্তব কাজের দক্ষতা অর্জনের সুযোগ।",
-    gradient: "from-blue-500 to-cyan-400",
-    iconBg: "bg-blue-50 text-blue-700",
-  },
-  {
-    icon: FaChalkboardTeacher,
-    number: "02",
-    title: "অভিজ্ঞ প্রশিক্ষক",
-    description:
-      "প্রশিক্ষকের নির্দেশনা, অনুশীলন এবং ধাপে ধাপে শেখার মাধ্যমে দক্ষতা উন্নয়ন।",
-    gradient: "from-violet-500 to-purple-400",
-    iconBg: "bg-violet-50 text-violet-700",
-  },
-  {
-    icon: FaCertificate,
-    number: "03",
-    title: "সার্টিফিকেটের সুযোগ",
-    description:
-      "প্রযোজ্য অনুমোদন ও কোর্সের শর্ত অনুযায়ী সার্টিফিকেটের তথ্য ভর্তি অফিস থেকে জেনে নিন।",
-    gradient: "from-emerald-500 to-teal-400",
-    iconBg: "bg-emerald-50 text-emerald-700",
   },
 ];
 
@@ -341,40 +312,6 @@ function CourseCard({ course }) {
   );
 }
 
-function HighlightCard({ item }) {
-  const Icon = item.icon;
-
-  return (
-    <article className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl sm:p-7">
-      <span
-        className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${item.gradient}`}
-      />
-
-      <div className="flex items-start justify-between gap-4">
-        <span
-          className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl ${item.iconBg}`}
-        >
-          <Icon />
-        </span>
-
-        <span className="text-3xl font-black text-slate-100 transition group-hover:text-slate-200">
-          {item.number}
-        </span>
-      </div>
-
-      <h3 className="mt-6 text-xl font-black text-slate-900">{item.title}</h3>
-
-      <p className="mt-3 text-sm leading-7 text-slate-600">
-        {item.description}
-      </p>
-
-      <div
-        className={`mt-6 h-1 w-12 rounded-full bg-gradient-to-r transition-all duration-300 group-hover:w-20 ${item.gradient}`}
-      />
-    </article>
-  );
-}
-
 export default function ShortCoursesPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-white text-slate-800">
@@ -382,86 +319,10 @@ export default function ShortCoursesPage() {
       <ShortCourseHero />
       {/* KEY HIGHLIGHTS */}
       <WhyChooseUs />
-
       {/* SOFTWARE YOU WILL LEARN */}
-      <section className="border-y border-slate-100 bg-white px-5 py-16 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10 text-center">
-            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-blue-700">
-              Course Highlights
-            </p>
-
-            <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
-              যে দক্ষতাগুলো শিখবেন
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-              অফিসের কাজ, অনলাইন আবেদন এবং দৈনন্দিন কম্পিউটার ব্যবহারের জন্য
-              প্রয়োজনীয় সফটওয়্যার ও দক্ষতা।
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {software.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={item.name}
-                  className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg"
-                >
-                  <span
-                    className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl transition group-hover:scale-105 ${item.bg} ${item.color}`}
-                  >
-                    <Icon className="text-2xl" />
-                  </span>
-
-                  <div>
-                    <h3 className="font-extrabold text-slate-900">
-                      {item.name}
-                    </h3>
-
-                    <p className="mt-1 text-xs leading-5 text-slate-500">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       <SoftwareLearn />
-
       {/* COURSES SECTION */}
-      <section
-        id="courses"
-        className="scroll-mt-20 bg-slate-50 px-5 py-20 sm:px-8 lg:px-10 lg:py-24"
-      >
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Our Short Courses"
-            title="আপনার জন্য সঠিক কোর্সটি বেছে নিন"
-            description="আপনার সময় ও শেখার প্রয়োজন অনুযায়ী বেছে নিন ৩ মাসের অথবা ৬ মাসের Computer Office Application কোর্স।"
-          />
-
-          <div className="grid items-stretch gap-7 lg:grid-cols-2 lg:gap-8">
-            {courses.map((course) => (
-              <CourseCard key={course.id} course={course} />
-            ))}
-          </div>
-
-          <div className="mx-auto mt-8 flex max-w-3xl items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-5">
-            <FaRegLightbulb className="mt-1 shrink-0 text-xl text-amber-600" />
-
-            <p className="text-sm leading-7 text-amber-900">
-              কোর্স ফি, ক্লাসের সময়সূচি, ভর্তি যোগ্যতা, ল্যাবের সুবিধা এবং
-              সার্টিফিকেটের স্বীকৃতি সম্পর্কে ভর্তি হওয়ার আগে নিশ্চিত হয়ে নিন।
-            </p>
-          </div>
-        </div>
-      </section>
+      <Course />
 
       {/* BENEFITS */}
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-10 lg:py-24">

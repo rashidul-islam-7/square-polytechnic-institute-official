@@ -1,7 +1,8 @@
 import React from "react";
 import { FaDesktop, FaChalkboardTeacher, FaCertificate } from "react-icons/fa";
 
-import { FaArrowRight } from "react-icons/fa6";
+import { FaHandsHoldingCircle } from "react-icons/fa6";
+
 import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
 
@@ -69,7 +70,10 @@ export default function WhyChooseUs() {
     <section className="relative z-10 -mt-1 bg-slate-50 px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-center items-center max-w-2xl m-auto text-center mb-6 md:mb-10">
-          <SectionTopSubTitle text={"Why Choose Us"} />
+          <SectionTopSubTitle
+            icon={FaHandsHoldingCircle}
+            text={"Why Choose Us"}
+          />
           <TitleStyle
             title="কেন আমাদের"
             highlightedTitle="প্রশিক্ষণ বেছে নেবেন? "
