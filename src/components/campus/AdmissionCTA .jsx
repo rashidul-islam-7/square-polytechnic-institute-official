@@ -30,7 +30,7 @@ const AdmissionCTA = () => {
           {/* Heading */}
           <h2 className="mt-7 text-3xl font-black leading-[1.35] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
             আপনার ভবিষ্যৎ গড়ার যাত্রা
-            <span className="mt-2 block bg-gradient-to-r from-teal-300 via-teal-400 to-cyan-300 bg-clip-text text-transparent">
+            <span className="mt-2 block bg-linear-to-r from-teal-300 via-teal-400 to-cyan-300 bg-clip-text text-transparent">
               শুরু হোক এখান থেকেই
             </span>
           </h2>
