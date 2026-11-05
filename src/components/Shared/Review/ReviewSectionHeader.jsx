@@ -18,7 +18,7 @@ const ReviewSectionHeader = () => {
             />
           </div>
 
-          <p className="mt-4 text-sm leading-7 text-slate-500 md:text-base">
+          <p className="mt-4 max-w-2xl m-auto leading-6 text-slate-500 text-base">
             স্কয়ার পলিটেকনিক ইন্সটিটিউটে শিক্ষার্থীদের শেখার অভিজ্ঞতা, পরিবেশ
             এবং শিক্ষক-সহযোগিতা সম্পর্কে তাদের কিছু কথা।
           </p>

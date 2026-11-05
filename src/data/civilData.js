@@ -460,17 +460,10 @@ export const departmentOverviewData = {
 
 export const whyChooseData = {
   id: 1,
-
   department: "Civil Technology",
-
   supTitle: "Why Civil",
-
-  title: (
-    <>
-      কেন এবং কারা <span className="text-[#44a1a4]">Civil Technology</span>{" "}
-      পড়বে?
-    </>
-  ),
+  title: "কেন Civil Technology পড়বে?",
+  highlightedTitle: "কেন Civil Technology?",
 
   description:
     "দেশের অবকাঠামো উন্নয়ন ও নির্মাণনির্ভর এই সময়ে Civil Technology শুধু একটি technical subject নয়, এটি Construction, Infrastructure এবং Engineering sector-এ career গড়ার একটি strong foundation। যারা building, road, bridge, design, surveying এবং construction-related practical work-এর সঙ্গে কাজ করতে চান, তাদের জন্য এই Department হতে পারে একটি practical career path।",

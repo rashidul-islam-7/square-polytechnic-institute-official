@@ -1,472 +1,410 @@
 export const studentsFeedback = [
   {
-    title: "Square Polytechnic Institute",
     studentName: "Jobayer Ahamed",
     session: "2021-22",
     department: "Computer",
     comment:
-      "স্কয়ার পলিটেকনিকের শিক্ষার পরিবেশ অনেক ভালো এবং শিক্ষকরা খুব আন্তরিক।",
+      "স্কয়ার পলিটেকনিকে ভর্তি হওয়ার পর থেকে পড়াশোনার প্রতি আমার আগ্রহ বেড়েছে। শিক্ষকদের আন্তরিক সহযোগিতা এবং সুন্দর শিক্ষার পরিবেশ আমাকে নিয়মিত নতুন কিছু শিখতে উৎসাহিত করে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Sakib Hasan",
     session: "2021-22",
     department: "Electrical",
-    comment: "এখানকার শিক্ষকরা প্রতিটি বিষয় সহজভাবে বুঝিয়ে পড়ান।",
+    comment:
+      "এখানকার শিক্ষকরা প্রতিটি বিষয় সহজভাবে বুঝিয়ে পড়ান। কোনো কিছু বুঝতে সমস্যা হলে তারা আবার বুঝিয়ে দেন, যা আমার পড়াশোনাকে অনেক সহজ করে তুলেছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Mehedi Hasan",
     session: "2022-23",
     department: "Computer",
     comment:
-      "Computer Technology পড়ার জন্য এখানকার পরিবেশ আমার কাছে খুব ভালো লেগেছে।",
+      "Computer Technology পড়ার জন্য এখানকার পরিবেশ আমার ভালো লেগেছে। নিয়মিত ক্লাসের পাশাপাশি বিভিন্ন বিষয় হাতে-কলমে শেখার সুযোগ পাচ্ছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rakibul Islam",
     session: "2022-23",
     department: "Civil",
     comment:
-      "শিক্ষকদের সহযোগিতা এবং নিয়মিত ক্লাসের কারণে পড়াশোনা ভালোভাবে চালিয়ে যেতে পারছি।",
+      "শিক্ষকদের সহযোগিতা এবং নিয়মিত ক্লাসের কারণে পড়াশোনা ভালোভাবে চালিয়ে যেতে পারছি। ক্লাসে কোনো বিষয় বুঝতে অসুবিধা হলে প্রয়োজনীয় সহযোগিতা পাওয়া যায়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Naim Hossain",
     session: "2021-22",
     department: "Mechanical",
     comment:
-      "প্র্যাকটিক্যাল ক্লাসগুলো খুব ভালো হয় এবং বিষয়গুলো হাতে-কলমে শেখানো হয়।",
+      "Mechanical Technology-এর ব্যবহারিক ক্লাসগুলো আমার কাছে বেশ ভালো লাগে। বিভিন্ন কাজ হাতে-কলমে শেখার মাধ্যমে বিষয়গুলো আরও ভালোভাবে বুঝতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Shakil Ahmed",
     session: "2022-23",
     department: "Electrical",
-    comment: "শিক্ষকরা পড়াশোনার পাশাপাশি practical কাজেও অনেক সহযোগিতা করেন।",
+    comment:
+      "শুধু বইয়ের পড়াশোনা নয়, Practical কাজ শেখার ক্ষেত্রেও শিক্ষকরা সহযোগিতা করেন। এতে Technical বিষয়গুলো সম্পর্কে বাস্তব ধারণা তৈরি হচ্ছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Tanvir Hasan",
     session: "2023-24",
     department: "Computer",
-    comment: "এখানে ভর্তি হওয়ার পর থেকে পড়াশোনার প্রতি আমার আগ্রহ আরও বেড়েছে।",
+    comment:
+      "এখানে ভর্তি হওয়ার পর থেকে Computer Technology সম্পর্কে আমার আগ্রহ আরও বেড়েছে। নতুন নতুন বিষয় শেখার পাশাপাশি নিজের দক্ষতা বাড়ানোর সুযোগ পাচ্ছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Arif Hossain",
     session: "2021-22",
     department: "Civil",
-    comment: "কলেজের পরিবেশ সুন্দর এবং শিক্ষকরা শিক্ষার্থীদের প্রতি যত্নশীল।",
+    comment:
+      "কলেজের শিক্ষার পরিবেশ সুন্দর এবং শিক্ষকরা শিক্ষার্থীদের প্রতি যত্নশীল। পড়াশোনার পাশাপাশি প্রয়োজনীয় পরামর্শ ও সহযোগিতা পাওয়া যায়।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rifat Islam",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Programming এবং অন্যান্য computer বিষয়গুলো খুব সুন্দরভাবে শেখানো হয়।",
+      "Programming এবং Computer Technology-এর বিভিন্ন বিষয় ধাপে ধাপে শেখানো হয়। শিক্ষকদের ব্যাখ্যা ও সহযোগিতার কারণে নতুন বিষয় বুঝতে সুবিধা হয়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Hasan Mahmud",
     session: "2022-23",
     department: "Mechanical",
-    comment: "আমার অভিজ্ঞতায় এখানকার শিক্ষকরা খুবই friendly এবং সহযোগিতাপূর্ণ।",
+    comment:
+      "শিক্ষকদের ব্যবহার এবং পড়ানোর ধরন আমার ভালো লাগে। তারা আমাদের পড়াশোনার বিষয়ে সহযোগিতা করেন এবং Practical কাজ শেখার জন্য উৎসাহ দেন।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Shuvo Ahmed",
     session: "2021-22",
     department: "Electrical",
-    comment: "প্রতিটি semester-এ শিক্ষকরা আমাদের ভালোভাবে guide করেন।",
+    comment:
+      "প্রতিটি Semester-এ শিক্ষকদের কাছ থেকে প্রয়োজনীয় Guidance পাই। নিয়মিত পড়াশোনা এবং বিষয়ভিত্তিক সহযোগিতা আমার শেখার অভিজ্ঞতাকে ভালো করেছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Fahim Rahman",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Computer Technology শেখার জন্য প্রয়োজনীয় বিষয়গুলো ধাপে ধাপে শেখানো হয়।",
+      "Computer Technology-এর গুরুত্বপূর্ণ বিষয়গুলো এখানে ধাপে ধাপে শেখানো হয়। এতে নতুন বিষয় শেখার পাশাপাশি নিজের Knowledge ও Skill বাড়াতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Abdullah Al Noman",
     session: "2022-23",
     department: "Civil",
     comment:
-      "Civil Technology-এর practical বিষয়গুলো ভালোভাবে শেখার সুযোগ পাচ্ছি।",
+      "Civil Technology-এর বিভিন্ন Practical বিষয় শেখার সুযোগ পাচ্ছি। ক্লাসে শেখা বিষয়গুলো ব্যবহারিকভাবে বুঝতে পারা আমার কাছে ভালো লাগে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Imran Hossain",
     session: "2021-22",
     department: "Mechanical",
-    comment: "পড়াশোনার পাশাপাশি practical knowledge অর্জনের সুযোগ এখানে ভালো।",
+    comment:
+      "পড়াশোনার পাশাপাশি Practical Knowledge অর্জনের সুযোগ রয়েছে। Workshop-এর কাজগুলো শেখার মাধ্যমে Mechanical Technology সম্পর্কে বাস্তব ধারণা পাচ্ছি।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Siam Ahmed",
     session: "2023-24",
     department: "Computer",
-    comment: "Web development এবং programming শেখার জন্য এখানকার পরিবেশ ভালো।",
+    comment:
+      "Web Development এবং Programming শেখার প্রতি আমার আগ্রহ রয়েছে। এখানে এসব বিষয়ে শেখার সুযোগ এবং শিক্ষকদের সহযোগিতা পেয়ে ভালো লাগছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Jahid Hasan",
     session: "2022-23",
     department: "Electrical",
-    comment: "শিক্ষকরা ক্লাসে কোনো বিষয় বুঝতে সমস্যা হলে আবার বুঝিয়ে দেন।",
+    comment:
+      "ক্লাসে কোনো বিষয় বুঝতে সমস্যা হলে শিক্ষকরা আবার বুঝিয়ে দেন। তাদের এই সহযোগিতার কারণে Technical বিষয়গুলো শিখতে অনেক সুবিধা হয়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rasel Mia",
     session: "2021-22",
     department: "Civil",
     comment:
-      "নিয়মিত ক্লাস এবং শিক্ষকদের সহযোগিতা আমার পড়াশোনায় অনেক সাহায্য করছে।",
+      "নিয়মিত ক্লাস এবং শিক্ষকদের সহযোগিতা আমার পড়াশোনায় অনেক সাহায্য করছে। প্রতিটি বিষয়ে ভালোভাবে শেখার জন্য প্রয়োজনীয় দিকনির্দেশনা পাওয়া যায়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Sabbir Hossain",
     session: "2023-24",
     department: "Computer",
-    comment: "এখানে Computer Technology পড়ার সিদ্ধান্তটি আমার জন্য ভালো ছিল।",
+    comment:
+      "Computer Technology নিয়ে পড়াশোনা করার সিদ্ধান্তটি আমার ভালো লেগেছে। এখানে নতুন বিষয় শেখার পাশাপাশি নিজের Technical Skill উন্নত করার সুযোগ পাচ্ছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Mushfiqur Rahman",
     session: "2022-23",
     department: "Mechanical",
-    comment: "Workshop এবং practical class-গুলো বেশ ভালোভাবে পরিচালনা করা হয়।",
+    comment:
+      "Workshop এবং Practical Class-এর মাধ্যমে বিভিন্ন কাজ শেখার সুযোগ পাই। হাতে-কলমে শেখার কারণে Theory-এর বিষয়গুলোও ভালোভাবে বুঝতে পারি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Emon Khan",
     session: "2021-22",
     department: "Electrical",
-    comment: "Electrical-এর technical বিষয়গুলো শিক্ষকরা সহজভাবে বুঝিয়ে দেন।",
+    comment:
+      "Electrical Technology-এর Technical বিষয়গুলো শিক্ষকরা সহজভাবে বুঝিয়ে দেন। Practical কাজের মাধ্যমে শেখার সুযোগ থাকায় বিষয়গুলো বুঝতে সুবিধা হয়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rony Ahmed",
     session: "2023-24",
     department: "Computer",
-    comment: "পড়াশোনার পরিবেশ ভালো এবং teachers-দের behaviour খুবই ভালো।",
+    comment:
+      "কলেজের পড়াশোনার পরিবেশ এবং শিক্ষকদের আন্তরিক ব্যবহার আমার ভালো লাগে। প্রয়োজনের সময় শিক্ষকদের কাছ থেকে সহযোগিতা পাওয়া যায়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Tanjim Hasan",
     session: "2022-23",
     department: "Civil",
-    comment: "শিক্ষকদের কাছ থেকে প্রয়োজন অনুযায়ী academic support পাওয়া যায়।",
+    comment:
+      "পড়াশোনার বিষয়ে শিক্ষকদের কাছ থেকে প্রয়োজনীয় Academic Support পাওয়া যায়। তাদের পরামর্শ আমার পড়াশোনার পরিকল্পনা করতে সাহায্য করে।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Arafat Hossain",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Programming শেখার পাশাপাশি বিভিন্ন practical project করার সুযোগ পাচ্ছি।",
+      "Programming শেখার পাশাপাশি বিভিন্ন Practical Project নিয়ে কাজ করার সুযোগ পাচ্ছি। এর মাধ্যমে নিজের দক্ষতা যাচাই ও উন্নত করতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rakib Hasan",
     session: "2021-22",
     department: "Mechanical",
     comment:
-      "Mechanical Technology-এর বিষয়গুলো theory এবং practical দুইভাবেই শেখানো হয়।",
+      "Mechanical Technology-এর বিষয়গুলো Theory এবং Practical দুইভাবেই শেখার সুযোগ রয়েছে। এতে পড়াশোনার বিষয়গুলো বাস্তব কাজের সঙ্গে মিলিয়ে বুঝতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Shahriar Islam",
     session: "2022-23",
     department: "Electrical",
-    comment: "কলেজের শিক্ষার পরিবেশ আমার কাছে বেশ ভালো মনে হয়েছে।",
+    comment:
+      "কলেজের পরিবেশ আমার কাছে ভালো লেগেছে। শিক্ষকদের সহযোগিতা এবং নিয়মিত ক্লাসের মাধ্যমে পড়াশোনা চালিয়ে যেতে সুবিধা হচ্ছে।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Mahadi Hasan",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Computer-এর বিভিন্ন নতুন technology সম্পর্কে শেখার সুযোগ এখানে পাওয়া যায়।",
+      "Computer Technology-এর বিভিন্ন নতুন বিষয় সম্পর্কে শেখার সুযোগ পাচ্ছি। বিশেষ করে নতুন Technology নিয়ে জানার আগ্রহ এখানে আরও বেড়েছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Nafis Ahmed",
     session: "2021-22",
     department: "Civil",
-    comment: "শিক্ষকরা আমাদের career নিয়েও বিভিন্ন ধরনের পরামর্শ দেন।",
+    comment:
+      "শিক্ষকরা শুধু পড়াশোনার বিষয়েই নয়, ভবিষ্যৎ Career নিয়েও পরামর্শ দেন। তাদের দিকনির্দেশনা নিজের লক্ষ্য ঠিক করতে সাহায্য করে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Sajid Hossain",
     session: "2022-23",
     department: "Computer",
-    comment: "ক্লাসগুলো নিয়মিত হয় এবং শিক্ষকরা বিষয়ভিত্তিকভাবে পড়ান।",
+    comment:
+      "নিয়মিত ক্লাস এবং বিষয়ভিত্তিক পড়ানোর পদ্ধতি আমার ভালো লাগে। প্রতিটি বিষয় বুঝে শেখার জন্য শিক্ষকরা যথেষ্ট সহযোগিতা করেন।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Moinul Islam",
     session: "2023-24",
     department: "Electrical",
-    comment: "Practical class-এর মাধ্যমে technical বিষয়গুলো বুঝতে অনেক সহজ হয়।",
+    comment:
+      "Practical Class-এর মাধ্যমে Electrical Technology-এর বিভিন্ন Technical বিষয় বুঝতে সহজ হয়। বাস্তব কাজ শেখার সুযোগটি আমার কাছে গুরুত্বপূর্ণ।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Fardin Ahmed",
     session: "2021-22",
     department: "Mechanical",
-    comment: "এখানকার learning environment আমার কাছে খুবই ভালো লেগেছে।",
+    comment:
+      "এখানকার Learning Environment আমার ভালো লেগেছে। শিক্ষকদের সহযোগিতা এবং Practical শেখার সুযোগ পড়াশোনাকে আরও আগ্রহপূর্ণ করে তুলেছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Nayeem Hasan",
     session: "2022-23",
     department: "Computer",
     comment:
-      "Computer Technology-এর বিভিন্ন গুরুত্বপূর্ণ বিষয় এখানে ভালোভাবে শেখানো হয়।",
+      "Computer Technology-এর প্রয়োজনীয় বিষয়গুলো ধাপে ধাপে শেখানো হয়। এতে নতুন বিষয়গুলো বুঝতে এবং নিজের Knowledge বাড়াতে সুবিধা হচ্ছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Sakib Hossain",
     session: "2023-24",
     department: "Civil",
-    comment: "আমাদের teachers সবসময় পড়াশোনার বিষয়ে সহযোগিতা করার চেষ্টা করেন।",
+    comment:
+      "শিক্ষকরা পড়াশোনার বিষয়ে সবসময় সহযোগিতা করার চেষ্টা করেন। কোনো বিষয়ে পরামর্শ প্রয়োজন হলে তাদের কাছ থেকে দিকনির্দেশনা পাওয়া যায়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Jubayer Islam",
     session: "2021-22",
     department: "Electrical",
-    comment: "Electrical Technology নিয়ে পড়াশোনা করার জন্য পরিবেশটি বেশ ভালো।",
+    comment:
+      "Electrical Technology নিয়ে পড়াশোনা করার জন্য এখানকার পরিবেশ ভালো লেগেছে। ক্লাসের পাশাপাশি Practical বিষয়গুলো শেখার সুযোগও রয়েছে।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rahat Ahmed",
     session: "2022-23",
     department: "Computer",
     comment:
-      "শিক্ষকদের কাছ থেকে programming এবং computer-related বিষয়ে ভালো guidance পাই।",
+      "Programming এবং Computer-related বিভিন্ন বিষয়ে শিক্ষকদের কাছ থেকে ভালো Guidance পাই। তাদের সহযোগিতা নতুন বিষয় শেখার আত্মবিশ্বাস বাড়ায়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Adnan Hossain",
     session: "2023-24",
     department: "Mechanical",
-    comment: "Practical কাজের মাধ্যমে শেখানোর বিষয়টি আমার সবচেয়ে ভালো লাগে।",
+    comment:
+      "Practical কাজের মাধ্যমে শেখার বিষয়টি আমার সবচেয়ে ভালো লাগে। হাতে-কলমে কাজ করার ফলে Mechanical Technology সম্পর্কে ভালো ধারণা তৈরি হচ্ছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Shakil Khan",
     session: "2021-22",
     department: "Civil",
     comment:
-      "Civil Technology-এর পড়াশোনার পাশাপাশি practical knowledge অর্জন করতে পারছি।",
+      "Civil Technology-এর পড়াশোনার পাশাপাশি Practical Knowledge অর্জন করতে পারছি। বাস্তব কাজ সম্পর্কে জানার সুযোগ আমার শেখার অভিজ্ঞতাকে সমৃদ্ধ করছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Tahmid Hasan",
     session: "2022-23",
     department: "Computer",
-    comment: "এখানে পড়াশোনার পরিবেশ শান্ত এবং শিক্ষকদের ব্যবহার ভালো।",
+    comment:
+      "কলেজের পরিবেশ শান্ত এবং শিক্ষকদের ব্যবহার আন্তরিক। পড়াশোনার বিষয়ে প্রয়োজনীয় সহযোগিতা পাওয়ায় নিজের শেখার প্রতি মনোযোগ ধরে রাখতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Sohan Ahmed",
     session: "2023-24",
     department: "Electrical",
-    comment: "Technical বিষয়গুলো বুঝতে teachers-দের explanation অনেক helpful।",
+    comment:
+      "Electrical Technology-এর Technical বিষয়গুলো শিক্ষকদের ব্যাখ্যার মাধ্যমে বুঝতে সুবিধা হয়। Practical Class-গুলোও শেখার ক্ষেত্রে সহায়ক।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Asif Rahman",
     session: "2021-22",
     department: "Computer",
     comment:
-      "Computer Technology-এর প্রতি আমার আগ্রহ তৈরি করতে এই প্রতিষ্ঠানটি অনেক সাহায্য করেছে।",
+      "Computer Technology-এর প্রতি আমার আগ্রহ তৈরি করতে এই প্রতিষ্ঠানের পড়াশোনা অনেক সাহায্য করেছে। নতুন বিষয় শেখার পাশাপাশি নিজের দক্ষতা বাড়াতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Farhan Islam",
     session: "2022-23",
     department: "Civil",
     comment:
-      "নিয়মিত ক্লাস এবং practical learning-এর কারণে পড়াশোনা বুঝতে সুবিধা হয়।",
+      "নিয়মিত ক্লাস এবং Practical Learning-এর কারণে পড়াশোনার বিষয়গুলো ভালোভাবে বুঝতে পারছি। শিক্ষকদের সহযোগিতাও আমার শেখার জন্য বেশ সহায়ক।",
     rating: 4,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Tamim Hossain",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Programming থেকে শুরু করে বিভিন্ন computer technology সম্পর্কে শেখার সুযোগ পাচ্ছি।",
+      "Programming থেকে শুরু করে Computer Technology-এর বিভিন্ন বিষয় শেখার সুযোগ পাচ্ছি। ধাপে ধাপে শেখার পদ্ধতিটি আমার কাছে ভালো লাগে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Riad Hasan",
     session: "2021-22",
     department: "Mechanical",
     comment:
-      "শিক্ষকরা practical এবং theoretical দুই ধরনের পড়াশোনাতেই সহযোগিতা করেন।",
+      "Theory এবং Practical দুই ক্ষেত্রেই শিক্ষকদের কাছ থেকে সহযোগিতা পাওয়া যায়। এতে Mechanical Technology-এর বিষয়গুলো আরও ভালোভাবে আয়ত্ত করতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Munna Ahmed",
     session: "2022-23",
     department: "Electrical",
-    comment: "কলেজের পরিবেশ এবং শিক্ষকদের teaching style আমার ভালো লাগে।",
+    comment:
+      "কলেজের পরিবেশ এবং শিক্ষকদের Teaching Style আমার ভালো লাগে। তারা বিষয়গুলো সহজভাবে বোঝানোর চেষ্টা করেন, যা শেখার ক্ষেত্রে অনেক সহায়ক।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Abrar Hossain",
     session: "2023-24",
     department: "Computer",
     comment:
-      "ভবিষ্যতে IT sector-এ কাজ করার জন্য প্রয়োজনীয় basic knowledge এখান থেকে পাচ্ছি।",
+      "ভবিষ্যতে IT Sector-এ কাজ করার লক্ষ্য নিয়ে Computer Technology পড়ছি। এখান থেকে প্রয়োজনীয় Basic Knowledge ও Technical Skill শেখার সুযোগ পাচ্ছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Mahir Hasan",
     session: "2021-22",
     department: "Civil",
     comment:
-      "শিক্ষকদের আন্তরিকতা এবং নিয়মিত ক্লাস আমার কাছে সবচেয়ে ভালো লেগেছে।",
+      "শিক্ষকদের আন্তরিকতা এবং নিয়মিত ক্লাস আমার কাছে সবচেয়ে ভালো লেগেছে। তাদের সহযোগিতায় পড়াশোনার বিভিন্ন বিষয় বুঝতে সুবিধা হয়।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Rahat Hossain",
     session: "2022-23",
     department: "Mechanical",
     comment:
-      "Technical education-এর জন্য এখানে theory-এর পাশাপাশি practical শেখার সুযোগ আছে।",
+      "Technical Education-এর ক্ষেত্রে Theory-এর পাশাপাশি Practical শেখার সুযোগ গুরুত্বপূর্ণ। এখানে দুই ধরনের শেখার অভিজ্ঞতা অর্জন করতে পারছি।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Nabil Ahmed",
     session: "2023-24",
     department: "Computer",
     comment:
-      "Web development এবং programming শেখার জন্য ভালো একটি learning environment পেয়েছি।",
+      "Web Development এবং Programming শেখার জন্য ভালো একটি Learning Environment পেয়েছি। নতুন বিষয় শেখা এবং নিজের Skill বাড়ানোর সুযোগ রয়েছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Shihab Islam",
     session: "2021-22",
     department: "Electrical",
     comment:
-      "শিক্ষকরা আমাদের প্রতিটি technical বিষয় বুঝতে প্রয়োজনীয় সহযোগিতা করেন।",
+      "শিক্ষকরা প্রতিটি Technical বিষয় বুঝতে প্রয়োজনীয় সহযোগিতা করেন। তাদের দিকনির্দেশনায় পড়াশোনার বিষয়গুলো আয়ত্ত করতে সুবিধা হচ্ছে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Ayon Hasan",
     session: "2022-23",
     department: "Computer",
-    comment: "Square Polytechnic-এ পড়াশোনার অভিজ্ঞতা এখন পর্যন্ত খুবই ভালো।",
+    comment:
+      "Square Polytechnic-এ পড়াশোনার অভিজ্ঞতা এখন পর্যন্ত ভালো। এখানকার শিক্ষার পরিবেশ এবং নতুন বিষয় শেখার সুযোগ আমার ভালো লাগে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Foysal Ahmed",
     session: "2023-24",
     department: "Civil",
     comment:
-      "আমাদের teachers খুব friendly এবং যেকোনো academic সমস্যায় সাহায্য করেন।",
+      "শিক্ষকরা আন্তরিকভাবে পড়ান এবং Academic সমস্যায় সহযোগিতা করেন। তাদের পরামর্শ ও দিকনির্দেশনা পড়াশোনা চালিয়ে যেতে সাহায্য করে।",
     rating: 5,
   },
   {
-    title: "Square Polytechnic Institute",
     studentName: "Siam Hossain",
     session: "2021-22",
     department: "Computer",
     comment:
-      "নিজের skill development-এর জন্য এখানে পড়াশোনা করে ভালো সুযোগ পাচ্ছি।",
-    rating: 5,
-  },
-];
-
-
-
-export const reviewsContent = [
-  {
-    id: 1,
-    type: "student",
-    title: "আমার প্রিয় শিক্ষাপ্রতিষ্ঠান",
-    comment:
-      "এখানকার শিক্ষকরা খুব যত্নসহকারে পড়ান। পড়াশোনার পরিবেশও অনেক ভালো।",
-    studentName: "রহিম আহমেদ",
-    department: "বিজ্ঞান বিভাগ",
-    session: "২০২৪-২৫",
-    rating: 5,
-  },
-  {
-    id: 2,
-    type: "parent",
-    title: "সন্তানের জন্য ভালো পরিবেশ",
-    comment:
-      "শিক্ষকদের আন্তরিকতা এবং নিয়মিত খোঁজখবর নেওয়ার বিষয়টি আমাদের ভালো লাগে।",
-    studentName: "মোঃ করিম উদ্দিন",
-    department: "অভিভাবক",
-    session: "২০২৪-২৫",
-    rating: 5,
-  },
-  {
-    id: 3,
-    type: "teacher",
-    title: "একটি সুন্দর শিক্ষার পরিবেশ",
-    comment:
-      "শিক্ষার্থীদের দক্ষতা ও সৃজনশীলতা বিকাশে এই প্রতিষ্ঠানের পরিবেশ সহায়ক।",
-    studentName: "সালমা আক্তার",
-    department: "প্রভাষক, বাংলা",
+      "নিজের Skill Development-এর জন্য Computer Technology পড়াশোনা করে ভালো অভিজ্ঞতা অর্জন করছি। নতুন বিষয় শেখার পাশাপাশি ভবিষ্যৎ Career-এর জন্য প্রস্তুতি নিতে পারছি।",
     rating: 5,
   },
 ];

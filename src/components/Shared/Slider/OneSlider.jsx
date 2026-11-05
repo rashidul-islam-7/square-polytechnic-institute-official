@@ -82,13 +82,13 @@ const Slider = ({ reviewsContent = [] }) => {
   const currentSlide = reviews[slider] ?? {};
 
   // Safe Values
-  const title = currentSlide.title ?? "শিক্ষার্থীর মতামত";
+  const title = currentSlide.title || "শিক্ষার্থীর মতামত";
 
   const comment =
-    currentSlide.comment ?? "এই শিক্ষার্থীর কোনো মন্তব্য পাওয়া যায়নি।";
-  const studentName = currentSlide.studentName ?? "শিক্ষার্থী";
-  const department = currentSlide.department ?? "বিভাগ উল্লেখ নেই";
-  const session = currentSlide.session ?? "উল্লেখ নেই";
+    currentSlide.comment || "এই শিক্ষার্থীর কোনো মন্তব্য পাওয়া যায়নি।";
+  const studentName = currentSlide.studentName || "শিক্ষার্থী";
+  const department = currentSlide.department || "বিভাগ উল্লেখ নেই";
+  const session = currentSlide.session || "উল্লেখ নেই";
   const ratingValue = Number(currentSlide.rating);
   const rating = Number.isFinite(ratingValue)
     ? Math.min(5, Math.max(0, Math.floor(ratingValue)))
@@ -97,7 +97,7 @@ const Slider = ({ reviewsContent = [] }) => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="relative mx-auto w-full px-4 sm:px-6 md:max-w-6xl">
+      <div className="relative mx-auto w-full md:max-w-6xl">
         <div className="relative mx-auto w-full md:max-w-4xl">
           {/* Main Card */}
           <div className="relative flex flex-col overflow-hidden rounded-3xl border border-[#DCE7E8] bg-white shadow-xl shadow-[#224248]/5">
@@ -133,7 +133,7 @@ const Slider = ({ reviewsContent = [] }) => {
               {/* Review Content */}
               <div
                 key={slider}
-                className="min-h-[180px] flex-1 animate-[fadeIn_1s_ease-in-out]"
+                className="min-h-[150px] flex-1 animate-[fadeIn_1s_ease-in-out]"
                 aria-live="polite"
               >
                 <h3 className="text-xl font-bold leading-snug text-[#224248] sm:text-2xl">

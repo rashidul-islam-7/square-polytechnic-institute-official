@@ -14,7 +14,7 @@ const StudentReviews = () => {
 
       <div className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-[#224248]/5 blur-3xl" />
 
-      <div className=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto max-w-7xl px-4 lg:px-8">
         {/*HEADER */}
         <ReviewSectionHeader />
         {/* REVIEWS */}
