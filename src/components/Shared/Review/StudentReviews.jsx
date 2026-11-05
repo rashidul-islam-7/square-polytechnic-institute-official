@@ -6,7 +6,6 @@ import OneSlider from "../Slider/OneSlider";
 import { studentsFeedback } from "@/data/feedbackData/studentsFeedback";
 import ReviewSectionHeader from "./ReviewSectionHeader";
 
-
 const StudentReviews = () => {
   return (
     <section className="relative overflow-hidden bg-white py-16 md:py-20 lg:py-24">

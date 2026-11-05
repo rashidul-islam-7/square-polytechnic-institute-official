@@ -54,6 +54,6 @@ const ContactBanner = () => {
       </div>
     </section>
   );
-};
+};  
 
 export default ContactBanner;
