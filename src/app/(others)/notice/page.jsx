@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import Link from "next/link";
 import {
   FaBullhorn,
   FaCalendarDays,
@@ -15,68 +14,17 @@ import {
   FaChevronRight,
 } from "react-icons/fa6";
 import Btn from "@/components/UI/Btn";
-import CustomIcon from "@/components/UI/CustomIcon";
 
 const notices = [
-  //   {
-  //     id: 1,
-  //     title: "২০২৬ শিক্ষাবর্ষে ভর্তি সংক্রান্ত জরুরি বিজ্ঞপ্তি",
-  //     description:
-  //       "২০২৬ শিক্ষাবর্ষে ডিপ্লোমা ইন ইঞ্জিনিয়ারিং কোর্সে ভর্তিচ্ছু শিক্ষার্থীদের ভর্তি কার্যক্রম সম্পর্কে বিস্তারিত জানানো যাচ্ছে।",
-  //     date: "2026-11-04",
-  //     category: "ভর্তি",
-  //     pdf: "/notices/admission-2026.pdf",
-  //     isNew: true,
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "সেমিস্টার ফাইনাল পরীক্ষার সময়সূচি",
-  //     description:
-  //       "সকল বিভাগের শিক্ষার্থীদের জানানো যাচ্ছে যে, নির্ধারিত সময় অনুযায়ী সেমিস্টার ফাইনাল পরীক্ষা অনুষ্ঠিত হবে।",
-  //     date: "2026-11-01",
-  //     category: "পরীক্ষা",
-  //     pdf: "/notices/exam-routine.pdf",
-  //     isNew: true,
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "শিক্ষার্থীদের ক্লাস উপস্থিতি সংক্রান্ত বিজ্ঞপ্তি",
-  //     description:
-  //       "সকল শিক্ষার্থীকে নিয়মিত ক্লাসে উপস্থিত থাকার জন্য নির্দেশ প্রদান করা হলো।",
-  //     date: "2026-10-25",
-  //     category: "একাডেমিক",
-  //     pdf: "/notices/attendance.pdf",
-  //     isNew: false,
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "নতুন শিক্ষার্থীদের ওরিয়েন্টেশন প্রোগ্রাম",
-  //     description:
-  //       "নতুন শিক্ষার্থীদের জন্য আয়োজিত ওরিয়েন্টেশন প্রোগ্রামের সময়সূচি ও প্রয়োজনীয় নির্দেশনা প্রকাশ করা হলো।",
-  //     date: "2026-10-20",
-  //     category: "অনুষ্ঠান",
-  //     pdf: "/notices/orientation.pdf",
-  //     isNew: false,
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "বৃত্তি সংক্রান্ত গুরুত্বপূর্ণ বিজ্ঞপ্তি",
-  //     description:
-  //       "যোগ্য শিক্ষার্থীদের বৃত্তির আবেদন ও প্রয়োজনীয় কাগজপত্র জমা দেওয়ার বিষয়ে বিস্তারিত নির্দেশনা।",
-  //     date: "2026-10-15",
-  //     category: "অন্যান্য",
-  //     pdf: "/notices/scholarship.pdf",
-  //     isNew: false,
-  //   },
-    {
-      id: 6,
-      title: "ল্যাব ক্লাসের নতুন সময়সূচি",
-      description: "সকল বিভাগের ব্যবহারিক ক্লাসের নতুন সময়সূচি প্রকাশ করা হয়েছে।",
-      date: "2026-10-10",
-      category: "একাডেমিক",
-      pdf: "/notices/lab-routine.pdf",
-      isNew: false,
-    },
+  {
+    id: 6,
+    title: "ল্যাব ক্লাসের নতুন সময়সূচি",
+    description: "সকল বিভাগের ব্যবহারিক ক্লাসের নতুন সময়সূচি প্রকাশ করা হয়েছে।",
+    date: "2026-10-10",
+    category: "একাডেমিক",
+    pdf: "/notices/lab-routine.pdf",
+    isNew: false,
+  },
 ];
 
 const categories = [
@@ -264,8 +212,10 @@ export default function NoticePage() {
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                   {/* PDF Icon */}
-                  <div className="flex p-3 shrink-0 items-center justify-center rounded-lg
-                   bg-[#44A1A4]/10 text-xl text-[#1a6f72]">
+                  <div
+                    className="flex p-3 shrink-0 items-center justify-center rounded-lg
+                   bg-[#44A1A4]/10 text-xl text-[#1a6f72]"
+                  >
                     <FaFilePdf />
                   </div>
 

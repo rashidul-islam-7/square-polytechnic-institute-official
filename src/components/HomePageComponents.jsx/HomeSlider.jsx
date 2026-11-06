@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Btn2 from "../UI/Btn2";
+import Btn from "../UI/Btn";
 
 export default function HeroSlider({
   slides = [],
@@ -99,27 +101,16 @@ export default function HeroSlider({
             <div className="mt-8 flex flex-wrap items-center gap-4">
               {/* Primary Button */}
               {primaryButton && (
-                <Link href={primaryButton.href || "#"}>
-                  <button className="group flex cursor-pointer items-center gap-2 rounded-lg bg-[#FF9A00] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#E88900] hover:shadow-xl">
-                    {primaryButton.text}
-
-                    {primaryButton.showIcon !== false && (
-                      <ArrowRight
-                        size={19}
-                        className="transition-transform duration-300 group-hover:translate-x-1"
-                      />
-                    )}
-                  </button>
-                </Link>
+                <Btn
+                  text={primaryButton.text}
+                  link={primaryButton.href}
+                  className="py-3"
+                />
               )}
 
               {/* Secondary Button */}
               {secondaryButton && (
-                <Link href={secondaryButton.href || "#"}>
-                  <button className="cursor-pointer rounded-lg border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/60 hover:text-[#224248]">
-                    {secondaryButton.text}
-                  </button>
-                </Link>
+                <Btn2 text={secondaryButton.text} link={secondaryButton.href} className="py-3" />
               )}
             </div>
           )}
