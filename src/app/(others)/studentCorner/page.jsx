@@ -23,6 +23,7 @@ import {
   FaLightbulb,
 } from "react-icons/fa6";
 import StudentCareHero from "@/components/student-care/Hero";
+import QuickAccess from "@/components/student-care/QuickAccess";
 
 // Images
 const images = {
@@ -239,28 +240,7 @@ export default function StudentCarePage() {
       <StudentCareHero />
 
       {/* quick access  */}
-      <section className="relative z-10 mx-auto -mt-1 max-w-[1440px] px-5 sm:px-8 lg:px-14">
-        <div className="grid overflow-hidden rounded-xl border border-gray-100 bg-white shadow-[0_12px_40px_rgba(34,66,72,0.08)] sm:grid-cols-2 lg:grid-cols-5">
-          {quickLinks.map((item, index) => (
-            <Link
-              href={item.href}
-              key={index}
-              className="group flex items-center gap-4 border-b border-gray-100 p-5 transition hover:bg-[#F2F9F8] sm:border-r lg:border-b-0"
-            >
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#44A1A4]/10 text-xl text-[#224248] transition group-hover:bg-[#224248] group-hover:text-white">
-                <item.icon />
-              </div>
-
-              <div className="min-w-0 flex-1">
-                <p className="text-sm font-bold">{item.title}</p>
-                <p className="mt-1 text-xs text-gray-400">{item.subtitle}</p>
-              </div>
-
-              <FaArrowRight className="shrink-0 text-xs text-[#44A1A4] transition group-hover:translate-x-1" />
-            </Link>
-          ))}
-        </div>
-      </section>
+      <QuickAccess />
 
       {/* =====================================
           INTRODUCTION

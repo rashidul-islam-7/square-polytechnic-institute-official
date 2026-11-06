@@ -1,8 +1,10 @@
-const SectionTopSubTitle = ({ text, icon: Icon }) => {
+const SectionTopSubTitle = ({ text, icon: Icon, className }) => {
   if (!text) return null;
 
   return (
-    <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#C28B24]/20 bg-[#FFFDF7] px-4 py-1.5 shadow-sm" > 
+    <div
+      className={`mb-4 inline-flex items-center gap-2 rounded-full border border-[#C28B24]/20 bg-[#FFFDF7] px-4 py-1.5 shadow-sm ${className}`}
+    >
       {Icon ? (
         <Icon size={14} className="shrink-0 text-[#9B6F17]" />
       ) : (

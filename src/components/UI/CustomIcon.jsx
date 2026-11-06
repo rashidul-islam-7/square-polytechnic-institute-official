@@ -7,7 +7,7 @@ const CustomIcon = ({
   color = "text-white",
   bg = " bg-[#132629] ",
   size = 24,
-  rounded = "rounded-xl",
+  rounded = "rounded-md",
   className = "",
 }) => {
   // check React icon or Lucide Icons

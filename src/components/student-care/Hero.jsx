@@ -31,7 +31,7 @@ export default function StudentCareHero() {
             <span className="font-medium mt-1">Student Care & Support</span>
           </div>
 
-          <div className="max-w-2xl border-l-3 border-[#d7f1f123] pl-4">
+          <div className="max-w-2xl border-l-3 border-[#d7f1f1c0] pl-4">
             {/* Heading */}
             <h1 className="text-4xl font-extrabold text-white md:text-5xl ">
               We Care About
@@ -40,8 +40,8 @@ export default function StudentCareHero() {
 
             {/* Description */}
             <p className="mt-3 text-sm leading-6 text-white/80 md:text-base">
-              শিক্ষার্থীদের শিক্ষা, দক্ষতা ও ব্যক্তিগত উন্নয়নে প্রয়োজনীয়
-              সহযোগিতা এবং দিকনির্দেশনা দিতে আমরা সবসময় পাশে আছি।
+             “শিক্ষার্থীদের প্রয়োজন, সম্ভাবনা ও ভবিষ্যৎকে গুরুত্ব দিয়ে আমরা নিশ্চিত করি প্রয়োজনীয় সহযোগিতা ও দিকনির্দেশনা।”
+             {/* “শিক্ষাজীবনের প্রতিটি ধাপে শিক্ষার্থীদের পাশে থেকে তাদের দক্ষতা বিকাশ ও উজ্জ্বল ভবিষ্যৎ গড়তে আমরা প্রতিশ্রুতিবদ্ধ।” */}
             </p>
           </div>
 
