@@ -40,20 +40,21 @@ export default function StudentCareHero() {
 
             {/* Description */}
             <p className="mt-3 text-sm leading-6 text-white/80 md:text-base">
-             “শিক্ষার্থীদের প্রয়োজন, সম্ভাবনা ও ভবিষ্যৎকে গুরুত্ব দিয়ে আমরা নিশ্চিত করি প্রয়োজনীয় সহযোগিতা ও দিকনির্দেশনা।”
-             {/* “শিক্ষাজীবনের প্রতিটি ধাপে শিক্ষার্থীদের পাশে থেকে তাদের দক্ষতা বিকাশ ও উজ্জ্বল ভবিষ্যৎ গড়তে আমরা প্রতিশ্রুতিবদ্ধ।” */}
+              “শিক্ষার্থীদের প্রয়োজন, সম্ভাবনা ও ভবিষ্যৎকে গুরুত্ব দিয়ে আমরা
+              নিশ্চিত করি প্রয়োজনীয় সহযোগিতা ও দিকনির্দেশনা।”
+              {/* “শিক্ষাজীবনের প্রতিটি ধাপে শিক্ষার্থীদের পাশে থেকে তাদের দক্ষতা বিকাশ ও উজ্জ্বল ভবিষ্যৎ গড়তে আমরা প্রতিশ্রুতিবদ্ধ।” */}
             </p>
           </div>
 
           {/* Buttons */}
-          <div className="mt-8 flex flex-wrap gap-4">
+          {/* <div className="mt-8 flex flex-wrap gap-4">
             <Btn
               text="Explore Student Services"
               link="#student-services "
               className="py-3"
             />
             <Btn2 text="Student Resources" link="#resources" className="py-3" />
-          </div>
+          </div> */}
 
           {/* Bottom Highlights */}
           <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-white/20 pt-7">

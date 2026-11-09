@@ -17,27 +17,27 @@ import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import CustomIcon from "../UI/CustomIcon";
 
 const quickLinks = [
-  {
-    icon: FaCalendarDays,
-    title: "Class Routine",
-    subtitle: "View your class schedule and timing.",
-    href: "/class-routine",
-    number: "01",
-  },
-  {
-    icon: FaCalendarCheck,
-    title: "Exam Routine",
-    subtitle: "Check upcoming examination schedules.",
-    href: "/exam-routine",
-    number: "02",
-  },
-  {
-    icon: FaClipboardList,
-    title: "Suggestion Box",
-    subtitle: "Share your ideas and suggestions.",
-    href: "/study-suggestion",
-    number: "03",
-  },
+  // {
+  //   icon: FaCalendarDays,
+  //   title: "Class Routine",
+  //   subtitle: "View your class schedule and timing.",
+  //   href: "/class-routine",
+  //   number: "01",
+  // },
+  // {
+  //   icon: FaCalendarCheck,
+  //   title: "Exam Routine",
+  //   subtitle: "Check upcoming examination schedules.",
+  //   href: "/exam-routine",
+  //   number: "02",
+  // },
+  // {
+  //   icon: FaClipboardList,
+  //   title: "Suggestion Box",
+  //   subtitle: "Share your ideas and suggestions.",
+  //   href: "/study-suggestion",
+  //   number: "03",
+  // },
   {
     icon: FaFileLines,
     title: "Previous Questions",
@@ -46,33 +46,34 @@ const quickLinks = [
     number: "04",
   },
   {
-    icon: FaGraduationCap,
-    title: "Results",
-    subtitle: "Check your examination results.",
-    href: "/result",
-    number: "05",
-  },
-  {
     icon: FaBookOpen,
     title: "Syllabus & Booklist",
     subtitle: "Explore syllabus and recommended books.",
     href: "/syllabus-booklist",
     number: "06",
   },
-  {
-    icon: FaUsers,
-    title: "Student Activities",
-    subtitle: "Explore campus activities and events.",
-    href: "/student-activities",
-    number: "07",
-  },
-  {
-    icon: FaBullhorn,
-    title: "Notice Board",
-    subtitle: "Stay updated with college announcements.",
-    href: "/notices",
-    number: "08",
-  },
+  // {
+  //   icon: FaGraduationCap,
+  //   title: "Results",
+  //   subtitle: "Check your examination results.",
+  //   href: "/result",
+  //   number: "05",
+  // },
+
+  // {
+  //   icon: FaUsers,
+  //   title: "Student Activities",
+  //   subtitle: "Explore campus activities and events.",
+  //   href: "/student-activities",
+  //   number: "07",
+  // },
+  // {
+  //   icon: FaBullhorn,
+  //   title: "Notice Board",
+  //   subtitle: "Stay updated with college announcements.",
+  //   href: "/notices",
+  //   number: "08",
+  // },
 ];
 
 export default function QuickAccess() {
@@ -125,7 +126,7 @@ export default function QuickAccess() {
               </span>
 
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F2F9F8] text-[12px] text-[#44A1A4] transition-all duration-300 hover:bg-[#ff9a00] group-hover:text-[#224248]">
-                <FaArrowRight /> 
+                <FaArrowRight />
               </span>
             </div>
           </Link>
