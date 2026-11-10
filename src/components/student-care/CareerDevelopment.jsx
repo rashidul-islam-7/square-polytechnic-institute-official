@@ -53,7 +53,7 @@ const careerServices = [
   },
 ];
 
-const CareerDevelopment = () => {
+const CareerDevelopment  = () => {
   return (
     <section
       aria-labelledby="career-heading"

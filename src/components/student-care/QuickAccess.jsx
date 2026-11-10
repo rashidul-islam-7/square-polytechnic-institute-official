@@ -86,11 +86,11 @@ export default function QuickAccess() {
             <SectionTopSubTitle text="Quick Access" icon={FaBolt} />
           </span>
 
-          <h2 className="mt-2 text-2xl font-bold text-[#224248] sm:text-3xl ">
+          <h2 className="mt-2 text-3xl font-bold text-[#224248] sm:text-4xl ">
             Quick Access
           </h2>
 
-          <p className="mt-2 max-w-xl text-sm leading-7 text-gray-500">
+          <p className="mt-2 max-w-xl leading-7 text-gray-500">
             শিক্ষার্থীদের প্রয়োজনীয় একাডেমিক তথ্য ও সেবা সমূহ।
           </p>
         </div>

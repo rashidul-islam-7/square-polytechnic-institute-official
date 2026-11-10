@@ -1,6 +1,7 @@
-import { FaGraduationCap } from "react-icons/fa6";
+import { FaChalkboard, FaGraduationCap } from "react-icons/fa6";
 import SectionTopSubTitle from "../UI/SectionTopSubTitle";
 import TitleStyle from "../UI/TitleStyle";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 // Images
 const images = {
@@ -26,22 +27,28 @@ export default function Introduction() {
             highlightedTitle=" সুন্দর ও সম্ভাবনাময়"
           />
 
-          <p className="mt-6 max-w-xl text-base leading-8 text-gray-600 sm:text-lg">
-            শিক্ষাজীবন শুধু ক্লাস ও পরীক্ষার মধ্যে সীমাবদ্ধ নয়। পড়াশোনার
-            পাশাপাশি একজন শিক্ষার্থীর প্রয়োজন সঠিক দিকনির্দেশনা, শেখার সুযোগ,
-            সহশিক্ষা কার্যক্রম এবং প্রয়োজনের সময় সহযোগিতা। শিক্ষার্থীদের এসব
-            প্রয়োজনীয় তথ্য ও সেবার সঙ্গে পরিচিত করতেই আমাদের Student Care।
+          <p className="mt-6 max-w-xl leading-7 text-gray-600 ">
+            শিক্ষার্থীদের শিক্ষাজীবন কেবল শ্রেণি কক্ষ বা পরীক্ষার খাতার গণ্ডিতে
+            সীমাবদ্ধ থাকে না। পড়ালেখার পাশাপাশি একজন শিক্ষার্থীর সঠিক সময়ে সঠিক
+            দিকনির্দেশনা, স্কিল ডেভেলপমেন্টের সুযোগ, সহশিক্ষা কার্যক্রম
+            (co-curricular activities) এবং একটি সঠিক গাইডের প্রয়োজন সবচেয়ে বেশি।
+            <br /> <br />
+            শিক্ষার্থীদের মেধা বিকাশ ও উজ্জ্বল ভবিষ্যৎ নিশ্চিত করতে প্রয়োজনীয়
+            তথ্য ও সেবা সহজে পৌঁছে দেওয়াই আমাদের Student Care-এর মূল লক্ষ্য।
           </p>
 
-          <p className="mt-4 max-w-xl text-base leading-8 text-gray-600">
+          <p className="mt-4 max-w-xl  leading-7 text-gray-600">
             একাডেমিক সহায়তা থেকে শুরু করে ক্যারিয়ার প্রস্তুতি, দক্ষতা উন্নয়ন
-            এবং শিক্ষার্থীদের বিভিন্ন কার্যক্রম—প্রয়োজনীয় তথ্য সহজেই খুঁজে
-            পেতে এই প্ল্যাটফর্মটি তৈরি করা হয়েছে।
+            এবং শিক্ষার্থীদের বিভিন্ন কার্যক্রম—প্রয়োজনে সব সময় সব খানে।
           </p>
 
-          <div className="mt-8">
-            <span className="text-sm font-medium text-gray-500">
-              শিক্ষার্থীর পাশে, শিক্ষাজীবনের প্রতিটি ধাপে
+          <div className="mt-8 flex items-center gap-2">
+            <span className="flex p-1 items-center justify-center rounded-full border border-[#1d928c]/30 bg-[#1d928c]/10 text-[#1d928c]">
+              <FaChalkboardTeacher size={17} />
+            </span>
+
+            <span className="font-medium tracking-wide text-gray-600">
+              শিক্ষার্থীর পাশে, শিক্ষাজীবনের প্রতিটি ধাপে!
             </span>
           </div>
         </div>
